@@ -19,14 +19,14 @@ class FeishuError(RuntimeError):
 def _gen_sign(secret: str) -> tuple[str, str]:
     """
     根据飞书自定义机器人签名规则生成 timestamp 和 sign。
-    规则要点（飞书自定义机器人）：
-    - 待签名字符串：timestamp + "\\n" + secret
-    - HMAC-SHA256：key=secret，message=待签名字符串
-    - sign：对 HMAC 结果做 Base64 编码
+    飞书规则（按官方文档描述）：
+    1) 拼接签名字符串：timestamp + "\\n" + 密钥
+    2) 使用 HmacSHA256 计算“空字符串”的签名结果
+    3) 对签名结果进行 Base64 编码
     """
     timestamp = str(int(time.time()))
-    string_to_sign = f"{timestamp}\n{secret}".encode("utf-8")
-    hmac_code = hmac.new(secret.encode("utf-8"), string_to_sign, digestmod=hashlib.sha256).digest()
+    key = f"{timestamp}\n{secret}".encode("utf-8")
+    hmac_code = hmac.new(key, msg=b"", digestmod=hashlib.sha256).digest()
     sign = base64.b64encode(hmac_code).decode("utf-8")
     return timestamp, sign
 
