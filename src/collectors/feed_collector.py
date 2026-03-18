@@ -1,7 +1,7 @@
 import logging
 import re
 import calendar
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
 
 import feedparser
@@ -20,7 +20,7 @@ def _to_datetime(entry: Dict[str, Any]) -> Optional[datetime]:
             try:
                 # 用 timegm 按 UTC 解释，避免本地时区导致的偏差
                 ts = calendar.timegm(v)
-                return datetime.fromtimestamp(ts)
+                return datetime.fromtimestamp(ts, tz=timezone.utc)
             except Exception:  # noqa: BLE001
                 return None
     return None
@@ -64,7 +64,7 @@ def fetch_feed_entries(
     *,
     max_entries: int = 30,
     timeout_s: float = 15.0,
-    recent_days: int = 30,
+    recency_days: int = 30,
 ) -> Tuple[List[Dict[str, Any]], Optional[str]]:
     """
     抓取单个 RSS/Atom 源，返回 (entries, error_message)。
@@ -92,11 +92,15 @@ def fetch_feed_entries(
                 continue
 
             published_at = _to_datetime(e)
-            if published_at:
-                # 最近 N 天过滤（以本机当前时间为基准；Actions 环境为 UTC，不影响“30天窗口”的相对判断）
-                age_days = (datetime.utcnow() - published_at).days
-                if age_days > recent_days:
-                    continue
+            if not published_at:
+                # 第一版策略：日期不可解析直接丢弃，避免把“旧文章/置顶”混进日报
+                log.info("丢弃（无法解析日期）：source=%s title=%s url=%s", name, title[:120], link)
+                continue
+
+            # 最近 N 天过滤（以 UTC 计算；保持简单可预期）
+            age_days = (datetime.now(timezone.utc) - published_at).days
+            if age_days > recency_days:
+                continue
 
             summary = _extract_summary(e)
             entries.append(

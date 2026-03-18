@@ -28,6 +28,10 @@ pip install -r requirements.txt
 - 信息源：`configs/sources.yaml`
 - 筛选规则：`configs/rules.yaml`
 
+#### 规则说明（与 `configs/rules.yaml` 对应）
+- **最近 30 天过滤**：由 `relevance.recency_days` 控制；只有能解析出发布时间的条目才会参与筛选，无法解析日期的条目会被直接丢弃并在日志中提示。
+- **摘要长度**：由 `output.summary_max_chars` 控制；日报中展示的 `摘要` 会按该长度截断。
+
 ### 4) 设置环境变量（飞书）
 需要配置飞书自定义机器人 Webhook，支持可选的“签名校验”：
 

@@ -58,6 +58,7 @@ def main() -> int:
 
     tz_name = str(output_cfg.get("timezone", "Asia/Shanghai"))
     title_prefix = str(output_cfg.get("title_prefix", "AI 安全日报"))
+    summary_max_chars = int(output_cfg.get("summary_max_chars", 160))
     date_str = today_ymd(tz_name)
 
     enabled_sources = [s for s in sources if bool(s.get("enabled", True))]
@@ -78,11 +79,11 @@ def main() -> int:
             )
             continue
 
-        recent_days = int(relevance_rules.get("recent_days", 30))
+        recency_days = int(relevance_rules.get("recency_days", 30))
         entries, err = fetch_feed_entries(
             src,
             max_entries=per_source_max_entries,
-            recent_days=recent_days,
+            recency_days=recency_days,
         )
         if err:
             failed_sources.append(str(src.get("name", "unknown")))
@@ -103,13 +104,13 @@ def main() -> int:
         "failed_sources": failed_sources,
         "total_fetched": total_fetched,
         "total_candidates": len(picked),
-        "summary_max_chars": int(relevance_rules.get("summary_max_chars", 160)),
     }
 
     md = render_daily_markdown(
         picked,
         tz_name=tz_name,
         title_prefix=title_prefix,
+        summary_max_chars=summary_max_chars,
         stats=stats,
     )
 

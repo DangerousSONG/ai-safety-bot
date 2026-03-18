@@ -1,11 +1,31 @@
-import logging
 from collections import defaultdict
 from typing import Any, Dict, List
 
 from src.utils.time import format_dt, today_ymd
 
 
-log = logging.getLogger(__name__)
+def _shorten(text: str, max_chars: int) -> str:
+    t = (text or "").strip()
+    if not t:
+        return ""
+    if len(t) <= max_chars:
+        return t
+    return t[: max(0, max_chars - 1)].rstrip() + "…"
+
+
+def _build_reason_text(reason: Dict[str, Any]) -> str:
+    strong = reason.get("strong") or []
+    weak = reason.get("weak") or []
+    ai_ctx = reason.get("ai_context") or []
+
+    parts: List[str] = []
+    if strong:
+        parts.append("强关键词：" + "、".join(str(x) for x in strong[:5]))
+    if ai_ctx:
+        parts.append("AI上下文：" + "、".join(str(x) for x in ai_ctx[:3]))
+    if weak:
+        parts.append("弱关键词：" + "、".join(str(x) for x in weak[:5]))
+    return "；".join(parts)
 
 
 def render_daily_markdown(
@@ -13,8 +33,13 @@ def render_daily_markdown(
     *,
     tz_name: str,
     title_prefix: str,
+    summary_max_chars: int = 160,
     stats: Dict[str, Any],
 ) -> str:
+    """
+    虽然函数名保留为 markdown，但第一版飞书使用 text 消息：
+    这里输出适合“纯文本展示”的格式（不包含 #/##/** 等 Markdown 标记）。
+    """
     date_str = today_ymd(tz_name)
     title = f"{title_prefix}（{date_str}）"
 
@@ -25,75 +50,56 @@ def render_daily_markdown(
     total_candidates = int(stats.get("total_candidates", 0))
 
     lines: List[str] = []
-    lines.append(f"# {title}")
+    lines.append(title)
     lines.append("")
-    lines.append("## 概览")
+
+    lines.append("【概览】")
     lines.append(f"- 抓取源：{ok_sources}/{total_sources} 成功")
     lines.append(f"- 抓取条目：{total_fetched}")
     lines.append(f"- 入选条目：{total_candidates}")
     if failed_sources:
-        lines.append(f"- 抓取失败源：{', '.join(failed_sources)}")
+        lines.append("- 抓取失败源：" + "、".join(failed_sources))
     lines.append("")
 
+    lines.append("【今日精选】")
+
     if not items:
-        lines.append("## 今日精选")
-        lines.append("")
-        lines.append("今日高相关动态较少（或信息源更新不多）。你可以：")
-        lines.append("- 明天再看一轮")
-        lines.append("- 或提高抓取条数/降低阈值（见 `configs/rules.yaml`）")
-        lines.append("")
+        lines.append("今日高相关动态较少（或信息源更新不多）。")
+        lines.append("建议：可适当调低 `min_score` 或提高 `per_source_max_entries`。")
         return "\n".join(lines)
 
-    summary_max_chars = int(stats.get("summary_max_chars", 160) or 160)
+    summary_max_chars = int(summary_max_chars or 160)
 
-    # 先按 category 分组，再按 source 分组
+    # 按 category 分组，组内按顺序输出
     by_cat: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
     for it in items:
         by_cat[it.get("category") or "未分类"].append(it)
 
-    lines.append("## 今日精选")
-    lines.append("")
-
+    idx = 0
     for cat in sorted(by_cat.keys()):
-        lines.append(f"### {cat}")
-        groups: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
-        for it in by_cat[cat]:
-            groups[it.get("source_name") or "未知来源"].append(it)
-
-        for src in sorted(groups.keys()):
-            lines.append(f"- **{src}**")
-            for it in groups[src]:
-                title = it.get("title", "").strip()
-                url = it.get("url", "").strip()
-                pub = format_dt(it.get("published_at"), tz_name=tz_name)
-                score = it.get("score", 0)
-                summary = (it.get("summary") or "").strip()
-                if summary and len(summary) > summary_max_chars:
-                    summary = summary[: summary_max_chars - 1].rstrip() + "…"
-
-                reason = it.get("reason") or {}
-                strong = reason.get("strong") or []
-                weak = reason.get("weak") or []
-                ai_ctx = reason.get("ai_context") or []
-                reason_parts: List[str] = []
-                if strong:
-                    reason_parts.append("强关键词：" + "、".join(str(x) for x in strong[:5]))
-                if ai_ctx:
-                    reason_parts.append("AI上下文：" + "、".join(str(x) for x in ai_ctx[:3]))
-                if weak:
-                    reason_parts.append("弱关键词：" + "、".join(str(x) for x in weak[:5]))
-                reason_text = "；".join(reason_parts) if reason_parts else "规则命中"
-
-                suffix_parts: List[str] = []
-                if pub:
-                    suffix_parts.append(pub)
-                suffix_parts.append(f"score={score}")
-                suffix = "；".join(suffix_parts)
-                lines.append(f"  - [{title}]({url})（{suffix}）")
-                lines.append(f"    - 入选原因：{reason_text}")
-                if summary:
-                    lines.append(f"    - 摘要：{summary}")
         lines.append("")
+        lines.append(f"【{cat}】")
+
+        for it in by_cat[cat]:
+            idx += 1
+            t = _shorten(it.get("title", ""), 140)
+            url = (it.get("url", "") or "").strip()
+            pub = format_dt(it.get("published_at"), tz_name=tz_name)
+            summary = _shorten(it.get("summary", ""), summary_max_chars)
+            score = it.get("score", 0)
+            reason_text = _build_reason_text(it.get("reason") or {})
+
+            lines.append(f"{idx}. {t}")
+            if pub:
+                lines.append(f"   时间：{pub}")
+            if summary:
+                lines.append(f"   摘要：{summary}")
+            if reason_text:
+                lines.append(f"   入选原因：{reason_text}（score={score}）")
+            else:
+                lines.append(f"   入选原因：规则命中（score={score}）")
+            if url:
+                lines.append(f"   链接：{url}")
 
     return "\n".join(lines)
 
