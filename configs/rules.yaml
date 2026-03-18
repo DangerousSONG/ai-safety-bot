@@ -2,6 +2,8 @@ relevance:
   per_source_max_entries: 30
   top_n: 10
   min_score: 3
+  recent_days: 30
+  summary_max_chars: 160
 
   strong_keywords:
     - "jailbreak"

@@ -78,7 +78,12 @@ def main() -> int:
             )
             continue
 
-        entries, err = fetch_feed_entries(src, max_entries=per_source_max_entries)
+        recent_days = int(relevance_rules.get("recent_days", 30))
+        entries, err = fetch_feed_entries(
+            src,
+            max_entries=per_source_max_entries,
+            recent_days=recent_days,
+        )
         if err:
             failed_sources.append(str(src.get("name", "unknown")))
             log.warning("抓取失败：source=%s err=%s", src.get("name"), err)
@@ -98,6 +103,7 @@ def main() -> int:
         "failed_sources": failed_sources,
         "total_fetched": total_fetched,
         "total_candidates": len(picked),
+        "summary_max_chars": int(relevance_rules.get("summary_max_chars", 160)),
     }
 
     md = render_daily_markdown(

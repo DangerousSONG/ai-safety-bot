@@ -1,6 +1,6 @@
 import logging
 from collections import defaultdict
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List
 
 from src.utils.time import format_dt, today_ymd
 
@@ -44,6 +44,8 @@ def render_daily_markdown(
         lines.append("")
         return "\n".join(lines)
 
+    summary_max_chars = int(stats.get("summary_max_chars", 160) or 160)
+
     # 先按 category 分组，再按 source 分组
     by_cat: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
     for it in items:
@@ -65,12 +67,32 @@ def render_daily_markdown(
                 url = it.get("url", "").strip()
                 pub = format_dt(it.get("published_at"), tz_name=tz_name)
                 score = it.get("score", 0)
+                summary = (it.get("summary") or "").strip()
+                if summary and len(summary) > summary_max_chars:
+                    summary = summary[: summary_max_chars - 1].rstrip() + "…"
+
+                reason = it.get("reason") or {}
+                strong = reason.get("strong") or []
+                weak = reason.get("weak") or []
+                ai_ctx = reason.get("ai_context") or []
+                reason_parts: List[str] = []
+                if strong:
+                    reason_parts.append("强关键词：" + "、".join(str(x) for x in strong[:5]))
+                if ai_ctx:
+                    reason_parts.append("AI上下文：" + "、".join(str(x) for x in ai_ctx[:3]))
+                if weak:
+                    reason_parts.append("弱关键词：" + "、".join(str(x) for x in weak[:5]))
+                reason_text = "；".join(reason_parts) if reason_parts else "规则命中"
+
                 suffix_parts: List[str] = []
                 if pub:
                     suffix_parts.append(pub)
                 suffix_parts.append(f"score={score}")
                 suffix = "；".join(suffix_parts)
                 lines.append(f"  - [{title}]({url})（{suffix}）")
+                lines.append(f"    - 入选原因：{reason_text}")
+                if summary:
+                    lines.append(f"    - 摘要：{summary}")
         lines.append("")
 
     return "\n".join(lines)

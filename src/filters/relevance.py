@@ -9,10 +9,10 @@ def _lower(s: str) -> str:
     return (s or "").lower()
 
 
-def score_title(title: str, rules: Dict[str, Any]) -> Tuple[int, List[str]]:
+def score_title(title: str, rules: Dict[str, Any]) -> Tuple[int, Dict[str, Any]]:
     """
     第一版：只基于标题做相关性打分。
-    返回 (score, matched_keywords)。
+    返回 (score, reason_dict)。
     """
     scoring = rules.get("scoring", {}) or {}
     strong_hit = int(scoring.get("strong_hit", 4))
@@ -26,12 +26,20 @@ def score_title(title: str, rules: Dict[str, Any]) -> Tuple[int, List[str]]:
     deny_keywords = rules.get("deny_keywords", []) or []
 
     t = _lower(title)
-    matched: List[str] = []
+    matched_deny: List[str] = []
+    matched_ai_ctx: List[str] = []
+    matched_strong: List[str] = []
+    matched_weak: List[str] = []
 
     for kw in deny_keywords:
         if _lower(str(kw)) in t:
-            matched.append(str(kw))
-            return deny_hit, matched
+            matched_deny.append(str(kw))
+            return deny_hit, {
+                "deny": matched_deny,
+                "ai_context": matched_ai_ctx,
+                "strong": matched_strong,
+                "weak": matched_weak,
+            }
 
     score = 0
 
@@ -39,23 +47,28 @@ def score_title(title: str, rules: Dict[str, Any]) -> Tuple[int, List[str]]:
     for kw in ai_context_keywords:
         if _lower(str(kw)) in t:
             ai_ctx = True
-            matched.append(str(kw))
+            matched_ai_ctx.append(str(kw))
             score += ai_context_hit
             break
 
     for kw in strong_keywords:
         if _lower(str(kw)) in t:
-            matched.append(str(kw))
+            matched_strong.append(str(kw))
             score += strong_hit
 
     # 弱相关词：需要与 AI 上下文同现才加分（避免“泛安全”噪声）
     if ai_ctx:
         for kw in weak_keywords:
             if _lower(str(kw)) in t:
-                matched.append(str(kw))
+                matched_weak.append(str(kw))
                 score += weak_hit
 
-    return score, matched
+    return score, {
+        "deny": matched_deny,
+        "ai_context": matched_ai_ctx,
+        "strong": matched_strong,
+        "weak": matched_weak,
+    }
 
 
 def filter_and_rank(items: List[Dict[str, Any]], rules: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -69,10 +82,10 @@ def filter_and_rank(items: List[Dict[str, Any]], rules: Dict[str, Any]) -> List[
     kept: List[Dict[str, Any]] = []
     for it in items:
         title = it.get("title", "")
-        score, matched = score_title(title, rules)
+        score, reason = score_title(title, rules)
         it2 = dict(it)
         it2["score"] = score
-        it2["matched_keywords"] = matched
+        it2["reason"] = reason
 
         if score >= min_score:
             kept.append(it2)

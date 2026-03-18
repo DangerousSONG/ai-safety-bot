@@ -6,22 +6,71 @@ sources:
     enabled: true
     content_trust: "official"
     delivery_trust: "official_feed"
-    notes: "Google 官方安全博客。第一版通过关键词规则筛出与 AI/LLM/生成式AI/agent 相关的安全条目。"
+    notes: "Google 官方安全博客。适合通过关键词筛 AI/LLM/生成式AI/agent 安全内容。"
 
   - name: "GitHub Blog Security"
     type: "feed"
     url: "https://github.blog/security/feed/"
-    category: "安全研究/社区"
+    category: "GitHub/开源生态"
     enabled: true
     content_trust: "official"
     delivery_trust: "official_feed"
-    notes: "GitHub 官方 Security 博客。用于补充 AI coding、代码安全、供应链安全、AI agent 安全相关内容。"
+    notes: "GitHub 官方安全栏目。适合补充 AI coding security、漏洞、供应链与 agent 安全相关内容。"
 
   - name: "OpenAI News"
     type: "feed"
     url: "https://openai.com/news/rss.xml"
     category: "国外大厂"
-    enabled: false
+    enabled: true
     content_trust: "official"
     delivery_trust: "official_feed"
-    notes: "OpenAI 官方新闻 RSS 候选源。第一版默认关闭，等本地验证抓取成功后再启用。"
+    notes: "OpenAI 官方 News RSS。优先关注 safety、preparedness、misuse、policy、security 相关内容。"
+
+  - name: "Hugging Face Blog"
+    type: "feed"
+    url: "https://huggingface.co/blog/feed.xml"
+    category: "Hugging Face/开源生态"
+    enabled: true
+    content_trust: "official"
+    delivery_trust: "official_feed"
+    notes: "Hugging Face 官方博客。噪声会比较大，需通过 AI 安全关键词规则过滤。"
+
+  # ----------------------------
+  # 第二批：建议作为候选源保留，下一步再接
+  # 原因：重要，但不建议在这一版贸然假设都有稳定 RSS
+  # ----------------------------
+  - name: "Volcengine LLMScan"
+    type: "html_list"
+    url: "https://www.volcengine.com/product/llm-scan"
+    category: "中国厂商"
+    enabled: false
+    content_trust: "official"
+    delivery_trust: "official_page"
+    notes: "火山引擎大模型安全测评产品页。适合后续做白名单页面抓取。"
+
+  - name: "Ant Group AI Safety News"
+    type: "html_list"
+    url: "https://www.antgroup.com/news-media/press-releases/1694256546000"
+    category: "中国厂商"
+    enabled: false
+    content_trust: "official"
+    delivery_trust: "official_page"
+    notes: "蚂蚁“蚁天鉴”公开新闻稿。适合后续扩展为厂商资讯页白名单。"
+
+  - name: "ModelScope Learn"
+    type: "html_list"
+    url: "https://www.modelscope.cn/learn"
+    category: "魔搭/国内生态"
+    enabled: false
+    content_trust: "official"
+    delivery_trust: "official_page"
+    notes: "魔搭 Learn 内容页。适合后续用关键词筛 AI 安全、治理、评测、guardrail 相关条目。"
+
+  - name: "ModelScope Safety Models"
+    type: "html_list"
+    url: "https://modelscope.cn/models"
+    category: "魔搭/国内生态"
+    enabled: false
+    content_trust: "official"
+    delivery_trust: "official_page"
+    notes: "后续可对白名单模型/数据集页面做抓取，如安全模型、治理数据集、内容风险识别模型等。"
