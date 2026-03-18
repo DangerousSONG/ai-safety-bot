@@ -45,7 +45,7 @@ $env:FEISHU_BOT_SECRET="your-feishu-bot-secret"
 ### 5) 运行
 
 ```bash
-python src/main.py
+python -m src.main
 ```
 
 成功后会：

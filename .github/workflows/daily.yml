@@ -34,5 +34,5 @@ jobs:
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_BOT_SECRET: ${{ secrets.FEISHU_BOT_SECRET }}
-        run: python src/main.py
+        run: python -m src.main
 
