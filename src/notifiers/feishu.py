@@ -1,6 +1,10 @@
+import base64
+import hashlib
+import hmac
 import json
 import logging
-from typing import Any, Dict
+import time
+from typing import Any, Dict, Optional
 
 import requests
 
@@ -9,57 +13,128 @@ log = logging.getLogger(__name__)
 
 
 class FeishuError(RuntimeError):
-    pass
+    """飞书推送异常。"""
 
 
-def send_markdown(webhook_url: str, title: str, markdown_text: str, *, timeout_s: float = 15.0) -> None:
+def _gen_sign(secret: str) -> tuple[str, str]:
     """
-    第一版：用飞书 bot webhook 发送“post”消息（支持 Markdown）。
+    根据飞书自定义机器人签名规则生成 timestamp 和 sign。
+    规则要点（飞书自定义机器人）：
+    - 待签名字符串：timestamp + "\\n" + secret
+    - HMAC-SHA256：key=secret，message=待签名字符串
+    - sign：对 HMAC 结果做 Base64 编码
+    """
+    timestamp = str(int(time.time()))
+    string_to_sign = f"{timestamp}\n{secret}".encode("utf-8")
+    hmac_code = hmac.new(secret.encode("utf-8"), string_to_sign, digestmod=hashlib.sha256).digest()
+    sign = base64.b64encode(hmac_code).decode("utf-8")
+    return timestamp, sign
+
+
+def _build_text_payload(
+    text: str,
+    *,
+    secret: Optional[str] = None,
+) -> Dict[str, Any]:
+    payload: Dict[str, Any] = {
+        "msg_type": "text",
+        "content": {
+            "text": text,
+        },
+    }
+
+    if secret:
+        timestamp, sign = _gen_sign(secret)
+        payload["timestamp"] = timestamp
+        payload["sign"] = sign
+
+    return payload
+
+
+def _raise_if_feishu_error(resp: requests.Response) -> None:
+    if resp.status_code >= 400:
+        raise FeishuError(f"HTTP {resp.status_code} {resp.reason}: {resp.text[:500]}")
+
+    try:
+        data = resp.json()
+    except Exception as e:  # noqa: BLE001
+        raise FeishuError(f"飞书返回的不是合法 JSON：{resp.text[:500]}") from e
+
+    # 飞书 webhook 常见成功格式：
+    # {"StatusCode":0,"StatusMessage":"success"}
+    # 或 {"code":0,"msg":"success"}
+    code = data.get("code", data.get("StatusCode", 0))
+    if str(code) not in {"0", "None"} and code != 0:
+        raise FeishuError(f"飞书返回失败：{json.dumps(data, ensure_ascii=False)}")
+
+
+def send_text(
+    webhook_url: str,
+    text: str,
+    *,
+    secret: Optional[str] = None,
+    timeout_s: float = 15.0,
+) -> None:
+    """
+    第一版：发送最稳的 text 消息。
+    如果配置了 secret，则自动附带 timestamp/sign。
     """
     if not webhook_url:
         raise FeishuError("缺少 FEISHU_WEBHOOK_URL")
 
-    payload: Dict[str, Any] = {
-        "msg_type": "post",
-        "content": {
-            "post": {
-                "zh_cn": {
-                    "title": title,
-                    "content": [
-                        [
-                            {
-                                "tag": "md",
-                                "text": markdown_text,
-                            }
-                        ]
-                    ],
-                }
-            }
-        },
-    }
+    if not text.strip():
+        raise FeishuError("发送内容为空")
+
+    payload = _build_text_payload(text=text, secret=secret)
 
     try:
         resp = requests.post(
             webhook_url,
-            data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+            json=payload,
             headers={"Content-Type": "application/json; charset=utf-8"},
             timeout=timeout_s,
         )
-        if resp.status_code >= 400:
-            raise FeishuError(f"HTTP {resp.status_code} {resp.reason}: {resp.text[:300]}")
-
-        # 飞书 webhook 通常返回 {"StatusCode":0,...} 或 {"code":0,...}
-        try:
-            data = resp.json()
-        except Exception:  # noqa: BLE001
-            data = None
-
-        if isinstance(data, dict):
-            code = data.get("code", data.get("StatusCode", 0))
-            if code not in (0, "0", None):
-                raise FeishuError(f"飞书返回非0：{data}")
-
+        _raise_if_feishu_error(resp)
         log.info("飞书推送成功")
+    except requests.Timeout as e:
+        raise FeishuError(f"飞书推送超时：{e!r}") from e
+    except requests.RequestException as e:
+        raise FeishuError(f"飞书请求异常：{e!r}") from e
     except Exception as e:  # noqa: BLE001
-        raise FeishuError(f"飞书推送失败：{repr(e)}") from e
+        raise FeishuError(f"飞书推送失败：{e!r}") from e
 
+
+def markdown_to_text(title: str, markdown_text: str) -> str:
+    """
+    第一版偷懒做法：把 Markdown 日报包装成纯文本发出去。
+    后续如果你真的要富文本/卡片，再单独扩展。
+    """
+    title = (title or "").strip()
+    body = (markdown_text or "").strip()
+
+    if title and body:
+        return f"{title}\n\n{body}"
+    if title:
+        return title
+    return body
+
+
+def send_daily_report(
+    webhook_url: str,
+    title: str,
+    markdown_text: str,
+    *,
+    secret: Optional[str] = None,
+    timeout_s: float = 15.0,
+) -> None:
+    """
+    给 main.py 调用的统一入口。
+    先把 Markdown 转成纯文本，再发送。
+    """
+    text = markdown_to_text(title=title, markdown_text=markdown_text)
+    send_text(
+        webhook_url=webhook_url,
+        text=text,
+        secret=secret,
+        timeout_s=timeout_s,
+    )

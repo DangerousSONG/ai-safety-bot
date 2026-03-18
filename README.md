@@ -28,15 +28,18 @@ pip install -r requirements.txt
 - 信息源：`configs/sources.yaml`
 - 筛选规则：`configs/rules.yaml`
 
-### 4) 设置环境变量
-需要配置飞书机器人 Webhook：
+### 4) 设置环境变量（飞书）
+需要配置飞书自定义机器人 Webhook，支持可选的“签名校验”：
 
-- `FEISHU_WEBHOOK_URL`：飞书自定义机器人 webhook 地址
+- 必填：`FEISHU_WEBHOOK_URL` — 飞书自定义机器人 Webhook 地址
+- 可选：`FEISHU_BOT_SECRET` — 若你的机器人开启了“签名校验”，请在此填写 Secret
 
 PowerShell 示例：
 
 ```powershell
 $env:FEISHU_WEBHOOK_URL="https://open.feishu.cn/open-apis/bot/v2/hook/xxxx"
+# 若开启签名校验，还需设置：
+$env:FEISHU_BOT_SECRET="your-feishu-bot-secret"
 ```
 
 ### 5) 运行
@@ -48,6 +51,13 @@ python src/main.py
 成功后会：
 - 在控制台打印抓取与筛选统计
 - 向飞书推送当日 Markdown 日报
+- 在 `outputs/daily_latest.md` 写入最近一次生成的日报（便于排查）
+
+#### 开启“签名校验”的说明
+1. 在飞书群里添加“自定义机器人”，勾选“签名校验”并复制 Secret
+2. 在本地/Actions 中设置 `FEISHU_BOT_SECRET`
+3. 本项目会自动按照飞书要求生成 `timestamp` 与 `sign` 并附加到请求体
+4. 未配置 `FEISHU_BOT_SECRET` 时将直接发送（兼容未启用签名的机器人）
 
 ## 信息源说明（第一版）
 - 默认启用：`Google Security Blog`、`GitHub Blog Security`
@@ -59,8 +69,9 @@ python src/main.py
 在 GitHub 仓库中进入：
 `Settings -> Secrets and variables -> Actions -> New repository secret`
 
-新增：
-- `FEISHU_WEBHOOK_URL`
+新增（Secrets → Actions）：
+- `FEISHU_WEBHOOK_URL`（必填）
+- `FEISHU_BOT_SECRET`（可选，启用签名校验时必须配置）
 
 ### 2) 工作流
 工作流文件位于：`.github/workflows/daily.yml`

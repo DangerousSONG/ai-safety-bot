@@ -1,14 +1,8 @@
 relevance:
-  # 每次运行每个源最多读取多少条 entry（避免RSS太长）
   per_source_max_entries: 30
-
-  # 最终日报最多保留多少条
   top_n: 10
-
-  # 分数阈值：低于阈值的条目不会进入日报
   min_score: 3
 
-  # 强相关关键词：命中即明显偏 AI 安全（加较高分）
   strong_keywords:
     - "jailbreak"
     - "jailbreaking"
@@ -46,7 +40,6 @@ relevance:
     - "refusal"
     - "拒答"
 
-  # 弱相关关键词：需要与 AI/LLM/agent 等词同现时才算（加较低分）
   weak_keywords:
     - "safety"
     - "security"
@@ -74,7 +67,6 @@ relevance:
     - "monitoring"
     - "审计"
 
-  # AI 相关触发词：用于弱相关关键词的同现判断
   ai_context_keywords:
     - "ai"
     - "人工智能"
@@ -90,7 +82,6 @@ relevance:
     - "generative"
     - "生成式"
 
-  # 排除词：典型“非安全主题”或噪声（命中直接丢弃或大幅降分）
   deny_keywords:
     - "funding"
     - "融资"

@@ -1,13 +1,13 @@
 import logging
 import os
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List
 
 import yaml
 
 from src.collectors.feed_collector import fetch_feed_entries
 from src.filters.relevance import filter_and_rank
-from src.notifiers.feishu import FeishuError, send_markdown
+from src.notifiers.feishu import FeishuError, send_daily_report
 from src.renderers.markdown_daily import render_daily_markdown
 from src.utils.time import today_ymd
 
@@ -28,6 +28,17 @@ def load_yaml(path: Path) -> Dict[str, Any]:
     if not isinstance(data, dict):
         raise ValueError(f"YAML 顶层必须是 dict：{path}")
     return data
+
+
+def save_output(repo_root: Path, content: str) -> None:
+    """
+    保存最近一次生成的日报，便于本地调试和 Actions 排查。
+    """
+    outputs_dir = repo_root / "outputs"
+    outputs_dir.mkdir(parents=True, exist_ok=True)
+
+    output_file = outputs_dir / "daily_latest.md"
+    output_file.write_text(content, encoding="utf-8")
 
 
 def main() -> int:
@@ -60,13 +71,19 @@ def main() -> int:
 
     for src in enabled_sources:
         if src.get("type") != "feed":
-            log.warning("跳过非 feed 源（第一版不支持）：name=%s type=%s", src.get("name"), src.get("type"))
+            log.warning(
+                "跳过非 feed 源（第一版不支持）：name=%s type=%s",
+                src.get("name"),
+                src.get("type"),
+            )
             continue
 
         entries, err = fetch_feed_entries(src, max_entries=per_source_max_entries)
         if err:
             failed_sources.append(str(src.get("name", "unknown")))
+            log.warning("抓取失败：source=%s err=%s", src.get("name"), err)
             continue
+
         ok_sources += 1
         total_fetched += len(entries)
         all_items.extend(entries)
@@ -90,15 +107,21 @@ def main() -> int:
         stats=stats,
     )
 
-    # 飞书推送（第一版为必需）
+    save_output(repo_root, md)
+
     webhook = os.getenv("FEISHU_WEBHOOK_URL", "").strip()
+    feishu_secret = os.getenv("FEISHU_BOT_SECRET", "").strip()
     feishu_title = f"{title_prefix}（{date_str}）"
 
     try:
-        send_markdown(webhook, feishu_title, md)
+        send_daily_report(
+            webhook_url=webhook,
+            title=feishu_title,
+            markdown_text=md,
+            secret=feishu_secret or None,
+        )
     except FeishuError as e:
         log.error("推送失败：%s", e)
-        # 同时把日报打印出来，便于在 Actions 日志里排查
         log.info("日报内容如下：\n%s", md)
         return 2
 
@@ -108,4 +131,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
