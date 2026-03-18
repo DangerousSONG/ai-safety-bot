@@ -1,0 +1,122 @@
+relevance:
+  # 每次运行每个源最多读取多少条 entry（避免RSS太长）
+  per_source_max_entries: 30
+
+  # 最终日报最多保留多少条
+  top_n: 10
+
+  # 分数阈值：低于阈值的条目不会进入日报
+  min_score: 3
+
+  # 强相关关键词：命中即明显偏 AI 安全（加较高分）
+  strong_keywords:
+    - "jailbreak"
+    - "jailbreaking"
+    - "越狱"
+    - "red team"
+    - "red-teaming"
+    - "红队"
+    - "prompt injection"
+    - "提示注入"
+    - "prompt leakage"
+    - "提示泄露"
+    - "tool abuse"
+    - "工具滥用"
+    - "data exfiltration"
+    - "数据外泄"
+    - "model security"
+    - "模型安全"
+    - "agent safety"
+    - "智能体安全"
+    - "safety eval"
+    - "safety evaluation"
+    - "安全评测"
+    - "content safety"
+    - "内容安全"
+    - "model inversion"
+    - "模型反演"
+    - "misuse"
+    - "滥用"
+    - "mitigation"
+    - "缓解"
+    - "vulnerability"
+    - "漏洞"
+    - "alignment"
+    - "对齐"
+    - "refusal"
+    - "拒答"
+
+  # 弱相关关键词：需要与 AI/LLM/agent 等词同现时才算（加较低分）
+  weak_keywords:
+    - "safety"
+    - "security"
+    - "risk"
+    - "threat"
+    - "attack"
+    - "defense"
+    - "guardrail"
+    - "filter"
+    - "abuse"
+    - "governance"
+    - "compliance"
+    - "privacy"
+    - "leak"
+    - "pii"
+    - "toxicity"
+    - "harm"
+    - "responsible"
+    - "eval"
+    - "evaluation"
+    - "benchmark"
+    - "基准"
+    - "robustness"
+    - "鲁棒性"
+    - "monitoring"
+    - "审计"
+
+  # AI 相关触发词：用于弱相关关键词的同现判断
+  ai_context_keywords:
+    - "ai"
+    - "人工智能"
+    - "llm"
+    - "large language model"
+    - "language model"
+    - "模型"
+    - "agent"
+    - "智能体"
+    - "chatbot"
+    - "prompt"
+    - "提示词"
+    - "generative"
+    - "生成式"
+
+  # 排除词：典型“非安全主题”或噪声（命中直接丢弃或大幅降分）
+  deny_keywords:
+    - "funding"
+    - "融资"
+    - "hiring"
+    - "招聘"
+    - "pricing"
+    - "价格"
+    - "partnership"
+    - "合作"
+    - "performance"
+    - "性能"
+    - "latency"
+    - "延迟"
+    - "throughput"
+    - "benchmarking"
+    - "sota"
+    - "参数"
+    - "release notes"
+    - "general availability"
+
+  scoring:
+    strong_hit: 4
+    weak_hit: 1
+    ai_context_hit: 1
+    deny_hit: -100
+
+output:
+  timezone: "Asia/Shanghai"
+  title_prefix: "AI 安全日报"

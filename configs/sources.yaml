@@ -1,0 +1,27 @@
+sources:
+  - name: "Google Security Blog"
+    type: "feed"
+    url: "https://security.googleblog.com/feeds/posts/default?alt=rss"
+    category: "安全研究/社区"
+    enabled: true
+    content_trust: "official"
+    delivery_trust: "official_feed"
+    notes: "Google 官方安全博客。第一版通过关键词规则筛出与 AI/LLM/生成式AI/agent 相关的安全条目。"
+
+  - name: "GitHub Blog Security"
+    type: "feed"
+    url: "https://github.blog/security/feed/"
+    category: "安全研究/社区"
+    enabled: true
+    content_trust: "official"
+    delivery_trust: "official_feed"
+    notes: "GitHub 官方 Security 博客。用于补充 AI coding、代码安全、供应链安全、AI agent 安全相关内容。"
+
+  - name: "OpenAI News"
+    type: "feed"
+    url: "https://openai.com/news/rss.xml"
+    category: "国外大厂"
+    enabled: false
+    content_trust: "official"
+    delivery_trust: "official_feed"
+    notes: "OpenAI 官方新闻 RSS 候选源。第一版默认关闭，等本地验证抓取成功后再启用。"
