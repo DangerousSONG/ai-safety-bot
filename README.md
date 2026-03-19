@@ -63,9 +63,12 @@ python -m src.main
 
 ## html_list（路线 B：白名单页面抓取）
 - `type: "html_list"` 只抓取**配置里写死的页面**，不做全站搜索。
+- 当前已启用的 html_list 中：
+  - **ModelScope Learn**：列表页抓取（尽量提取多条内容）
+  - **Volcengine LLMScan / Ant Group AI Safety News**：单页信号源（更偏“有更新就提示”，不假设是完整资讯流）
 - 当前实现是“轻量增强解析”：
-  - ModelScope Learn：尽量从列表页提取多条链接及各自标题/日期/简要摘要
-  - Volcengine/Ant Group：即使是单页也尽量从 meta/JSON-LD 提取更好的标题/摘要/日期
+  - ModelScope Learn：从列表页提取多条链接及各自标题/日期（尽量）/摘要（可能为空）
+  - Volcengine/Ant Group：从 meta/JSON-LD 提取更好的标题/摘要/日期（尽力而为）
 - 解析失败只会记录日志并跳过该源，不影响其他信息源。
 
 ## 去重与已推送记录（避免重复推送）

@@ -221,6 +221,54 @@ def _dedupe_by_url(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return out
 
 
+def _is_modelscope_learn_article_url(u: str) -> bool:
+    """
+    尽量过滤掉导航/栏目/分页/搜索等噪音链接，只保留更像“文章详情”的链接。
+    """
+    ul = (u or "").strip().lower()
+    if not ul:
+        return False
+    if "modelscope.cn" not in ul:
+        return False
+    if "/learn" not in ul:
+        return False
+
+    # 丢弃明显的非内容页
+    deny_substrings = [
+        "/learn?",
+        "/learn#",
+        "page=",
+        "pagesize=",
+        "sort=",
+        "filter=",
+        "search",
+        "login",
+        "signup",
+        "register",
+        "account",
+        "settings",
+        "tag/",
+        "tags/",
+        "topic/",
+        "topics/",
+        "category",
+        "categories",
+    ]
+    if any(x in ul for x in deny_substrings):
+        return False
+
+    # 保守：要求路径层级更深一点（避免把 /learn 或 /learn/xxx 这种栏目页塞进来）
+    try:
+        path = ul.split("modelscope.cn", 1)[1].split("?", 1)[0].split("#", 1)[0]
+        parts = [p for p in path.split("/") if p]
+        if len(parts) < 3:  # e.g. ["learn"] or ["learn","xxx"]
+            return False
+    except Exception:
+        pass
+
+    return True
+
+
 def fetch_html_list_entries(
     source: Dict[str, Any],
     *,
@@ -258,9 +306,7 @@ def fetch_html_list_entries(
                 if not href or href.startswith("#"):
                     continue
                 abs_url = urljoin(str(url), href)
-                if "/learn" not in abs_url:
-                    continue
-                if abs_url.rstrip("/") == str(url).rstrip("/"):
+                if not _is_modelscope_learn_article_url(abs_url):
                     continue
 
                 anchor_text = _strip_html(m.group("text") or "")
@@ -269,14 +315,12 @@ def fetch_html_list_entries(
                     continue
                 if anchor_text.lower() in {"learn", "more", "read more", "详情"}:
                     continue
+                if anchor_text in {"首页", "上一页", "下一页", "下一篇", "上一篇", "更多", "查看全部"}:
+                    continue
 
                 published_at = _find_first_date_near(html, m.start())
-                # 尝试在链接附近抓一个简短摘要（就近窗口去标签）
-                near = html[max(0, m.start() - 300) : min(len(html), m.end() + 600)]
-                near_text = _strip_html(near)
-                # 去掉标题本身，避免重复
-                near_text = near_text.replace(anchor_text, "").strip()
-                summary = near_text[:220].strip() if near_text else ""
+                # summary：宁可空，也不要拼接大量噪音
+                summary = ""
 
                 items.append(
                     {
