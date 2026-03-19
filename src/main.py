@@ -130,8 +130,25 @@ def main() -> int:
         log.info("已过滤历史推送：skipped=%d remaining=%d", skipped, len(kept_items))
 
     ranked = filter_and_rank(kept_items, relevance_rules)
+
+    # per-source 限流：避免单个高产源（如 arXiv）独占日报
+    max_per_source = int(relevance_rules.get("max_per_source", 3))
     top_n = int(relevance_rules.get("top_n", 10))
-    picked = ranked[:top_n]
+    source_counts: Dict[str, int] = {}
+    capped: List[Dict[str, Any]] = []
+    for it in ranked:
+        sname = str(it.get("source_name", ""))
+        if source_counts.get(sname, 0) >= max_per_source:
+            continue
+        source_counts[sname] = source_counts.get(sname, 0) + 1
+        capped.append(it)
+    picked = capped[:top_n]
+
+    if len(ranked) != len(capped):
+        log.info(
+            "per-source 限流（max=%d）：ranked=%d → capped=%d → picked=%d",
+            max_per_source, len(ranked), len(capped), len(picked),
+        )
 
     stats = {
         "total_sources": len(enabled_sources),

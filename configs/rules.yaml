@@ -3,6 +3,7 @@ relevance:
   top_n: 10
   min_score: 3
   recency_days: 180
+  max_per_source: 3
 
   strong_keywords:
     - "jailbreak"
@@ -67,8 +68,6 @@ relevance:
     - "toxicity"
     - "harm"
     - "responsible"
-    - "eval"
-    - "evaluation"
     - "benchmark"
     - "基准"
     - "robustness"

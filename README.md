@@ -26,7 +26,6 @@
 | GitHub Blog Security | feed | GitHub/开源生态 | GitHub 安全栏目，含供应链、AI coding 安全 |
 | OpenAI News | feed | 国外大厂 | OpenAI 官方 News RSS，重点关注 safety/policy |
 | Hugging Face Blog | feed | HF/开源生态 | HF 官方博客，噪声较大，依赖关键词过滤 |
-| CNCERT Security Advisories | feed | 政府/官方公告 | 国家互联网应急中心漏洞预警与安全公告 |
 | arXiv cs.CR | feed | 学术研究 | arXiv 密码学与安全方向每日新论文，含 LLM 安全前沿 |
 
 ## 配置文件
@@ -35,6 +34,7 @@
 
 关键参数（`configs/rules.yaml`）：
 - `relevance.recency_days`：`feed` 最近 N 天过滤（当前 **180 天**）
+- `relevance.max_per_source`：每个信息源最多入选条数（当前 **3**），防止 arXiv 等高产源独占日报
 - `relevance.min_score`：最低入选分数（当前 **3**）
 - `output.summary_max_chars`：摘要截断长度（默认 160）
 
@@ -43,6 +43,7 @@
 - 命中 `ai_context_keywords`（如 llm、foundation model、模型）：+1 分，且激活弱词加分
 - 命中 `weak_keywords`（如 security、adversarial、robustness）：+1 分/条（需 AI 上下文）
 - 命中 `deny_keywords`（如 funding、best practices）：直接 -100 分，不入选
+- `"eval"` / `"evaluation"` 已从 weak_keywords 移除，改由 `"safety eval"` / `"safety evaluation"`（strong_keywords）覆盖，避免泛 LLM 评测文章误入
 
 ## 本地运行
 

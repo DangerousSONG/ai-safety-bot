@@ -39,13 +39,13 @@ sources:
     type: "feed"
     url: "https://www.cert.org.cn/publish/main/rss/site_1/rss.xml"
     category: "政府/官方公告"
-    enabled: true
+    enabled: false
     content_trust: "official"
     delivery_trust: "official_feed"
     notes: >
-      国家互联网应急中心（CNCERT/CC）官方 RSS。
-      覆盖高危漏洞预警、安全公告、AI 系统安全通报等。
-      噪声较高（含非 AI 类通报），依赖关键词过滤后取 AI 安全相关条目。
+      国家互联网应急中心（CNCERT/CC）。
+      【暂停原因】官网显示"RSS订阅"入口，但所有已知 RSS 路径均返回 404，
+      推断 CNCERT 已下线 RSS 服务。待找到可用替代接入方式（如官方 API 或镜像源）后重新启用。
 
   - name: "arXiv cs.CR"
     type: "feed"
