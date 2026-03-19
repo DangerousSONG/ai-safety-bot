@@ -5,7 +5,7 @@
 ## 当前能力（与代码一致）
 - **信息源**
   - `feed`：RSS/Atom 抓取（主干）
-  - `html_list`：固定白名单页面抓取（路线 B；非全站搜索）
+  - `html_list`：固定白名单页面抓取（路线 B；非全站搜索，当前全部暂停）
 - **筛选与输出**
   - 标题关键词相关性筛选（`configs/rules.yaml`）
   - 摘要：从 feed 的 summary/description 或 html 页面 meta/JSON-LD 中提取（尽力而为）
@@ -13,10 +13,21 @@
 - **运行与健壮性**
   - 单个信息源抓取/解析失败不影响整体
   - `feed`：发布时间不可解析直接丢弃（并打日志）
-  - `feed`：最近 N 天过滤（默认 30 天）
+  - `feed`：最近 N 天过滤（当前 **180 天**）
 - **避免重复推送**
   - `data/sent_items.json` 记录已推送条目（保留 90 天）
   - 推送成功后自动更新并由 GitHub Actions 自动 commit/push 回 `main`
+
+## 当前启用的信息源
+
+| 名称 | 类型 | 分类 | 说明 |
+|---|---|---|---|
+| Google Security Blog | feed | 安全研究/社区 | Google 官方安全博客 |
+| GitHub Blog Security | feed | GitHub/开源生态 | GitHub 安全栏目，含供应链、AI coding 安全 |
+| OpenAI News | feed | 国外大厂 | OpenAI 官方 News RSS，重点关注 safety/policy |
+| Hugging Face Blog | feed | HF/开源生态 | HF 官方博客，噪声较大，依赖关键词过滤 |
+| CNCERT Security Advisories | feed | 政府/官方公告 | 国家互联网应急中心漏洞预警与安全公告 |
+| arXiv cs.CR | feed | 学术研究 | arXiv 密码学与安全方向每日新论文，含 LLM 安全前沿 |
 
 ## 配置文件
 - 信息源：`configs/sources.yaml`
@@ -24,7 +35,14 @@
 
 关键参数（`configs/rules.yaml`）：
 - `relevance.recency_days`：`feed` 最近 N 天过滤（当前 **180 天**）
+- `relevance.min_score`：最低入选分数（当前 **3**）
 - `output.summary_max_chars`：摘要截断长度（默认 160）
+
+打分规则简述：
+- 命中 `strong_keywords`（如 jailbreak、漏洞、prompt injection）：+4 分/条，无需 AI 上下文
+- 命中 `ai_context_keywords`（如 llm、foundation model、模型）：+1 分，且激活弱词加分
+- 命中 `weak_keywords`（如 security、adversarial、robustness）：+1 分/条（需 AI 上下文）
+- 命中 `deny_keywords`（如 funding、best practices）：直接 -100 分，不入选
 
 ## 本地运行
 

@@ -80,6 +80,7 @@ relevance:
     - "moderation"
     - "审核"
     - "risk management"
+    - "adversarial"
 
   ai_context_keywords:
     - "ai"
@@ -87,6 +88,8 @@ relevance:
     - "llm"
     - "large language model"
     - "language model"
+    - "foundation model"
+    - "基础模型"
     - "模型"
     - "agent"
     - "智能体"

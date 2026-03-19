@@ -35,9 +35,32 @@ sources:
     delivery_trust: "official_feed"
     notes: "Hugging Face 官方博客。噪声会比较大，需通过 AI 安全关键词规则过滤。"
 
+  - name: "CNCERT Security Advisories"
+    type: "feed"
+    url: "https://www.cert.org.cn/publish/main/rss/site_1/rss.xml"
+    category: "政府/官方公告"
+    enabled: true
+    content_trust: "official"
+    delivery_trust: "official_feed"
+    notes: >
+      国家互联网应急中心（CNCERT/CC）官方 RSS。
+      覆盖高危漏洞预警、安全公告、AI 系统安全通报等。
+      噪声较高（含非 AI 类通报），依赖关键词过滤后取 AI 安全相关条目。
+
+  - name: "arXiv cs.CR"
+    type: "feed"
+    url: "https://export.arxiv.org/rss/cs.CR"
+    category: "学术研究"
+    enabled: true
+    content_trust: "community"
+    delivery_trust: "official_feed"
+    notes: >
+      arXiv 密码学与安全（cs.CR）每日新论文 RSS。
+      覆盖 LLM 安全、对抗攻击、越狱、prompt injection、模型鲁棒性等学术前沿。
+      噪声高（含传统密码学/网络安全），依赖 AI 上下文 + 强关键词过滤。
+
   # ----------------------------
-  # 第二批：建议作为候选源保留，下一步再接
-  # 原因：重要，但不建议在这一版贸然假设都有稳定 RSS
+  # 暂停/待接入：html_list 源及候选源
   # ----------------------------
   - name: “Volcengine LLMScan”
     type: “html_list”
