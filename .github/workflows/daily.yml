@@ -6,16 +6,22 @@ on:
     # Asia/Shanghai 09:00 = UTC 01:00
     - cron: "0 1 * * *"
 
+concurrency:
+  group: ai-safety-daily-bot-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   daily:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,4 +41,14 @@ jobs:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_BOT_SECRET: ${{ secrets.FEISHU_BOT_SECRET }}
         run: python -m src.main
+
+      - name: Commit and push sent items if changed
+        run: |
+          if git diff --quiet -- data/sent_items.json; then
+            echo "sent_items.json unchanged; skip commit."
+            exit 0
+          fi
+          git add data/sent_items.json
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "chore: update sent items [skip ci]"
+          git push
 

@@ -40,9 +40,6 @@ def render_daily_markdown(
     虽然函数名保留为 markdown，但第一版飞书使用 text 消息：
     这里输出适合“纯文本展示”的格式（不包含 #/##/** 等 Markdown 标记）。
     """
-    date_str = today_ymd(tz_name)
-    title = f"{title_prefix}（{date_str}）"
-
     total_sources = int(stats.get("total_sources", 0))
     ok_sources = int(stats.get("ok_sources", 0))
     failed_sources: List[str] = list(stats.get("failed_sources", []) or [])
@@ -50,22 +47,22 @@ def render_daily_markdown(
     total_candidates = int(stats.get("total_candidates", 0))
 
     lines: List[str] = []
-    lines.append(title)
-    lines.append("")
-
-    lines.append("【概览】")
-    lines.append(f"- 抓取源：{ok_sources}/{total_sources} 成功")
-    lines.append(f"- 抓取条目：{total_fetched}")
-    lines.append(f"- 入选条目：{total_candidates}")
+    # 正文不再重复日报标题（飞书消息 title 已包含）
+    # 概览尽量压缩为适合飞书阅读的一行
+    overview_parts: List[str] = [
+        f"抓取源 {ok_sources}/{total_sources}",
+        f"抓取 {total_fetched}",
+        f"入选 {total_candidates}",
+    ]
     if failed_sources:
-        lines.append("- 抓取失败源：" + "、".join(failed_sources))
+        overview_parts.append("失败 " + "、".join(failed_sources))
+    lines.append("【概览】" + "｜".join(overview_parts))
     lines.append("")
 
     lines.append("【今日精选】")
 
     if not items:
         lines.append("今日高相关动态较少（或信息源更新不多）。")
-        lines.append("建议：可适当调低 `min_score` 或提高 `per_source_max_entries`。")
         return "\n".join(lines)
 
     summary_max_chars = int(summary_max_chars or 160)
@@ -89,17 +86,19 @@ def render_daily_markdown(
             score = it.get("score", 0)
             reason_text = _build_reason_text(it.get("reason") or {})
 
-            lines.append(f"{idx}. {t}")
+            # 每条新闻统一格式：
+            # 标题 / 时间 / 简要提炼 / 入选原因 / 原文链接
+            lines.append(f"{idx}. 标题：{t}")
             if pub:
                 lines.append(f"   时间：{pub}")
             if summary:
-                lines.append(f"   摘要：{summary}")
+                lines.append(f"   简要提炼：{summary}")
             if reason_text:
                 lines.append(f"   入选原因：{reason_text}（score={score}）")
             else:
                 lines.append(f"   入选原因：规则命中（score={score}）")
             if url:
-                lines.append(f"   链接：{url}")
+                lines.append(f"   原文链接：{url}")
 
     return "\n".join(lines)
 

@@ -32,6 +32,12 @@ pip install -r requirements.txt
 - **最近 30 天过滤**：由 `relevance.recency_days` 控制；只有能解析出发布时间的条目才会参与筛选，无法解析日期的条目会被直接丢弃并在日志中提示。
 - **摘要长度**：由 `output.summary_max_chars` 控制；日报中展示的 `摘要` 会按该长度截断。
 
+#### 去重与“已推送记录”（避免重复推送）
+- 状态文件：`data/sent_items.json`
+- 规则：推送成功后会把本次入选条目写入状态文件；后续运行会先过滤掉历史已推送条目。
+- 保留策略：只保留最近 90 天的记录（自动清理旧记录）。
+- 注意：只有“飞书推送成功”后才会更新记录，避免误标记。
+
 ### 4) 设置环境变量（飞书）
 需要配置飞书自定义机器人 Webhook，支持可选的“签名校验”：
 
@@ -80,6 +86,7 @@ python -m src.main
 ### 2) 工作流
 工作流文件位于：`.github/workflows/daily.yml`
 - 支持 `schedule`（定时）和 `workflow_dispatch`（手动）触发
+- 推送成功后，如果 `data/sent_items.json` 有变化，会自动 commit 并 push 回 `main`
 
 ## 常见问题（MVP 约定）
 - 某个 RSS 源抓取失败：只会跳过该源并记录错误日志，不影响其他源与最终推送。

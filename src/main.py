@@ -9,6 +9,14 @@ from src.collectors.feed_collector import fetch_feed_entries
 from src.filters.relevance import filter_and_rank
 from src.notifiers.feishu import FeishuError, send_daily_report
 from src.renderers.markdown_daily import render_daily_markdown
+from src.store.sent_items import (
+    build_item_id,
+    load_sent_items,
+    prune_sent_items,
+    save_sent_items,
+    sent_id_set,
+    upsert_sent_items,
+)
 from src.utils.time import today_ymd
 
 
@@ -47,6 +55,7 @@ def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
     sources_path = repo_root / "configs" / "sources.yaml"
     rules_path = repo_root / "configs" / "rules.yaml"
+    sent_path = repo_root / "data" / "sent_items.json"
 
     log.info("启动：repo_root=%s", repo_root)
     sources_cfg = load_yaml(sources_path)
@@ -63,6 +72,10 @@ def main() -> int:
 
     enabled_sources = [s for s in sources if bool(s.get("enabled", True))]
     log.info("信息源：total=%d enabled=%d", len(sources), len(enabled_sources))
+
+    sent_data = prune_sent_items(load_sent_items(sent_path), keep_days=90)
+    sent_ids = sent_id_set(sent_data)
+    log.info("历史已推送：count=%d（保留90天）", len(sent_ids))
 
     per_source_max_entries = int(relevance_rules.get("per_source_max_entries", 30))
     all_items: List[Dict[str, Any]] = []
@@ -94,7 +107,25 @@ def main() -> int:
         total_fetched += len(entries)
         all_items.extend(entries)
 
-    ranked = filter_and_rank(all_items, relevance_rules)
+    # 去重：过滤掉历史已推送条目
+    kept_items: List[Dict[str, Any]] = []
+    skipped = 0
+    for it in all_items:
+        iid = build_item_id(
+            source_name=str(it.get("source_name", "")),
+            url=str(it.get("url", "")),
+            title=str(it.get("title", "")),
+            published_at=it.get("published_at"),
+        )
+        it["id"] = iid
+        if iid in sent_ids:
+            skipped += 1
+            continue
+        kept_items.append(it)
+    if skipped:
+        log.info("已过滤历史推送：skipped=%d remaining=%d", skipped, len(kept_items))
+
+    ranked = filter_and_rank(kept_items, relevance_rules)
     top_n = int(relevance_rules.get("top_n", 10))
     picked = ranked[:top_n]
 
@@ -106,7 +137,7 @@ def main() -> int:
         "total_candidates": len(picked),
     }
 
-    md = render_daily_markdown(
+    body = render_daily_markdown(
         picked,
         tz_name=tz_name,
         title_prefix=title_prefix,
@@ -114,7 +145,7 @@ def main() -> int:
         stats=stats,
     )
 
-    save_output(repo_root, md)
+    save_output(repo_root, body)
 
     webhook = os.getenv("FEISHU_WEBHOOK_URL", "").strip()
     feishu_secret = os.getenv("FEISHU_BOT_SECRET", "").strip()
@@ -124,13 +155,19 @@ def main() -> int:
         send_daily_report(
             webhook_url=webhook,
             title=feishu_title,
-            markdown_text=md,
+            markdown_text=body,
             secret=feishu_secret or None,
         )
     except FeishuError as e:
         log.error("推送失败：%s", e)
-        log.info("日报内容如下：\n%s", md)
+        log.info("日报内容如下：\n%s", body)
         return 2
+
+    # 推送成功后再写 sent_items，避免“发失败但记录为已发”
+    if picked:
+        sent_data = upsert_sent_items(sent_data, pushed_items=picked)
+        sent_data = prune_sent_items(sent_data, keep_days=90)
+        save_sent_items(sent_path, sent_data)
 
     log.info("完成：picked=%d failed_sources=%d", len(picked), len(failed_sources))
     return 0
