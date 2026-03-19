@@ -39,23 +39,29 @@ sources:
   # 第二批：建议作为候选源保留，下一步再接
   # 原因：重要，但不建议在这一版贸然假设都有稳定 RSS
   # ----------------------------
-  - name: "Volcengine LLMScan"
-    type: "html_list"
-    url: "https://www.volcengine.com/product/llm-scan"
-    category: "中国厂商"
-    enabled: true
-    content_trust: "official"
-    delivery_trust: "official_page"
-    notes: "火山引擎大模型安全测评产品页。适合后续做白名单页面抓取。"
+  - name: “Volcengine LLMScan”
+    type: “html_list”
+    url: “https://www.volcengine.com/product/llm-scan”
+    category: “中国厂商”
+    enabled: false
+    content_trust: “official”
+    delivery_trust: “official_page”
+    notes: >
+      火山引擎大模型安全测评产品页。
+      【暂停原因】固定单页 URL，首次推送后 sent_items 永久去重，后续运行不再推送。
+      待 html_list 支持”内容变化检测”或改为 API/RSS 接入后重新启用。
 
-  - name: "Ant Group AI Safety News"
-    type: "html_list"
-    url: "https://www.antgroup.com/news-media/press-releases/1694256546000"
-    category: "中国厂商"
-    enabled: true
-    content_trust: "official"
-    delivery_trust: "official_page"
-    notes: "蚂蚁“蚁天鉴”公开新闻稿。适合后续扩展为厂商资讯页白名单。"
+  - name: “Ant Group AI Safety News”
+    type: “html_list”
+    url: “https://www.antgroup.com/news-media/press-releases/1694256546000”
+    category: “中国厂商”
+    enabled: false
+    content_trust: “official”
+    delivery_trust: “official_page”
+    notes: >
+      蚂蚁”蚁天鉴”公开新闻稿（固定单篇文章 URL，非新闻列表页）。
+      【暂停原因】URL 固定，首次推送后永久被去重屏蔽，无法作为持续信息流。
+      待找到蚂蚁 AI 安全相关 RSS 或新闻列表页后替换。
 
   - name: "ModelScope Learn"
     type: "html_list"

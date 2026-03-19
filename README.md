@@ -62,13 +62,18 @@ python -m src.main
 - 生成调试产物：`outputs/daily_latest.md`
 
 ## html_list（路线 B：白名单页面抓取）
-- `type: "html_list"` 只抓取**配置里写死的页面**，不做全站搜索。
-- 当前已启用的 html_list 中：
-  - **ModelScope Learn**：列表页抓取（尽量提取多条内容）
-  - **Volcengine LLMScan / Ant Group AI Safety News**：单页信号源（更偏“有更新就提示”，不假设是完整资讯流）
-- 当前实现是“轻量增强解析”：
-  - ModelScope Learn：从列表页提取多条链接及各自标题/日期（尽量）/摘要（可能为空）
-  - Volcengine/Ant Group：从 meta/JSON-LD 提取更好的标题/摘要/日期（尽力而为）
+- `type: “html_list”` 只抓取**配置里写死的页面**，不做全站搜索。
+- **当前各源状态**：
+
+  | 源 | 状态 | 备注 |
+  |---|---|---|
+  | ModelScope Learn | **启用** | 列表页，尝试提取多条链接；若为 SPA 则静态抓取无效，日志会有 WARNING |
+  | Volcengine LLMScan | **暂停** | 固定单页 URL，首次推送后被 sent_items 永久去重，无持续信息流价值 |
+  | Ant Group AI Safety News | **暂停** | 固定单篇文章 URL（非列表页），原因同上 |
+
+- **已知局限**：
+  - ModelScope Learn 为 React SPA，静态 HTTP 抓取可能拿不到文章链接（日志会打印 WARNING 明确标记），此时会回退到单页兜底，效果极差
+  - 单页 URL 不变的源（如产品页/固定新闻稿）不适合作为持续信息流接入，应等有 RSS/API 后替换
 - 解析失败只会记录日志并跳过该源，不影响其他信息源。
 
 ## 去重与已推送记录（避免重复推送）

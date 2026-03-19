@@ -301,21 +301,28 @@ def fetch_html_list_entries(
         # ModelScope Learn：尽量抓多条，且提取每条真实标题
         # ---------------------------
         if "modelscope" in url_l and "/learn" in url_l:
+            all_hrefs_found = 0
+            filtered_out = 0
             for m in _A_HREF_TEXT_RE.finditer(html):
                 href = (m.group("href") or "").strip()
                 if not href or href.startswith("#"):
                     continue
                 abs_url = urljoin(str(url), href)
+                all_hrefs_found += 1
                 if not _is_modelscope_learn_article_url(abs_url):
+                    filtered_out += 1
                     continue
 
                 anchor_text = _strip_html(m.group("text") or "")
                 # 过滤掉过短/明显不是标题的锚文本
                 if len(anchor_text) < 6:
+                    filtered_out += 1
                     continue
                 if anchor_text.lower() in {"learn", "more", "read more", "详情"}:
+                    filtered_out += 1
                     continue
                 if anchor_text in {"首页", "上一页", "下一页", "下一篇", "上一篇", "更多", "查看全部"}:
+                    filtered_out += 1
                     continue
 
                 published_at = _find_first_date_near(html, m.start())
@@ -337,13 +344,40 @@ def fetch_html_list_entries(
 
             items = _dedupe_by_url(items)[:max_entries]
             if items:
-                log.info("抓取成功（html_list）：source=%s entries=%d", name, len(items))
+                sample = " / ".join(it["title"][:40] for it in items[:3])
+                log.info(
+                    "抓取成功（html_list/列表页）：source=%s entries=%d hrefs_found=%d filtered_out=%d 样本标题=[%s]",
+                    name, len(items), all_hrefs_found, filtered_out, sample,
+                )
                 return items, None
 
+            # 走到这里说明正则一条都没提取到——ModelScope Learn 很可能是 SPA，
+            # 服务端返回的 HTML 骨架里没有文章链接
+            if all_hrefs_found == 0:
+                log.warning(
+                    "ModelScope Learn 未找到任何 <a href> 链接（html_len=%d）。"
+                    "页面很可能是 SPA（React/Vue），静态 HTML 抓取无效。"
+                    "将回退到单页兜底，但效果极差，建议改用 API 或 RSS 接入。"
+                    " source=%s url=%s",
+                    len(html), name, url,
+                )
+            else:
+                log.warning(
+                    "ModelScope Learn 找到 %d 个 href，但全部被过滤（filtered_out=%d），"
+                    "无有效文章链接。将回退到单页兜底。source=%s url=%s",
+                    all_hrefs_found, filtered_out, name, url,
+                )
+
         # ---------------------------
-        # Volcengine LLMScan：页面多为单页，但尽量提取更好的 title/summary/date
+        # Volcengine LLMScan：固定单页，URL 不变，首次推送后会被 sent_items 永久去重。
+        # 当前已在 sources.yaml 中 enabled: false，此分支仅作保留以便未来参考。
         # ---------------------------
         if "volcengine" in url_l or "llmscan" in name_l:
+            log.warning(
+                "html_list 单页兜底（固定URL）：source=%s url=%s "
+                "注意：此源 URL 不变，首次推送后将永久被 sent_items 去重屏蔽。",
+                name, url,
+            )
             items.append(
                 {
                     "title": title or name,
@@ -356,13 +390,19 @@ def fetch_html_list_entries(
                     "delivery_trust": source.get("delivery_trust", ""),
                 }
             )
-            log.info("抓取成功（html_list）：source=%s entries=%d", name, len(items))
+            log.info("抓取成功（html_list/单页）：source=%s entries=%d", name, len(items))
             return items, None
 
         # ---------------------------
-        # Ant Group AI Safety News：新闻稿单页，尽量用 meta/JSON-LD 提取
+        # Ant Group AI Safety News：固定单篇文章 URL，非新闻列表页。
+        # 当前已在 sources.yaml 中 enabled: false，此分支仅作保留以便未来参考。
         # ---------------------------
         if "antgroup" in url_l or "ant group" in name_l:
+            log.warning(
+                "html_list 单页兜底（固定URL）：source=%s url=%s "
+                "注意：此源 URL 不变，首次推送后将永久被 sent_items 去重屏蔽。",
+                name, url,
+            )
             items.append(
                 {
                     "title": title or name,
@@ -375,10 +415,15 @@ def fetch_html_list_entries(
                     "delivery_trust": source.get("delivery_trust", ""),
                 }
             )
-            log.info("抓取成功（html_list）：source=%s entries=%d", name, len(items))
+            log.info("抓取成功（html_list/单页）：source=%s entries=%d", name, len(items))
             return items, None
 
-        # 默认：单页兜底
+        # 默认：单页兜底（未匹配任何已知分支）
+        log.warning(
+            "html_list 未匹配任何已知处理分支，使用默认单页兜底：source=%s url=%s "
+            "title=%r summary_len=%d published_at=%s",
+            name, url, title, len(desc), published_at_page,
+        )
         items.append(
             {
                 "title": title or name,
@@ -392,7 +437,7 @@ def fetch_html_list_entries(
             }
         )
 
-        log.info("抓取成功（html_list）：source=%s entries=%d", name, len(items))
+        log.info("抓取成功（html_list/单页兜底）：source=%s entries=%d", name, len(items))
         return items, None
     except HttpError as e:
         msg = f"抓取失败（HTTP）：source={name} url={url} err={e}"
