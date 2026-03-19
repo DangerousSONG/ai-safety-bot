@@ -23,7 +23,7 @@
 - 筛选规则：`configs/rules.yaml`
 
 关键参数（`configs/rules.yaml`）：
-- `relevance.recency_days`：`feed` 最近 N 天过滤（默认 30）
+- `relevance.recency_days`：`feed` 最近 N 天过滤（当前 **180 天**）
 - `output.summary_max_chars`：摘要截断长度（默认 160）
 
 ## 本地运行
@@ -67,7 +67,7 @@ python -m src.main
 
   | 源 | 状态 | 备注 |
   |---|---|---|
-  | ModelScope Learn | **启用** | 列表页，尝试提取多条链接；若为 SPA 则静态抓取无效，日志会有 WARNING |
+  | ModelScope Learn | **暂停** | React SPA，静态 HTTP 抓取无效（hrefs_found=0），已确认。待改用 API/RSS 后重新启用 |
   | Volcengine LLMScan | **暂停** | 固定单页 URL，首次推送后被 sent_items 永久去重，无持续信息流价值 |
   | Ant Group AI Safety News | **暂停** | 固定单篇文章 URL（非列表页），原因同上 |
 

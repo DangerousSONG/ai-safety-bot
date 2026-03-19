@@ -45,11 +45,11 @@ def render_daily_markdown(
     failed_sources: List[str] = list(stats.get("failed_sources", []) or [])
     total_fetched = int(stats.get("total_fetched", 0))
     total_candidates = int(stats.get("total_candidates", 0))
+    recency_days = int(stats.get("recency_days", 180))
 
     lines: List[str] = []
-    # 正文不再重复日报标题（飞书消息 title 已包含）
-    # 概览尽量压缩为适合飞书阅读的一行
     overview_parts: List[str] = [
+        f"统计窗口：最近{recency_days}天",
         f"抓取源 {ok_sources}/{total_sources}",
         f"抓取 {total_fetched}",
         f"入选 {total_candidates}",

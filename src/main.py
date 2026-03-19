@@ -139,6 +139,7 @@ def main() -> int:
         "failed_sources": failed_sources,
         "total_fetched": total_fetched,
         "total_candidates": len(picked),
+        "recency_days": int(relevance_rules.get("recency_days", 180)),
     }
 
     body = render_daily_markdown(

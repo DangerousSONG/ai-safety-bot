@@ -67,10 +67,13 @@ sources:
     type: "html_list"
     url: "https://www.modelscope.cn/learn"
     category: "魔搭/国内生态"
-    enabled: true
+    enabled: false
     content_trust: "official"
     delivery_trust: "official_page"
-    notes: "魔搭 Learn 内容页。适合后续用关键词筛 AI 安全、治理、评测、guardrail 相关条目。"
+    notes: >
+      魔搭 Learn 内容页。
+      【暂停原因】页面为 React SPA，静态 HTTP 抓取拿不到文章链接（html_len 有值但 hrefs_found=0）。
+      待改用 ModelScope API（/api/v1/articles）或找到对应 RSS 后重新启用。
 
   - name: "ModelScope Safety Models"
     type: "html_list"
