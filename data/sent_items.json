@@ -1,4 +1,12 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "efe1a74dc08e37a6c9df61c7e67e59155203ede6",
+      "source": "OpenAI News",
+      "title": "Designing AI agents to resist prompt injection",
+      "url": "https://openai.com/index/designing-agents-to-resist-prompt-injection",
+      "published_at": "2026-03-11T11:30:00+00:00",
+      "first_sent_at": "2026-03-19T01:44:38.726503+00:00"
+    }
+  ]
 }
-
