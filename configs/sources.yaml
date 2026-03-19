@@ -43,7 +43,7 @@ sources:
     type: "html_list"
     url: "https://www.volcengine.com/product/llm-scan"
     category: "中国厂商"
-    enabled: false
+    enabled: true
     content_trust: "official"
     delivery_trust: "official_page"
     notes: "火山引擎大模型安全测评产品页。适合后续做白名单页面抓取。"
@@ -52,7 +52,7 @@ sources:
     type: "html_list"
     url: "https://www.antgroup.com/news-media/press-releases/1694256546000"
     category: "中国厂商"
-    enabled: false
+    enabled: true
     content_trust: "official"
     delivery_trust: "official_page"
     notes: "蚂蚁“蚁天鉴”公开新闻稿。适合后续扩展为厂商资讯页白名单。"
@@ -61,7 +61,7 @@ sources:
     type: "html_list"
     url: "https://www.modelscope.cn/learn"
     category: "魔搭/国内生态"
-    enabled: false
+    enabled: true
     content_trust: "official"
     delivery_trust: "official_page"
     notes: "魔搭 Learn 内容页。适合后续用关键词筛 AI 安全、治理、评测、guardrail 相关条目。"

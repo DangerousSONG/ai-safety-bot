@@ -6,6 +6,7 @@ from typing import Any, Dict, List
 import yaml
 
 from src.collectors.feed_collector import fetch_feed_entries
+from src.collectors.html_list_collector import fetch_html_list_entries
 from src.filters.relevance import filter_and_rank
 from src.notifiers.feishu import FeishuError, send_daily_report
 from src.renderers.markdown_daily import render_daily_markdown
@@ -84,20 +85,23 @@ def main() -> int:
     total_fetched = 0
 
     for src in enabled_sources:
-        if src.get("type") != "feed":
-            log.warning(
-                "跳过非 feed 源（第一版不支持）：name=%s type=%s",
-                src.get("name"),
-                src.get("type"),
+        stype = src.get("type")
+        if stype == "feed":
+            recency_days = int(relevance_rules.get("recency_days", 30))
+            entries, err = fetch_feed_entries(
+                src,
+                max_entries=per_source_max_entries,
+                recency_days=recency_days,
             )
+        elif stype == "html_list":
+            entries, err = fetch_html_list_entries(
+                src,
+                max_entries=per_source_max_entries,
+            )
+        else:
+            log.warning("跳过未知类型源：name=%s type=%s", src.get("name"), stype)
             continue
 
-        recency_days = int(relevance_rules.get("recency_days", 30))
-        entries, err = fetch_feed_entries(
-            src,
-            max_entries=per_source_max_entries,
-            recency_days=recency_days,
-        )
         if err:
             failed_sources.append(str(src.get("name", "unknown")))
             log.warning("抓取失败：source=%s err=%s", src.get("name"), err)

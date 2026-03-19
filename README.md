@@ -32,6 +32,11 @@ pip install -r requirements.txt
 - **最近 30 天过滤**：由 `relevance.recency_days` 控制；只有能解析出发布时间的条目才会参与筛选，无法解析日期的条目会被直接丢弃并在日志中提示。
 - **摘要长度**：由 `output.summary_max_chars` 控制；日报中展示的 `摘要` 会按该长度截断。
 
+#### html_list 白名单页面抓取（路线 B）
+- `configs/sources.yaml` 中 `type: "html_list"` 的源属于“固定白名单页面抓取”，不是全站搜索。
+- 当前版本对 `html_list` 做的是**轻量解析**：尽量提取 `title/url/published_at/summary`；如果解析失败会记录日志但不会影响其他信息源。
+- 适用场景：国内厂商产品页/新闻稿、固定栏目页（后续可逐步增强解析规则）。
+
 #### 去重与“已推送记录”（避免重复推送）
 - 状态文件：`data/sent_items.json`
 - 规则：推送成功后会把本次入选条目写入状态文件；后续运行会先过滤掉历史已推送条目。
