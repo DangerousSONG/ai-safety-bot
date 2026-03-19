@@ -1,21 +1,37 @@
-# ai-safety-daily-bot（第一版 MVP）
+# ai-safety-bot（AI 安全日报机器人）
 
-目标：每天定时抓取少量高质量 RSS/Atom 信息源，基于**标题**做 AI 安全相关性筛选，生成中文 Markdown 日报，并通过飞书机器人 Webhook 推送。
+每天定时抓取 **RSS/Atom + 少量白名单页面（html_list）**，用**标题关键词规则**筛出 AI 安全相关内容，生成适合飞书 **text** 消息的纯文本日报并推送。
 
-第一版范围（MVP）：
-- ✅ RSS/Atom 抓取（2–3 个稳定源，含可选候选源）
-- ✅ 标题关键词相关性筛选
-- ✅ 中文 Markdown 日报
-- ✅ 飞书 Webhook 推送
-- ✅ GitHub Actions 定时运行
-- ❌ 不做：LLM 摘要、Server酱、复杂去重、HTML 列表页解析、GitHub/HF 全站搜索、自动提交产物、飞书卡片
+## 当前能力（与代码一致）
+- **信息源**
+  - `feed`：RSS/Atom 抓取（主干）
+  - `html_list`：固定白名单页面抓取（路线 B；非全站搜索）
+- **筛选与输出**
+  - 标题关键词相关性筛选（`configs/rules.yaml`）
+  - 摘要：从 feed 的 summary/description 或 html 页面 meta/JSON-LD 中提取（尽力而为）
+  - 输出：飞书 **text** 消息（不渲染 Markdown，因此正文是纯文本排版）
+- **运行与健壮性**
+  - 单个信息源抓取/解析失败不影响整体
+  - `feed`：发布时间不可解析直接丢弃（并打日志）
+  - `feed`：最近 N 天过滤（默认 30 天）
+- **避免重复推送**
+  - `data/sent_items.json` 记录已推送条目（保留 90 天）
+  - 推送成功后自动更新并由 GitHub Actions 自动 commit/push 回 `main`
+
+## 配置文件
+- 信息源：`configs/sources.yaml`
+- 筛选规则：`configs/rules.yaml`
+
+关键参数（`configs/rules.yaml`）：
+- `relevance.recency_days`：`feed` 最近 N 天过滤（默认 30）
+- `output.summary_max_chars`：摘要截断长度（默认 160）
 
 ## 本地运行
 
-### 1) 环境要求
+### 环境要求
 - Python 3.11+
 
-### 2) 安装依赖
+### 安装依赖
 
 ```bash
 python -m venv .venv
@@ -24,76 +40,50 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 3) 配置
-- 信息源：`configs/sources.yaml`
-- 筛选规则：`configs/rules.yaml`
-
-#### 规则说明（与 `configs/rules.yaml` 对应）
-- **最近 30 天过滤**：由 `relevance.recency_days` 控制；只有能解析出发布时间的条目才会参与筛选，无法解析日期的条目会被直接丢弃并在日志中提示。
-- **摘要长度**：由 `output.summary_max_chars` 控制；日报中展示的 `摘要` 会按该长度截断。
-
-#### html_list 白名单页面抓取（路线 B）
-- `configs/sources.yaml` 中 `type: "html_list"` 的源属于“固定白名单页面抓取”，不是全站搜索。
-- 当前版本对 `html_list` 做的是**轻量解析**：尽量提取 `title/url/published_at/summary`；如果解析失败会记录日志但不会影响其他信息源。
-- 适用场景：国内厂商产品页/新闻稿、固定栏目页（后续可逐步增强解析规则）。
-
-#### 去重与“已推送记录”（避免重复推送）
-- 状态文件：`data/sent_items.json`
-- 规则：推送成功后会把本次入选条目写入状态文件；后续运行会先过滤掉历史已推送条目。
-- 保留策略：只保留最近 90 天的记录（自动清理旧记录）。
-- 注意：只有“飞书推送成功”后才会更新记录，避免误标记。
-
-### 4) 设置环境变量（飞书）
-需要配置飞书自定义机器人 Webhook，支持可选的“签名校验”：
-
-- 必填：`FEISHU_WEBHOOK_URL` — 飞书自定义机器人 Webhook 地址
-- 可选：`FEISHU_BOT_SECRET` — 若你的机器人开启了“签名校验”，请在此填写 Secret
+### 设置环境变量（飞书）
+- 必填：`FEISHU_WEBHOOK_URL`
+- 可选：`FEISHU_BOT_SECRET`（开启飞书机器人“签名校验”时必填）
 
 PowerShell 示例：
 
 ```powershell
 $env:FEISHU_WEBHOOK_URL="https://open.feishu.cn/open-apis/bot/v2/hook/xxxx"
-# 若开启签名校验，还需设置：
 $env:FEISHU_BOT_SECRET="your-feishu-bot-secret"
 ```
 
-### 5) 运行
+### 运行
 
 ```bash
 python -m src.main
 ```
 
-成功后会：
-- 在控制台打印抓取与筛选统计
-- 向飞书推送当日 Markdown 日报
-- 在 `outputs/daily_latest.md` 写入最近一次生成的日报（便于排查）
+运行后会：
+- 推送一条飞书 text 消息
+- 生成调试产物：`outputs/daily_latest.md`
 
-#### 开启“签名校验”的说明
-1. 在飞书群里添加“自定义机器人”，勾选“签名校验”并复制 Secret
-2. 在本地/Actions 中设置 `FEISHU_BOT_SECRET`
-3. 本项目会自动按照飞书要求生成 `timestamp` 与 `sign` 并附加到请求体
-4. 未配置 `FEISHU_BOT_SECRET` 时将直接发送（兼容未启用签名的机器人）
+## html_list（路线 B：白名单页面抓取）
+- `type: "html_list"` 只抓取**配置里写死的页面**，不做全站搜索。
+- 当前实现是“轻量增强解析”：
+  - ModelScope Learn：尽量从列表页提取多条链接及各自标题/日期/简要摘要
+  - Volcengine/Ant Group：即使是单页也尽量从 meta/JSON-LD 提取更好的标题/摘要/日期
+- 解析失败只会记录日志并跳过该源，不影响其他信息源。
 
-## 信息源说明（第一版）
-- 默认启用：`Google Security Blog`、`GitHub Blog Security`
-- 候选但默认关闭：`OpenAI News`（需你本地验证抓取成功后再打开 `enabled: true`）
+## 去重与已推送记录（避免重复推送）
+- 状态文件：`data/sent_items.json`
+- 唯一 ID：
+  - 优先：`source + normalized_url`
+  - 无 URL 兜底：`source + title + published_at`
+- 只保留最近 90 天记录（自动清理）。
+- 只有“飞书推送成功”后才会写入记录，避免误标记为已发。
 
-## GitHub Actions 配置（定时运行）
+## GitHub Actions（定时运行）
+- 工作流：`.github/workflows/daily.yml`
+- 触发：
+  - `workflow_dispatch`：手动触发（用于调试）
+  - `schedule`：北京时间 **09:07**（UTC `01:07`）
+- Secrets（仓库 Settings → Secrets and variables → Actions）：
+  - `FEISHU_WEBHOOK_URL`（必填）
+  - `FEISHU_BOT_SECRET`（可选）
+- 推送成功后：若 `data/sent_items.json` 有变化，会自动 commit 并 push 回 `main`
 
-### 1) 配置 Secrets
-在 GitHub 仓库中进入：
-`Settings -> Secrets and variables -> Actions -> New repository secret`
-
-新增（Secrets → Actions）：
-- `FEISHU_WEBHOOK_URL`（必填）
-- `FEISHU_BOT_SECRET`（可选，启用签名校验时必须配置）
-
-### 2) 工作流
-工作流文件位于：`.github/workflows/daily.yml`
-- 支持 `schedule`（定时）和 `workflow_dispatch`（手动）触发
-- 推送成功后，如果 `data/sent_items.json` 有变化，会自动 commit 并 push 回 `main`
-
-## 常见问题（MVP 约定）
-- 某个 RSS 源抓取失败：只会跳过该源并记录错误日志，不影响其他源与最终推送。
-- 筛选后没有条目：仍会生成“今日高相关动态较少”的日报并推送。
 
