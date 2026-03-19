@@ -13,10 +13,11 @@
 - **运行与健壮性**
   - 单个信息源抓取/解析失败不影响整体
   - `feed`：发布时间不可解析直接丢弃（并打日志）
-  - `feed`：最近 N 天过滤（当前 **180 天**）
+  - `feed`：最近 N 天过滤（当前 **360 天**）
 - **避免重复推送**
   - `data/sent_items.json` 记录已推送条目（保留 90 天）
   - 推送成功后自动更新并由 GitHub Actions 自动 commit/push 回 `main`
+  - **当前状态：已于 2026-03-19 手动重置历史去重状态（`sent_items.json` 清空），下次运行将重新开始累计**
 
 ## 当前启用的信息源
 
@@ -33,8 +34,8 @@
 - 筛选规则：`configs/rules.yaml`
 
 关键参数（`configs/rules.yaml`）：
-- `relevance.recency_days`：`feed` 最近 N 天过滤（当前 **180 天**）
-- `relevance.max_per_source`：每个信息源最多入选条数（当前 **3**），防止 arXiv 等高产源独占日报
+- `relevance.recency_days`：`feed` 最近 N 天过滤（当前 **360 天**）
+- `relevance.max_per_source`：每个信息源最多入选条数（当前 **2**），防止 arXiv 等高产源独占日报
 - `relevance.min_score`：最低入选分数（当前 **3**）
 - `output.summary_max_chars`：摘要截断长度（默认 160）
 
@@ -106,8 +107,8 @@ python -m src.main
 ## GitHub Actions（定时运行）
 - 工作流：`.github/workflows/daily.yml`
 - 触发：
-  - `workflow_dispatch`：手动触发（用于调试）
-  - `schedule`：北京时间 **09:07**（UTC `01:07`）
+  - `workflow_dispatch`：手动触发（用于调试，随时可用）
+  - `schedule`：北京时间 **09:07**，**仅工作日（周一至周五）**，UTC cron `7 1 * * 1-5`
 - Secrets（仓库 Settings → Secrets and variables → Actions）：
   - `FEISHU_WEBHOOK_URL`（必填）
   - `FEISHU_BOT_SECRET`（可选）

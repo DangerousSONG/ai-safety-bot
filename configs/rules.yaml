@@ -2,8 +2,8 @@ relevance:
   per_source_max_entries: 30
   top_n: 10
   min_score: 3
-  recency_days: 180
-  max_per_source: 3
+  recency_days: 360
+  max_per_source: 2
 
   strong_keywords:
     - "jailbreak"
