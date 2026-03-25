@@ -63,6 +63,22 @@
       "url": "https://arxiv.org/abs/2603.20131",
       "published_at": "2026-03-23T04:00:00+00:00",
       "first_sent_at": "2026-03-24T03:38:50.890593+00:00"
+    },
+    {
+      "id": "8ac7a894b1c31292428366a1ad7a2281360514ec",
+      "source": "arXiv cs.CR",
+      "title": "Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning",
+      "url": "https://arxiv.org/abs/2603.20198",
+      "published_at": "2026-03-24T04:00:00+00:00",
+      "first_sent_at": "2026-03-25T03:41:36.500379+00:00"
+    },
+    {
+      "id": "101aa98596f895b3282619506944dffabc15bc8f",
+      "source": "arXiv cs.CR",
+      "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
+      "url": "https://arxiv.org/abs/2603.21058",
+      "published_at": "2026-03-24T04:00:00+00:00",
+      "first_sent_at": "2026-03-25T03:41:36.500379+00:00"
     }
   ]
 }
