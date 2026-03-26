@@ -79,6 +79,22 @@
       "url": "https://arxiv.org/abs/2603.21058",
       "published_at": "2026-03-24T04:00:00+00:00",
       "first_sent_at": "2026-03-25T03:41:36.500379+00:00"
+    },
+    {
+      "id": "e4b337a27709dc594c1d3727d44ddcaed7d800ae",
+      "source": "arXiv cs.CR",
+      "title": "Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning",
+      "url": "https://arxiv.org/abs/2603.22489",
+      "published_at": "2026-03-25T04:00:00+00:00",
+      "first_sent_at": "2026-03-26T03:51:15.539298+00:00"
+    },
+    {
+      "id": "d73baafb59576a1edd0156aec480aab219e97c38",
+      "source": "arXiv cs.CR",
+      "title": "T-MAP: Red-Teaming LLM Agents with Trajectory-aware Evolutionary Search",
+      "url": "https://arxiv.org/abs/2603.22341",
+      "published_at": "2026-03-25T04:00:00+00:00",
+      "first_sent_at": "2026-03-26T03:51:15.539298+00:00"
     }
   ]
 }
