@@ -95,6 +95,30 @@
       "url": "https://arxiv.org/abs/2603.22341",
       "published_at": "2026-03-25T04:00:00+00:00",
       "first_sent_at": "2026-03-26T03:51:15.539298+00:00"
+    },
+    {
+      "id": "a911db56784789869ec1e247a69acd8c5d39a842",
+      "source": "arXiv cs.CR",
+      "title": "The Cognitive Firewall:Securing Browser Based AI Agents Against Indirect Prompt Injection Via Hybrid Edge Cloud Defense",
+      "url": "https://arxiv.org/abs/2603.23791",
+      "published_at": "2026-03-26T04:00:00+00:00",
+      "first_sent_at": "2026-03-27T03:53:09.492953+00:00"
+    },
+    {
+      "id": "9f76bdb47a50fd17da6dd0d05ce90c048cf5befd",
+      "source": "arXiv cs.CR",
+      "title": "Enhancing Jailbreak Attacks on LLMs via Persona Prompts",
+      "url": "https://arxiv.org/abs/2507.22171",
+      "published_at": "2026-03-26T04:00:00+00:00",
+      "first_sent_at": "2026-03-27T03:53:09.492953+00:00"
+    },
+    {
+      "id": "72b3ee173a975012637a16e93b05c17dfec56b56",
+      "source": "GitHub Blog Security",
+      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
+      "url": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
+      "published_at": "2026-03-26T16:00:00+00:00",
+      "first_sent_at": "2026-03-27T03:53:09.492953+00:00"
     }
   ]
 }
