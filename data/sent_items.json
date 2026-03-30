@@ -119,6 +119,22 @@
       "url": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
       "published_at": "2026-03-26T16:00:00+00:00",
       "first_sent_at": "2026-03-27T03:53:09.492953+00:00"
+    },
+    {
+      "id": "e105e1f8288666fa1127303ec62515728b4c610e",
+      "source": "arXiv cs.CR",
+      "title": "Knowdit: Agentic Smart Contract Vulnerability Detection with Auditing Knowledge Summarization",
+      "url": "https://arxiv.org/abs/2603.26270",
+      "published_at": "2026-03-30T04:00:00+00:00",
+      "first_sent_at": "2026-03-30T04:11:22.584880+00:00"
+    },
+    {
+      "id": "3d5851e8decc3f40ea21ea6adcea1209691c0842",
+      "source": "arXiv cs.CR",
+      "title": "ROAST: Risk-aware Outlier-exposure for Adversarial Selective Training of Anomaly Detectors Against Evasion Attacks",
+      "url": "https://arxiv.org/abs/2603.26093",
+      "published_at": "2026-03-30T04:00:00+00:00",
+      "first_sent_at": "2026-03-30T04:11:22.584880+00:00"
     }
   ]
 }
