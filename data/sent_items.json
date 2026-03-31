@@ -135,6 +135,14 @@
       "url": "https://arxiv.org/abs/2603.26093",
       "published_at": "2026-03-30T04:00:00+00:00",
       "first_sent_at": "2026-03-30T04:11:22.584880+00:00"
+    },
+    {
+      "id": "08782a5cc00af2f24d764231b3685b38cc821cbb",
+      "source": "arXiv cs.CR",
+      "title": "A Large-scale Empirical Study on the Generalizability of Disclosed Java Library Vulnerability Exploits",
+      "url": "https://arxiv.org/abs/2603.25997",
+      "published_at": "2026-03-30T04:00:00+00:00",
+      "first_sent_at": "2026-03-31T03:53:37.494436+00:00"
     }
   ]
 }
