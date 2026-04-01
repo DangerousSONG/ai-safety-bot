@@ -143,6 +143,22 @@
       "url": "https://arxiv.org/abs/2603.25997",
       "published_at": "2026-03-30T04:00:00+00:00",
       "first_sent_at": "2026-03-31T03:53:37.494436+00:00"
+    },
+    {
+      "id": "d80f283913743a09747b8c835c9f17edcb7e525b",
+      "source": "arXiv cs.CR",
+      "title": "GUARD-SLM: Token Activation-Based Defense Against Jailbreak Attacks for Small Language Models",
+      "url": "https://arxiv.org/abs/2603.28817",
+      "published_at": "2026-04-01T04:00:00+00:00",
+      "first_sent_at": "2026-04-01T04:15:02.838102+00:00"
+    },
+    {
+      "id": "7b801b70add0ad4d0778ab4e661c0f2e2de2cbfb",
+      "source": "arXiv cs.CR",
+      "title": "Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks",
+      "url": "https://arxiv.org/abs/2603.30016",
+      "published_at": "2026-04-01T04:00:00+00:00",
+      "first_sent_at": "2026-04-01T04:15:02.838102+00:00"
     }
   ]
 }
