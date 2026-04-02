@@ -159,6 +159,22 @@
       "url": "https://arxiv.org/abs/2603.30016",
       "published_at": "2026-04-01T04:00:00+00:00",
       "first_sent_at": "2026-04-01T04:15:02.838102+00:00"
+    },
+    {
+      "id": "bde0ecf864f25538519f97a5b71c08a748569cd6",
+      "source": "arXiv cs.CR",
+      "title": "Trojan-Speak: Bypassing Constitutional Classifiers with No Jailbreak Tax via Adversarial Finetuning",
+      "url": "https://arxiv.org/abs/2603.29038",
+      "published_at": "2026-04-01T04:00:00+00:00",
+      "first_sent_at": "2026-04-02T03:47:55.959199+00:00"
+    },
+    {
+      "id": "b35c198b4102117de81154740160f23dd6fcb323",
+      "source": "arXiv cs.CR",
+      "title": "Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations",
+      "url": "https://arxiv.org/abs/2603.28846",
+      "published_at": "2026-04-01T04:00:00+00:00",
+      "first_sent_at": "2026-04-02T03:47:55.959199+00:00"
     }
   ]
 }
