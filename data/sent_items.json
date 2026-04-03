@@ -175,6 +175,30 @@
       "url": "https://arxiv.org/abs/2603.28846",
       "published_at": "2026-04-01T04:00:00+00:00",
       "first_sent_at": "2026-04-02T03:47:55.959199+00:00"
+    },
+    {
+      "id": "2052cf1bdec63903f17714dd5a8caf629ef92e84",
+      "source": "Google Security Blog",
+      "title": "Google Workspace’s continuous approach to mitigating indirect prompt injections",
+      "url": "http://security.googleblog.com/2026/04/google-workspaces-continuous-approach.html",
+      "published_at": "2026-04-02T16:00:00+00:00",
+      "first_sent_at": "2026-04-03T03:48:56.043603+00:00"
+    },
+    {
+      "id": "227701c24cbc1f2a35f7be14432dd8fb1cbd22c7",
+      "source": "arXiv cs.CR",
+      "title": "AgentWatcher: A Rule-based Prompt Injection Monitor",
+      "url": "https://arxiv.org/abs/2604.01194",
+      "published_at": "2026-04-02T04:00:00+00:00",
+      "first_sent_at": "2026-04-03T03:48:56.043603+00:00"
+    },
+    {
+      "id": "ed6aed8eca582d7ccbdb1541f46760c55bcf120c",
+      "source": "arXiv cs.CR",
+      "title": "UK AISI Alignment Evaluation Case-Study",
+      "url": "https://arxiv.org/abs/2604.00788",
+      "published_at": "2026-04-02T04:00:00+00:00",
+      "first_sent_at": "2026-04-03T03:48:56.043603+00:00"
     }
   ]
 }
