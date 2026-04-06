@@ -199,6 +199,22 @@
       "url": "https://arxiv.org/abs/2604.00788",
       "published_at": "2026-04-02T04:00:00+00:00",
       "first_sent_at": "2026-04-03T03:48:56.043603+00:00"
+    },
+    {
+      "id": "cefe6149b6c6c547bb0fdec88ae103239076ff86",
+      "source": "arXiv cs.CR",
+      "title": "An Independent Safety Evaluation of Kimi K2.5",
+      "url": "https://arxiv.org/abs/2604.03121",
+      "published_at": "2026-04-06T04:00:00+00:00",
+      "first_sent_at": "2026-04-06T04:10:36.966578+00:00"
+    },
+    {
+      "id": "ca549bf5d6d33f9f99a6f4eb2fc3b83109b5015a",
+      "source": "arXiv cs.CR",
+      "title": "Kill-Chain Canaries: Stage-Level Tracking of Prompt Injection Across Attack Surfaces and Model Safety Tiers",
+      "url": "https://arxiv.org/abs/2603.28013",
+      "published_at": "2026-04-06T04:00:00+00:00",
+      "first_sent_at": "2026-04-06T04:10:36.966578+00:00"
     }
   ]
 }
