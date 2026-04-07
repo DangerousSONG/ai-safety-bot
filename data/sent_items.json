@@ -215,6 +215,22 @@
       "url": "https://arxiv.org/abs/2603.28013",
       "published_at": "2026-04-06T04:00:00+00:00",
       "first_sent_at": "2026-04-06T04:10:36.966578+00:00"
+    },
+    {
+      "id": "b743a3d76db04320bb2bd830b832e05fdb31d251",
+      "source": "arXiv cs.CR",
+      "title": "Understanding the Effects of Safety Unalignment on Large Language Models",
+      "url": "https://arxiv.org/abs/2604.02574",
+      "published_at": "2026-04-06T04:00:00+00:00",
+      "first_sent_at": "2026-04-07T03:52:14.757459+00:00"
+    },
+    {
+      "id": "0ecf046b7cbc7de218e65f7eaf3c044710b1c740",
+      "source": "arXiv cs.CR",
+      "title": "Towards Multi-Stakeholder Vulnerability Notifications in the Ad-Tech Supply Chain",
+      "url": "https://arxiv.org/abs/2406.06958",
+      "published_at": "2026-04-06T04:00:00+00:00",
+      "first_sent_at": "2026-04-07T03:52:14.757459+00:00"
     }
   ]
 }
