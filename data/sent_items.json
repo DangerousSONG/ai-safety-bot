@@ -247,6 +247,22 @@
       "url": "https://arxiv.org/abs/2604.03900",
       "published_at": "2026-04-07T04:00:00+00:00",
       "first_sent_at": "2026-04-08T03:54:32.529135+00:00"
+    },
+    {
+      "id": "3c5398300c6b5dc20629c20a74f90a38702b2b50",
+      "source": "arXiv cs.CR",
+      "title": "SkillAttack: Automated Red Teaming of Agent Skills through Attack Path Refinement",
+      "url": "https://arxiv.org/abs/2604.04989",
+      "published_at": "2026-04-08T04:00:00+00:00",
+      "first_sent_at": "2026-04-09T03:51:41.158056+00:00"
+    },
+    {
+      "id": "7e7f46dd8c92a2aee56a27e15e75c957541d1f06",
+      "source": "arXiv cs.CR",
+      "title": "FreakOut-LLM: The Effect of Emotional Stimuli on Safety Alignment",
+      "url": "https://arxiv.org/abs/2604.04992",
+      "published_at": "2026-04-08T04:00:00+00:00",
+      "first_sent_at": "2026-04-09T03:51:41.158056+00:00"
     }
   ]
 }
