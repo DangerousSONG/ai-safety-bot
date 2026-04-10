@@ -263,6 +263,22 @@
       "url": "https://arxiv.org/abs/2604.04992",
       "published_at": "2026-04-08T04:00:00+00:00",
       "first_sent_at": "2026-04-09T03:51:41.158056+00:00"
+    },
+    {
+      "id": "09c45ba246f8e95c22042c250fff04ff1c14e0bf",
+      "source": "arXiv cs.CR",
+      "title": "TrajGuard: Streaming Hidden-state Trajectory Detection for Decoding-time Jailbreak Defense",
+      "url": "https://arxiv.org/abs/2604.07727",
+      "published_at": "2026-04-10T04:00:00+00:00",
+      "first_sent_at": "2026-04-10T04:11:48.487778+00:00"
+    },
+    {
+      "id": "a3b406581f714b2217d073d6aa836aa118c04681",
+      "source": "arXiv cs.CR",
+      "title": "MEV-ACE: Identity-Authenticated Fair Ordering for Proposer-Controlled MEV Mitigation",
+      "url": "https://arxiv.org/abs/2604.07568",
+      "published_at": "2026-04-10T04:00:00+00:00",
+      "first_sent_at": "2026-04-10T04:11:48.487778+00:00"
     }
   ]
 }
