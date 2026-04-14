@@ -287,6 +287,22 @@
       "url": "https://arxiv.org/abs/2510.09093",
       "published_at": "2026-04-13T04:00:00+00:00",
       "first_sent_at": "2026-04-13T04:24:34.223243+00:00"
+    },
+    {
+      "id": "47f2599fceaa1b0e9cd4264b5dae654ad9a7cfc4",
+      "source": "arXiv cs.CR",
+      "title": "Jailbreaking the Matrix: Nullspace Steering for Controlled Model Subversion",
+      "url": "https://arxiv.org/abs/2604.10326",
+      "published_at": "2026-04-14T04:00:00+00:00",
+      "first_sent_at": "2026-04-14T04:13:02.002285+00:00"
+    },
+    {
+      "id": "6f6d0e88af54f30cc1c24cfd3fcdb45d3b7c9b22",
+      "source": "arXiv cs.CR",
+      "title": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2604.10577",
+      "published_at": "2026-04-14T04:00:00+00:00",
+      "first_sent_at": "2026-04-14T04:13:02.002285+00:00"
     }
   ]
 }
