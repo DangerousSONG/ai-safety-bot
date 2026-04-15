@@ -303,6 +303,22 @@
       "url": "https://arxiv.org/abs/2604.10577",
       "published_at": "2026-04-14T04:00:00+00:00",
       "first_sent_at": "2026-04-14T04:13:02.002285+00:00"
+    },
+    {
+      "id": "b6bd558dbbdf9623823f49f82494ee4b03ef6530",
+      "source": "arXiv cs.CR",
+      "title": "TEMPLATEFUZZ: Fine-Grained Chat Template Fuzzing for Jailbreaking and Red Teaming LLMs",
+      "url": "https://arxiv.org/abs/2604.12232",
+      "published_at": "2026-04-15T04:00:00+00:00",
+      "first_sent_at": "2026-04-15T04:11:42.166341+00:00"
+    },
+    {
+      "id": "6baff97fa5247575e8f943038cbb24cbc9b1e3af",
+      "source": "arXiv cs.CR",
+      "title": "WebAgentGuard: A Reasoning-Driven Guard Model for Detecting Prompt Injection Attacks in Web Agents",
+      "url": "https://arxiv.org/abs/2604.12284",
+      "published_at": "2026-04-15T04:00:00+00:00",
+      "first_sent_at": "2026-04-15T04:11:42.166341+00:00"
     }
   ]
 }
