@@ -319,6 +319,22 @@
       "url": "https://arxiv.org/abs/2604.12284",
       "published_at": "2026-04-15T04:00:00+00:00",
       "first_sent_at": "2026-04-15T04:11:42.166341+00:00"
+    },
+    {
+      "id": "7d13921de5b620dd5dd030587e7a0f16c3117e7c",
+      "source": "arXiv cs.CR",
+      "title": "Activation-Guided Local Editing for Jailbreaking Attacks",
+      "url": "https://arxiv.org/abs/2508.00555",
+      "published_at": "2026-04-16T04:00:00+00:00",
+      "first_sent_at": "2026-04-16T04:18:04.328876+00:00"
+    },
+    {
+      "id": "97d5b06fe1ff7e888d2f259f5b5109ec4c42abf3",
+      "source": "arXiv cs.CR",
+      "title": "Between a Rock and a Hard Place: The Tension Between Ethical Reasoning and Safety Alignment in LLMs",
+      "url": "https://arxiv.org/abs/2509.05367",
+      "published_at": "2026-04-16T04:00:00+00:00",
+      "first_sent_at": "2026-04-16T04:18:04.328876+00:00"
     }
   ]
 }
