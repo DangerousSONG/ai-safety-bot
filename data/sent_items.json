@@ -335,6 +335,22 @@
       "url": "https://arxiv.org/abs/2509.05367",
       "published_at": "2026-04-16T04:00:00+00:00",
       "first_sent_at": "2026-04-16T04:18:04.328876+00:00"
+    },
+    {
+      "id": "2178735f38c3f212f59666342175739c0574afe8",
+      "source": "arXiv cs.CR",
+      "title": "Hijacking Large Audio-Language Models via Context-Agnostic and Imperceptible Auditory Prompt Injection",
+      "url": "https://arxiv.org/abs/2604.14604",
+      "published_at": "2026-04-17T04:00:00+00:00",
+      "first_sent_at": "2026-04-17T04:15:29.666836+00:00"
+    },
+    {
+      "id": "72cb1e98e198eccc0011ffd00fbf415f9ebf266b",
+      "source": "arXiv cs.CR",
+      "title": "AndroScanner: Automated Backend Vulnerability Detection for Android Applications",
+      "url": "https://arxiv.org/abs/2604.14431",
+      "published_at": "2026-04-17T04:00:00+00:00",
+      "first_sent_at": "2026-04-17T04:15:29.666836+00:00"
     }
   ]
 }
