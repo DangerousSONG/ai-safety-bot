@@ -351,6 +351,22 @@
       "url": "https://arxiv.org/abs/2604.14431",
       "published_at": "2026-04-17T04:00:00+00:00",
       "first_sent_at": "2026-04-17T04:15:29.666836+00:00"
+    },
+    {
+      "id": "6f0725abb6aa083d0aee6f58c308c4291fb61d00",
+      "source": "arXiv cs.CR",
+      "title": "LogJack: Indirect Prompt Injection Through Cloud Logs Against LLM Debugging Agents",
+      "url": "https://arxiv.org/abs/2604.15368",
+      "published_at": "2026-04-20T04:00:00+00:00",
+      "first_sent_at": "2026-04-20T04:24:10.360458+00:00"
+    },
+    {
+      "id": "578f842635fa0f85fac8a239e9fa1eb0fd5de25c",
+      "source": "arXiv cs.CR",
+      "title": "Modeling Sparse and Bursty Vulnerability Sightings: Forecasting Under Data Constraints",
+      "url": "https://arxiv.org/abs/2604.16038",
+      "published_at": "2026-04-20T04:00:00+00:00",
+      "first_sent_at": "2026-04-20T04:24:10.360458+00:00"
     }
   ]
 }
