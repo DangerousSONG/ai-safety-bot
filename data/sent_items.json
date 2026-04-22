@@ -383,6 +383,22 @@
       "url": "https://arxiv.org/abs/2604.16659",
       "published_at": "2026-04-21T04:00:00+00:00",
       "first_sent_at": "2026-04-21T04:15:19.061901+00:00"
+    },
+    {
+      "id": "5d0a7384cf8e8706230753751c604500bbeb150b",
+      "source": "arXiv cs.CR",
+      "title": "Owner-Harm: A Missing Threat Model for AI Agent Safety",
+      "url": "https://arxiv.org/abs/2604.18658",
+      "published_at": "2026-04-22T04:00:00+00:00",
+      "first_sent_at": "2026-04-22T04:11:20.567746+00:00"
+    },
+    {
+      "id": "6ed65d1d137b55e898f4a2f9412c11019f9ad6cc",
+      "source": "arXiv cs.CR",
+      "title": "Beyond Explicit Refusals: Soft-Failure Attacks on Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/abs/2604.18663",
+      "published_at": "2026-04-22T04:00:00+00:00",
+      "first_sent_at": "2026-04-22T04:11:20.567746+00:00"
     }
   ]
 }
