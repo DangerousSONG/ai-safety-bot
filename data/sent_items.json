@@ -399,6 +399,30 @@
       "url": "https://arxiv.org/abs/2604.18663",
       "published_at": "2026-04-22T04:00:00+00:00",
       "first_sent_at": "2026-04-22T04:11:20.567746+00:00"
+    },
+    {
+      "id": "92629aa492174d11517a5d613b76bcc37e503f2b",
+      "source": "arXiv cs.CR",
+      "title": "Taint-Style Vulnerability Detection and Confirmation for Node.js Packages Using LLM Agent Reasoning",
+      "url": "https://arxiv.org/abs/2604.20179",
+      "published_at": "2026-04-23T04:00:00+00:00",
+      "first_sent_at": "2026-04-23T04:16:00.708662+00:00"
+    },
+    {
+      "id": "f239ec64755f879901fc473d90340a2837e14085",
+      "source": "arXiv cs.CR",
+      "title": "Synthesizing Multi-Agent Harnesses for Vulnerability Discovery",
+      "url": "https://arxiv.org/abs/2604.20801",
+      "published_at": "2026-04-23T04:00:00+00:00",
+      "first_sent_at": "2026-04-23T04:16:00.708662+00:00"
+    },
+    {
+      "id": "928435683514a6ea44a24f31ccb8690542a1bb27",
+      "source": "OpenAI News",
+      "title": "Introducing OpenAI Privacy Filter",
+      "url": "https://openai.com/index/introducing-openai-privacy-filter",
+      "published_at": "2026-04-22T00:00:00+00:00",
+      "first_sent_at": "2026-04-23T04:16:00.708662+00:00"
     }
   ]
 }
