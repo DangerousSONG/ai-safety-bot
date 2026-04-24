@@ -423,6 +423,30 @@
       "url": "https://openai.com/index/introducing-openai-privacy-filter",
       "published_at": "2026-04-22T00:00:00+00:00",
       "first_sent_at": "2026-04-23T04:16:00.708662+00:00"
+    },
+    {
+      "id": "64bf27fd6a9e30c4cbb3bb858b2b9472c3e09a58",
+      "source": "Google Security Blog",
+      "title": "AI threats in the wild: The current state of prompt injections on the web",
+      "url": "http://security.googleblog.com/2026/04/ai-threats-in-wild-current-state-of.html",
+      "published_at": "2026-04-23T21:38:00+00:00",
+      "first_sent_at": "2026-04-24T04:21:06.225035+00:00"
+    },
+    {
+      "id": "941cbc9047d0a5ac491abb463273fcad9719ec8d",
+      "source": "arXiv cs.CR",
+      "title": "Sensitivity Uncertainty Alignment in Large Language Models",
+      "url": "https://arxiv.org/abs/2604.20903",
+      "published_at": "2026-04-24T04:00:00+00:00",
+      "first_sent_at": "2026-04-24T04:21:06.225035+00:00"
+    },
+    {
+      "id": "880438d363eae74bc2b2662e44a075065c1e3945",
+      "source": "arXiv cs.CR",
+      "title": "Adaptive Instruction Composition for Automated LLM Red-Teaming",
+      "url": "https://arxiv.org/abs/2604.21159",
+      "published_at": "2026-04-24T04:00:00+00:00",
+      "first_sent_at": "2026-04-24T04:21:06.225035+00:00"
     }
   ]
 }
