@@ -447,6 +447,22 @@
       "url": "https://arxiv.org/abs/2604.21159",
       "published_at": "2026-04-24T04:00:00+00:00",
       "first_sent_at": "2026-04-24T04:21:06.225035+00:00"
+    },
+    {
+      "id": "71d482fac2341c7b77bf63c0776a13b977efde3a",
+      "source": "arXiv cs.CR",
+      "title": "Toward Principled LLM Safety Testing: Solving the Jailbreak Oracle Problem",
+      "url": "https://arxiv.org/abs/2506.17299",
+      "published_at": "2026-04-27T04:00:00+00:00",
+      "first_sent_at": "2026-04-27T04:34:29.179196+00:00"
+    },
+    {
+      "id": "718a694488cc802f61e4704e4f27fad1b4931a50",
+      "source": "arXiv cs.CR",
+      "title": "Evaluating Concept Filtering Defenses against Child Sexual Abuse Material Generation by Text-to-Image Models",
+      "url": "https://arxiv.org/abs/2512.05707",
+      "published_at": "2026-04-27T04:00:00+00:00",
+      "first_sent_at": "2026-04-27T04:34:29.179196+00:00"
     }
   ]
 }
