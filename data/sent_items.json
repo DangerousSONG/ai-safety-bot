@@ -487,6 +487,30 @@
       "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
       "published_at": "2026-04-27T00:00:00+00:00",
       "first_sent_at": "2026-04-28T04:38:01.555331+00:00"
+    },
+    {
+      "id": "102523bc134743ca36379e4b9202ef15d9a2eb0b",
+      "source": "arXiv cs.CR",
+      "title": "A Comparative Evaluation of AI Agent Security Guardrails",
+      "url": "https://arxiv.org/abs/2604.24826",
+      "published_at": "2026-04-29T04:00:00+00:00",
+      "first_sent_at": "2026-04-29T04:33:58.520980+00:00"
+    },
+    {
+      "id": "7b2962e1564fdfbec59a088a86574e0ef7b741af",
+      "source": "arXiv cs.CR",
+      "title": "SnapGuard: Lightweight Prompt Injection Detection for Screenshot-Based Web Agents",
+      "url": "https://arxiv.org/abs/2604.25562",
+      "published_at": "2026-04-29T04:00:00+00:00",
+      "first_sent_at": "2026-04-29T04:33:58.520980+00:00"
+    },
+    {
+      "id": "cad35b6f45cd818e52b7bdbd363196c9bf9ddab5",
+      "source": "GitHub Blog Security",
+      "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+      "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+      "published_at": "2026-04-28T15:30:00+00:00",
+      "first_sent_at": "2026-04-29T04:33:58.520980+00:00"
     }
   ]
 }
