@@ -511,6 +511,22 @@
       "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
       "published_at": "2026-04-28T15:30:00+00:00",
       "first_sent_at": "2026-04-29T04:33:58.520980+00:00"
+    },
+    {
+      "id": "0b894b6ae87aea09132f1f6e8eaae8f43bf5ac64",
+      "source": "arXiv cs.CR",
+      "title": "Self-Jailbreaking: Language Models Can Reason Themselves Out of Safety Alignment After Benign Reasoning Training",
+      "url": "https://arxiv.org/abs/2510.20956",
+      "published_at": "2026-04-30T04:00:00+00:00",
+      "first_sent_at": "2026-04-30T04:36:55.692365+00:00"
+    },
+    {
+      "id": "680a8c81a32c3e254f5e3d1a2ca4b6f4f12c0e3a",
+      "source": "arXiv cs.CR",
+      "title": "VulStyle: A Multi-Modal Pre-Training for Code Stylometry-Augmented Vulnerability Detection",
+      "url": "https://arxiv.org/abs/2604.26313",
+      "published_at": "2026-04-30T04:00:00+00:00",
+      "first_sent_at": "2026-04-30T04:36:55.692365+00:00"
     }
   ]
 }
