@@ -527,6 +527,22 @@
       "url": "https://arxiv.org/abs/2604.26313",
       "published_at": "2026-04-30T04:00:00+00:00",
       "first_sent_at": "2026-04-30T04:36:55.692365+00:00"
+    },
+    {
+      "id": "8e42ddd9ab458e2809cc868ef291bab2d80c2baa",
+      "source": "arXiv cs.CR",
+      "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+      "url": "https://arxiv.org/abs/2604.28157",
+      "published_at": "2026-05-01T04:00:00+00:00",
+      "first_sent_at": "2026-05-01T04:53:32.889905+00:00"
+    },
+    {
+      "id": "852242d1c9b568fd2cb39bb3b5d66416506390ab",
+      "source": "arXiv cs.CR",
+      "title": "TwinGate: Stateful Defense against Decompositional Jailbreaks in Untraceable Traffic via Asymmetric Contrastive Learning",
+      "url": "https://arxiv.org/abs/2604.27861",
+      "published_at": "2026-05-01T04:00:00+00:00",
+      "first_sent_at": "2026-05-01T04:53:32.889905+00:00"
     }
   ]
 }
