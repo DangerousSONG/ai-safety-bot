@@ -543,6 +543,22 @@
       "url": "https://arxiv.org/abs/2604.27861",
       "published_at": "2026-05-01T04:00:00+00:00",
       "first_sent_at": "2026-05-01T04:53:32.889905+00:00"
+    },
+    {
+      "id": "cd4e525f40691b8043fea36913d5bf86f4e3c643",
+      "source": "arXiv cs.CR",
+      "title": "STARE: Step-wise Temporal Alignment and Red-teaming Engine for Multi-modal Toxicity Attack",
+      "url": "https://arxiv.org/abs/2605.00699",
+      "published_at": "2026-05-04T04:00:00+00:00",
+      "first_sent_at": "2026-05-04T04:44:38.795142+00:00"
+    },
+    {
+      "id": "ae2f7df85de3f33587bcff3628e825f749bad893",
+      "source": "arXiv cs.CR",
+      "title": "Alignment Contracts for Agentic Security Systems",
+      "url": "https://arxiv.org/abs/2605.00081",
+      "published_at": "2026-05-04T04:00:00+00:00",
+      "first_sent_at": "2026-05-04T04:44:38.795142+00:00"
     }
   ]
 }
