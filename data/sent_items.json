@@ -575,6 +575,22 @@
       "url": "https://arxiv.org/abs/2605.00974",
       "published_at": "2026-05-05T04:00:00+00:00",
       "first_sent_at": "2026-05-05T04:20:48.235134+00:00"
+    },
+    {
+      "id": "58446dc242bd9f2e71dcb56c183c35cf4d1508e3",
+      "source": "arXiv cs.CR",
+      "title": "Tracing the Dynamics of Refusal: Exploiting Latent Refusal Trajectories for Robust Jailbreak Detection",
+      "url": "https://arxiv.org/abs/2605.02958",
+      "published_at": "2026-05-06T04:00:00+00:00",
+      "first_sent_at": "2026-05-06T04:36:59.234676+00:00"
+    },
+    {
+      "id": "5a78b3bfa612932446c19ff11acafd1ab641a096",
+      "source": "arXiv cs.CR",
+      "title": "Revisiting JBShield: Breaking and Rebuilding Representation-Level Jailbreak Defenses",
+      "url": "https://arxiv.org/abs/2605.03095",
+      "published_at": "2026-05-06T04:00:00+00:00",
+      "first_sent_at": "2026-05-06T04:36:59.234676+00:00"
     }
   ]
 }
