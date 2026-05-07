@@ -591,6 +591,22 @@
       "url": "https://arxiv.org/abs/2605.03095",
       "published_at": "2026-05-06T04:00:00+00:00",
       "first_sent_at": "2026-05-06T04:36:59.234676+00:00"
+    },
+    {
+      "id": "931a857ee1acd6cc6d9dbbf73fdaf549870483a3",
+      "source": "arXiv cs.CR",
+      "title": "Sparse Tokens Suffice: Jailbreaking Audio Language Models via Token-Aware Gradient Optimization",
+      "url": "https://arxiv.org/abs/2605.04700",
+      "published_at": "2026-05-07T04:00:00+00:00",
+      "first_sent_at": "2026-05-07T04:37:53.667612+00:00"
+    },
+    {
+      "id": "4a3c649540eb76a6594183796356ffffd4daab97",
+      "source": "arXiv cs.CR",
+      "title": "SoK: Robustness in Large Language Models against Jailbreak Attacks",
+      "url": "https://arxiv.org/abs/2605.05058",
+      "published_at": "2026-05-07T04:00:00+00:00",
+      "first_sent_at": "2026-05-07T04:37:53.667612+00:00"
     }
   ]
 }
