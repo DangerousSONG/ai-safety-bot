@@ -607,6 +607,22 @@
       "url": "https://arxiv.org/abs/2605.05058",
       "published_at": "2026-05-07T04:00:00+00:00",
       "first_sent_at": "2026-05-07T04:37:53.667612+00:00"
+    },
+    {
+      "id": "83769c42cd917062cc4c37eca105c4307d5b0c7a",
+      "source": "arXiv cs.CR",
+      "title": "SafeHarbor: Hierarchical Memory-Augmented Guardrail for LLM Agent Safety",
+      "url": "https://arxiv.org/abs/2605.05704",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "first_sent_at": "2026-05-08T04:19:23.883569+00:00"
+    },
+    {
+      "id": "3890e1464a78708573a8fa47c2fde39664825365",
+      "source": "arXiv cs.CR",
+      "title": "GLiNER Guard: Unified Encoder Family for Production LLM Safety and Privacy",
+      "url": "https://arxiv.org/abs/2605.05277",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "first_sent_at": "2026-05-08T04:19:23.883569+00:00"
     }
   ]
 }
