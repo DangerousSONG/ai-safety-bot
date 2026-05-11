@@ -623,6 +623,14 @@
       "url": "https://arxiv.org/abs/2605.05277",
       "published_at": "2026-05-08T04:00:00+00:00",
       "first_sent_at": "2026-05-08T04:19:23.883569+00:00"
+    },
+    {
+      "id": "f0d9b35ed755a229a0c92295177861b909c47121",
+      "source": "arXiv cs.CR",
+      "title": "An Automated Framework for Cybersecurity Policy Compliance Assessment Against Security Control Standards",
+      "url": "https://arxiv.org/abs/2605.07515",
+      "published_at": "2026-05-11T04:00:00+00:00",
+      "first_sent_at": "2026-05-11T05:02:34.562535+00:00"
     }
   ]
 }
