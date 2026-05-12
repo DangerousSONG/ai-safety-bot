@@ -631,6 +631,22 @@
       "url": "https://arxiv.org/abs/2605.07515",
       "published_at": "2026-05-11T04:00:00+00:00",
       "first_sent_at": "2026-05-11T05:02:34.562535+00:00"
+    },
+    {
+      "id": "d4edbcfa33c7f14fa1840d3b4fba03d5f77e8b11",
+      "source": "arXiv cs.CR",
+      "title": "Why Do Aligned LLMs Remain Jailbreakable: Refusal-Escape Directions, Operator-Level Sources, and Safety-Utility Trade-off",
+      "url": "https://arxiv.org/abs/2605.08878",
+      "published_at": "2026-05-12T04:00:00+00:00",
+      "first_sent_at": "2026-05-12T04:41:55.273348+00:00"
+    },
+    {
+      "id": "7e01c736048481302e9f94c81ac974380677a536",
+      "source": "arXiv cs.CR",
+      "title": "The Art of the Jailbreak: Formulating Jailbreak Attacks for LLM Security Beyond Binary Scoring",
+      "url": "https://arxiv.org/abs/2605.09225",
+      "published_at": "2026-05-12T04:00:00+00:00",
+      "first_sent_at": "2026-05-12T04:41:55.273348+00:00"
     }
   ]
 }
