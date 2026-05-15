@@ -687,6 +687,22 @@
       "url": "https://arxiv.org/abs/2605.13471",
       "published_at": "2026-05-14T04:00:00+00:00",
       "first_sent_at": "2026-05-14T04:52:45.822620+00:00"
+    },
+    {
+      "id": "5c82b32786d4f2c411e1219933462cff0197899f",
+      "source": "arXiv cs.CR",
+      "title": "EVA: Editing for Versatile Alignment against Jailbreaks",
+      "url": "https://arxiv.org/abs/2605.14750",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "first_sent_at": "2026-05-15T04:56:25.524911+00:00"
+    },
+    {
+      "id": "4dedbfd5a88938e4b7eb6d9bae4814dd57358683",
+      "source": "arXiv cs.CR",
+      "title": "WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections",
+      "url": "https://arxiv.org/abs/2605.15030",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "first_sent_at": "2026-05-15T04:56:25.524911+00:00"
     }
   ]
 }
