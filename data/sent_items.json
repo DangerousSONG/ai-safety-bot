@@ -703,6 +703,22 @@
       "url": "https://arxiv.org/abs/2605.15030",
       "published_at": "2026-05-15T04:00:00+00:00",
       "first_sent_at": "2026-05-15T04:56:25.524911+00:00"
+    },
+    {
+      "id": "038761cd419266cf4808e65308b8d830307973fa",
+      "source": "arXiv cs.CR",
+      "title": "Compositional Jailbreaking: An Empirical Analysis of Mutator Chain Interactions in Aligned LLMs",
+      "url": "https://arxiv.org/abs/2605.15598",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "first_sent_at": "2026-05-18T05:12:52.810678+00:00"
+    },
+    {
+      "id": "6b181138b59053a492c21cbe7b6435e8213ec540",
+      "source": "arXiv cs.CR",
+      "title": "A Cross-Modal Prompt Injection Attack against Large Vision-Language Models with Image-Only Perturbation",
+      "url": "https://arxiv.org/abs/2605.16090",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "first_sent_at": "2026-05-18T05:12:52.810678+00:00"
     }
   ]
 }
