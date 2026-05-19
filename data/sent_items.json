@@ -719,6 +719,22 @@
       "url": "https://arxiv.org/abs/2605.16090",
       "published_at": "2026-05-18T04:00:00+00:00",
       "first_sent_at": "2026-05-18T05:12:52.810678+00:00"
+    },
+    {
+      "id": "61afedf1e04d37eb537168f828a59b5ee6f5cdb8",
+      "source": "arXiv cs.CR",
+      "title": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents",
+      "url": "https://arxiv.org/abs/2605.17324",
+      "published_at": "2026-05-19T04:00:00+00:00",
+      "first_sent_at": "2026-05-19T05:07:40.548981+00:00"
+    },
+    {
+      "id": "ff7c787b213ccf43c7a68fe381eeceaa899ff0b2",
+      "source": "arXiv cs.CR",
+      "title": "A Red Teaming Framework for Evaluating Robustness of AI-enabled Security Orchestration, Automation, and Response Systems",
+      "url": "https://arxiv.org/abs/2605.17075",
+      "published_at": "2026-05-19T04:00:00+00:00",
+      "first_sent_at": "2026-05-19T05:07:40.548981+00:00"
     }
   ]
 }
