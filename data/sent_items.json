@@ -751,6 +751,22 @@
       "url": "https://arxiv.org/abs/2605.18868",
       "published_at": "2026-05-20T04:00:00+00:00",
       "first_sent_at": "2026-05-20T05:10:37.108543+00:00"
+    },
+    {
+      "id": "2fa4f247d924176e8b6ba804a6c40768a6ba0612",
+      "source": "arXiv cs.CR",
+      "title": "Rethinking Fraud Safety Evaluation: Multi-Round Attacks Reveal Safety-Utility Tradeoffs in Graph-Context LLM Defenders",
+      "url": "https://arxiv.org/abs/2605.20759",
+      "published_at": "2026-05-21T04:00:00+00:00",
+      "first_sent_at": "2026-05-21T05:14:07.601903+00:00"
+    },
+    {
+      "id": "52ba6ff8d5a5f99d92383c4c8667e950b1852add",
+      "source": "arXiv cs.CR",
+      "title": "Adaptive Probe-based Steering for Robust LLM Jailbreaking",
+      "url": "https://arxiv.org/abs/2605.20286",
+      "published_at": "2026-05-21T04:00:00+00:00",
+      "first_sent_at": "2026-05-21T05:14:07.601903+00:00"
     }
   ]
 }
