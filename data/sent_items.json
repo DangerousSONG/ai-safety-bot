@@ -767,6 +767,22 @@
       "url": "https://arxiv.org/abs/2605.20286",
       "published_at": "2026-05-21T04:00:00+00:00",
       "first_sent_at": "2026-05-21T05:14:07.601903+00:00"
+    },
+    {
+      "id": "c9d0c1ab9e68b18bd718447dc874edde3d969113",
+      "source": "arXiv cs.CR",
+      "title": "Frequency-Domain Regularized Adversarial Alignment for Transferable Attacks against Closed-Source MLLMs",
+      "url": "https://arxiv.org/abs/2605.21541",
+      "published_at": "2026-05-22T04:00:00+00:00",
+      "first_sent_at": "2026-05-22T05:08:02.178772+00:00"
+    },
+    {
+      "id": "256018cdff9f8cc8c89ea5fa8e7897c5b9b416d8",
+      "source": "arXiv cs.CR",
+      "title": "FuzzingBrain V2: A Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction",
+      "url": "https://arxiv.org/abs/2605.21779",
+      "published_at": "2026-05-22T04:00:00+00:00",
+      "first_sent_at": "2026-05-22T05:08:02.178772+00:00"
     }
   ]
 }
