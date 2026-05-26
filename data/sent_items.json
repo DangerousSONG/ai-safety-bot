@@ -799,6 +799,22 @@
       "url": "https://arxiv.org/abs/2605.23623",
       "published_at": "2026-05-25T04:00:00+00:00",
       "first_sent_at": "2026-05-25T05:26:13.839073+00:00"
+    },
+    {
+      "id": "2ee1414005d82344dddd5becd67e82d6391bae64",
+      "source": "arXiv cs.CR",
+      "title": "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content",
+      "url": "https://arxiv.org/abs/2605.24421",
+      "published_at": "2026-05-26T04:00:00+00:00",
+      "first_sent_at": "2026-05-26T05:08:42.248471+00:00"
+    },
+    {
+      "id": "e65b43056e60b6ff2ace08478b08a40fff7704e3",
+      "source": "arXiv cs.CR",
+      "title": "Ellipsoid Control: A White-list Jailbreak Defense via Benign Latent Modeling",
+      "url": "https://arxiv.org/abs/2605.24552",
+      "published_at": "2026-05-26T04:00:00+00:00",
+      "first_sent_at": "2026-05-26T05:08:42.248471+00:00"
     }
   ]
 }
