@@ -815,6 +815,22 @@
       "url": "https://arxiv.org/abs/2605.24552",
       "published_at": "2026-05-26T04:00:00+00:00",
       "first_sent_at": "2026-05-26T05:08:42.248471+00:00"
+    },
+    {
+      "id": "aee983ebdc76a4afbc3964ee2c9efd433c8eef5b",
+      "source": "arXiv cs.CR",
+      "title": "Jailbreak susceptibility prediction and mitigation via the behavioral geometry of models",
+      "url": "https://arxiv.org/abs/2605.26409",
+      "published_at": "2026-05-27T04:00:00+00:00",
+      "first_sent_at": "2026-05-27T05:23:05.870951+00:00"
+    },
+    {
+      "id": "d0b62ad00ab913698e08339acc080a284cd7f88f",
+      "source": "arXiv cs.CR",
+      "title": "AgentSecBench: Measuring Prompt Injection, Privacy Leakage, and Tool-Use Integrity in LLM Agents",
+      "url": "https://arxiv.org/abs/2605.26269",
+      "published_at": "2026-05-27T04:00:00+00:00",
+      "first_sent_at": "2026-05-27T05:23:05.870951+00:00"
     }
   ]
 }
