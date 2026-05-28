@@ -831,6 +831,22 @@
       "url": "https://arxiv.org/abs/2605.26269",
       "published_at": "2026-05-27T04:00:00+00:00",
       "first_sent_at": "2026-05-27T05:23:05.870951+00:00"
+    },
+    {
+      "id": "1adcf1bf7af730bd73f3bc0a4a27c9ec93b1a7db",
+      "source": "arXiv cs.CR",
+      "title": "MIRAGE: Context-Aware Prompt Injection against Mobile GUI Agents via User-Generated Content",
+      "url": "https://arxiv.org/abs/2605.28116",
+      "published_at": "2026-05-28T04:00:00+00:00",
+      "first_sent_at": "2026-05-28T05:15:26.238530+00:00"
+    },
+    {
+      "id": "8a9b7497ee4e5a75e34740d7ead020701d4a00e8",
+      "source": "arXiv cs.CR",
+      "title": "Disentangling Adversarial Prompts: A Semantic-Graph Defense for Robust LLM Security",
+      "url": "https://arxiv.org/abs/2605.27823",
+      "published_at": "2026-05-28T04:00:00+00:00",
+      "first_sent_at": "2026-05-28T05:15:26.238530+00:00"
     }
   ]
 }
