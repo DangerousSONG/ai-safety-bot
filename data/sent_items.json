@@ -847,6 +847,22 @@
       "url": "https://arxiv.org/abs/2605.27823",
       "published_at": "2026-05-28T04:00:00+00:00",
       "first_sent_at": "2026-05-28T05:15:26.238530+00:00"
+    },
+    {
+      "id": "c202cc6058ffba380ae548ecf6236387b7b925be",
+      "source": "arXiv cs.CR",
+      "title": "Evolving Skill-Structured Attack Memory Enhances LLM Jailbreaking",
+      "url": "https://arxiv.org/abs/2605.29237",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "first_sent_at": "2026-05-29T05:18:14.202543+00:00"
+    },
+    {
+      "id": "b60e29e2a524bcf36f16f0f0575e28d862edcb65",
+      "source": "arXiv cs.CR",
+      "title": "Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening",
+      "url": "https://arxiv.org/abs/2605.28999",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "first_sent_at": "2026-05-29T05:18:14.202543+00:00"
     }
   ]
 }
