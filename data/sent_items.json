@@ -879,6 +879,22 @@
       "url": "https://arxiv.org/abs/2605.30693",
       "published_at": "2026-06-01T04:00:00+00:00",
       "first_sent_at": "2026-06-01T06:10:31.501539+00:00"
+    },
+    {
+      "id": "a5b54fa2bbdc53dac24ecd1b51b95985302b5edb",
+      "source": "arXiv cs.CR",
+      "title": "Cross-Generational Transfer of Adversarial Attacks Reveals Non-Monotonic Safety Alignment in LLMs",
+      "url": "https://arxiv.org/abs/2606.00813",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "first_sent_at": "2026-06-02T05:56:19.141413+00:00"
+    },
+    {
+      "id": "7ae12ba74d3bba2135921ef55bfa02bb44e05ce5",
+      "source": "arXiv cs.CR",
+      "title": "Persona Attack: Incremental Memory Injection Jailbreak Attack against Large Language Models",
+      "url": "https://arxiv.org/abs/2606.00150",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "first_sent_at": "2026-06-02T05:56:19.141413+00:00"
     }
   ]
 }
