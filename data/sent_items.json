@@ -895,6 +895,22 @@
       "url": "https://arxiv.org/abs/2606.00150",
       "published_at": "2026-06-02T04:00:00+00:00",
       "first_sent_at": "2026-06-02T05:56:19.141413+00:00"
+    },
+    {
+      "id": "e7df2af35d49d07175c62aef7d40d60e54b6838f",
+      "source": "arXiv cs.CR",
+      "title": "MultiTurnPSB: Evaluating Multi-Turn Jailbreak Attacks an dClassifier-Based Defenses for Medical AI Safety",
+      "url": "https://arxiv.org/abs/2606.02630",
+      "published_at": "2026-06-03T04:00:00+00:00",
+      "first_sent_at": "2026-06-03T06:09:18.894762+00:00"
+    },
+    {
+      "id": "76c87b523a27433092d64d5238b3b529c8699bff",
+      "source": "arXiv cs.CR",
+      "title": "A New Framework for Cybersecurity Refusals in AI Agents",
+      "url": "https://arxiv.org/abs/2606.02644",
+      "published_at": "2026-06-03T04:00:00+00:00",
+      "first_sent_at": "2026-06-03T06:09:18.894762+00:00"
     }
   ]
 }
