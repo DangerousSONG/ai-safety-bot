@@ -911,6 +911,22 @@
       "url": "https://arxiv.org/abs/2606.02644",
       "published_at": "2026-06-03T04:00:00+00:00",
       "first_sent_at": "2026-06-03T06:09:18.894762+00:00"
+    },
+    {
+      "id": "983176fc88aab5ce5c75b347f623c4fc76e58b80",
+      "source": "arXiv cs.CR",
+      "title": "MaskForge: Structure-Aware Adaptive Attacks for Jailbreaking Diffusion Large Language Models",
+      "url": "https://arxiv.org/abs/2606.04027",
+      "published_at": "2026-06-04T04:00:00+00:00",
+      "first_sent_at": "2026-06-04T06:01:51.380306+00:00"
+    },
+    {
+      "id": "33763540794d8b637497075c7a955d36361fa8d0",
+      "source": "arXiv cs.CR",
+      "title": "What If Prompt Injection Never Left? Exploring Cross-Session Stored Prompt Injection in Agentic Systems",
+      "url": "https://arxiv.org/abs/2606.04425",
+      "published_at": "2026-06-04T04:00:00+00:00",
+      "first_sent_at": "2026-06-04T06:01:51.380306+00:00"
     }
   ]
 }
