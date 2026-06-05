@@ -927,6 +927,30 @@
       "url": "https://arxiv.org/abs/2606.04425",
       "published_at": "2026-06-04T04:00:00+00:00",
       "first_sent_at": "2026-06-04T06:01:51.380306+00:00"
+    },
+    {
+      "id": "a1aa5a516e2adf5be8cfada7b12f13aabee0bf9b",
+      "source": "arXiv cs.CR",
+      "title": "SlotGCG: Exploiting the Positional Vulnerability in LLMs for Jailbreak Attacks",
+      "url": "https://arxiv.org/abs/2606.05609",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "first_sent_at": "2026-06-05T05:24:38.864879+00:00"
+    },
+    {
+      "id": "e13c80baf159ac300d714be79cbe3f2e7b442f90",
+      "source": "arXiv cs.CR",
+      "title": "Domain-Conditioned Safety in Frontier Computer-Using Agents: A 793-Episode Browser Benchmark, a Coding-Domain Cross-Reference, and a Reproducibility Audit of Recent Red-Teaming",
+      "url": "https://arxiv.org/abs/2606.05233",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "first_sent_at": "2026-06-05T05:24:38.864879+00:00"
+    },
+    {
+      "id": "58ac8849c1839c04d86b471717baa7d1fee76a14",
+      "source": "Hugging Face Blog",
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "published_at": "2026-06-04T18:57:45+00:00",
+      "first_sent_at": "2026-06-05T05:24:38.864879+00:00"
     }
   ]
 }
