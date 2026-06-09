@@ -967,6 +967,22 @@
       "url": "https://arxiv.org/abs/2606.06784",
       "published_at": "2026-06-08T04:00:00+00:00",
       "first_sent_at": "2026-06-08T05:59:53.970342+00:00"
+    },
+    {
+      "id": "ed176ce05f1ccaef959a4842295c6d5cfca64227",
+      "source": "arXiv cs.CR",
+      "title": "Beyond Pass/Fail: Using Process Mining to Understand How LLMs Resist (and Fail) Red Team Attacks",
+      "url": "https://arxiv.org/abs/2606.07833",
+      "published_at": "2026-06-09T04:00:00+00:00",
+      "first_sent_at": "2026-06-09T05:12:26.507470+00:00"
+    },
+    {
+      "id": "e9b27930c7fdd8ea020e560a3aae24517f72a2bf",
+      "source": "arXiv cs.CR",
+      "title": "AI-Native Closed-Loop Security for 6G-Enabled Cyber-Physical Systems: From Edge Detection to Network-Wide Mitigation",
+      "url": "https://arxiv.org/abs/2606.08173",
+      "published_at": "2026-06-09T04:00:00+00:00",
+      "first_sent_at": "2026-06-09T05:12:26.507470+00:00"
     }
   ]
 }
