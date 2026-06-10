@@ -983,6 +983,22 @@
       "url": "https://arxiv.org/abs/2606.08173",
       "published_at": "2026-06-09T04:00:00+00:00",
       "first_sent_at": "2026-06-09T05:12:26.507470+00:00"
+    },
+    {
+      "id": "6a4180ea4009edc29ba73504346c1a8978485ab0",
+      "source": "arXiv cs.CR",
+      "title": "GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines",
+      "url": "https://arxiv.org/abs/2606.09935",
+      "published_at": "2026-06-10T04:00:00+00:00",
+      "first_sent_at": "2026-06-10T05:24:53.921052+00:00"
+    },
+    {
+      "id": "b6da169f5dbf4007d8d8db2206b974e8b8c816bb",
+      "source": "arXiv cs.CR",
+      "title": "Assessing Automated Prompt Injection Attacks in Agentic Environments",
+      "url": "https://arxiv.org/abs/2606.10525",
+      "published_at": "2026-06-10T04:00:00+00:00",
+      "first_sent_at": "2026-06-10T05:24:53.921052+00:00"
     }
   ]
 }
