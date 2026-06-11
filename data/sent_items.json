@@ -999,6 +999,22 @@
       "url": "https://arxiv.org/abs/2606.10525",
       "published_at": "2026-06-10T04:00:00+00:00",
       "first_sent_at": "2026-06-10T05:24:53.921052+00:00"
+    },
+    {
+      "id": "8918bd5381f09a49d4ca5c1737d4f8f9d094e00e",
+      "source": "arXiv cs.CR",
+      "title": "JailbreakOPT: Tool-Assisted Iterative Jailbreak Prompt Optimization",
+      "url": "https://arxiv.org/abs/2606.11425",
+      "published_at": "2026-06-11T04:00:00+00:00",
+      "first_sent_at": "2026-06-11T05:58:53.960002+00:00"
+    },
+    {
+      "id": "3d911829cc892d67d4c5aaf10906681aa779719e",
+      "source": "arXiv cs.CR",
+      "title": "Grammar-Constrained Decoding Can Jailbreak LLMs into Generating Malicious Code",
+      "url": "https://arxiv.org/abs/2606.11817",
+      "published_at": "2026-06-11T04:00:00+00:00",
+      "first_sent_at": "2026-06-11T05:58:53.960002+00:00"
     }
   ]
 }
