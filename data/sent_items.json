@@ -1015,6 +1015,22 @@
       "url": "https://arxiv.org/abs/2606.11817",
       "published_at": "2026-06-11T04:00:00+00:00",
       "first_sent_at": "2026-06-11T05:58:53.960002+00:00"
+    },
+    {
+      "id": "9069b8d23efa53252cccbb69e098fc183de4f2ea",
+      "source": "arXiv cs.CR",
+      "title": "PI-Hunter: Automated Red-Teaming for Exposing and Localizing Prompt Injections",
+      "url": "https://arxiv.org/abs/2606.12737",
+      "published_at": "2026-06-12T04:00:00+00:00",
+      "first_sent_at": "2026-06-12T05:54:50.454415+00:00"
+    },
+    {
+      "id": "bcaf3f35d9cfd41624c013797f0625d92b8290ec",
+      "source": "arXiv cs.CR",
+      "title": "MAStrike: Shapley-Guided Collusive Red-Teaming on Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2606.12918",
+      "published_at": "2026-06-12T04:00:00+00:00",
+      "first_sent_at": "2026-06-12T05:54:50.454415+00:00"
     }
   ]
 }
