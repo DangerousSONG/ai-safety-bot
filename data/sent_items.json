@@ -1031,6 +1031,22 @@
       "url": "https://arxiv.org/abs/2606.12918",
       "published_at": "2026-06-12T04:00:00+00:00",
       "first_sent_at": "2026-06-12T05:54:50.454415+00:00"
+    },
+    {
+      "id": "a71ce2246743fc698b4c4d0b1d075e3ba92ff0c3",
+      "source": "arXiv cs.CR",
+      "title": "FreoStream:Enhancing Stream Guardrails via Future-Aware Reasoning and Safety-Aligned Optimization",
+      "url": "https://arxiv.org/abs/2606.13737",
+      "published_at": "2026-06-15T04:00:00+00:00",
+      "first_sent_at": "2026-06-15T06:32:19.173009+00:00"
+    },
+    {
+      "id": "2305caa83e638cc8bf37c455d2a0717435acdf08",
+      "source": "arXiv cs.CR",
+      "title": "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails",
+      "url": "https://arxiv.org/abs/2606.14517",
+      "published_at": "2026-06-15T04:00:00+00:00",
+      "first_sent_at": "2026-06-15T06:32:19.173009+00:00"
     }
   ]
 }
