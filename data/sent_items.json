@@ -1047,6 +1047,22 @@
       "url": "https://arxiv.org/abs/2606.14517",
       "published_at": "2026-06-15T04:00:00+00:00",
       "first_sent_at": "2026-06-15T06:32:19.173009+00:00"
+    },
+    {
+      "id": "cbba9ed923f19572339c04fd7242350318b93576",
+      "source": "arXiv cs.CR",
+      "title": "Defending against Adaptive Prompt Injection Attacks via Reasoning-enabled Task Alignment",
+      "url": "https://arxiv.org/abs/2606.15441",
+      "published_at": "2026-06-16T04:00:00+00:00",
+      "first_sent_at": "2026-06-16T06:38:28.732184+00:00"
+    },
+    {
+      "id": "1a08845ccba375bf1a58bf1364197d57394802a9",
+      "source": "arXiv cs.CR",
+      "title": "GAS-Leak-LLM: Genetic Algorithm-Based Suffix Optimization for Black-Box LLM Jailbreaking",
+      "url": "https://arxiv.org/abs/2606.15788",
+      "published_at": "2026-06-16T04:00:00+00:00",
+      "first_sent_at": "2026-06-16T06:38:28.732184+00:00"
     }
   ]
 }
