@@ -1063,6 +1063,22 @@
       "url": "https://arxiv.org/abs/2606.15788",
       "published_at": "2026-06-16T04:00:00+00:00",
       "first_sent_at": "2026-06-16T06:38:28.732184+00:00"
+    },
+    {
+      "id": "8ccb90501ff75fa98cd0a5eaf274fbc3ec02b0f5",
+      "source": "arXiv cs.CR",
+      "title": "Safety, Security, and Cognitive Risks in Neuro-Symbolic AI",
+      "url": "https://arxiv.org/abs/2606.17223",
+      "published_at": "2026-06-17T04:00:00+00:00",
+      "first_sent_at": "2026-06-17T06:21:55.488818+00:00"
+    },
+    {
+      "id": "166368ba5d24eb938243b8f77d390399c7472d02",
+      "source": "arXiv cs.CR",
+      "title": "An Evaluation of Data Leakage Risks in Tool-Using LLM Agents in Realistic Scenarios",
+      "url": "https://arxiv.org/abs/2606.17114",
+      "published_at": "2026-06-17T04:00:00+00:00",
+      "first_sent_at": "2026-06-17T06:21:55.488818+00:00"
     }
   ]
 }
