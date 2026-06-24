@@ -1,54 +1,6 @@
 {
   "items": [
     {
-      "id": "ab72616e1ec1713bcee64e5285e3d7b197cf36a7",
-      "source": "arXiv cs.CR",
-      "title": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Language Models",
-      "url": "https://arxiv.org/abs/2603.20122",
-      "published_at": "2026-03-23T04:00:00+00:00",
-      "first_sent_at": "2026-03-24T03:38:50.890593+00:00"
-    },
-    {
-      "id": "a70586e9337a28b7a643dcb9216adf73a415837f",
-      "source": "arXiv cs.CR",
-      "title": "An Agentic Multi-Agent Architecture for Cybersecurity Risk Management",
-      "url": "https://arxiv.org/abs/2603.20131",
-      "published_at": "2026-03-23T04:00:00+00:00",
-      "first_sent_at": "2026-03-24T03:38:50.890593+00:00"
-    },
-    {
-      "id": "8ac7a894b1c31292428366a1ad7a2281360514ec",
-      "source": "arXiv cs.CR",
-      "title": "Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning",
-      "url": "https://arxiv.org/abs/2603.20198",
-      "published_at": "2026-03-24T04:00:00+00:00",
-      "first_sent_at": "2026-03-25T03:41:36.500379+00:00"
-    },
-    {
-      "id": "101aa98596f895b3282619506944dffabc15bc8f",
-      "source": "arXiv cs.CR",
-      "title": "Zero-Shot Vulnerability Detection in Low-Resource Smart Contracts Through Solidity-Only Training",
-      "url": "https://arxiv.org/abs/2603.21058",
-      "published_at": "2026-03-24T04:00:00+00:00",
-      "first_sent_at": "2026-03-25T03:41:36.500379+00:00"
-    },
-    {
-      "id": "e4b337a27709dc594c1d3727d44ddcaed7d800ae",
-      "source": "arXiv cs.CR",
-      "title": "Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning",
-      "url": "https://arxiv.org/abs/2603.22489",
-      "published_at": "2026-03-25T04:00:00+00:00",
-      "first_sent_at": "2026-03-26T03:51:15.539298+00:00"
-    },
-    {
-      "id": "d73baafb59576a1edd0156aec480aab219e97c38",
-      "source": "arXiv cs.CR",
-      "title": "T-MAP: Red-Teaming LLM Agents with Trajectory-aware Evolutionary Search",
-      "url": "https://arxiv.org/abs/2603.22341",
-      "published_at": "2026-03-25T04:00:00+00:00",
-      "first_sent_at": "2026-03-26T03:51:15.539298+00:00"
-    },
-    {
       "id": "a911db56784789869ec1e247a69acd8c5d39a842",
       "source": "arXiv cs.CR",
       "title": "The Cognitive Firewall:Securing Browser Based AI Agents Against Indirect Prompt Injection Via Hybrid Edge Cloud Defense",
@@ -1063,6 +1015,22 @@
       "url": "https://arxiv.org/abs/2606.19660",
       "published_at": "2026-06-19T04:00:00+00:00",
       "first_sent_at": "2026-06-19T06:25:57.233724+00:00"
+    },
+    {
+      "id": "40ddaaa276e2b8c0a8ce3b3c59ee55cb4d8cdd65",
+      "source": "arXiv cs.CR",
+      "title": "PixJail: Self-Evolving Paper-to-Pipeline Reproduction for Text-to-Image Jailbreak Evaluation",
+      "url": "https://arxiv.org/abs/2606.24081",
+      "published_at": "2026-06-24T04:00:00+00:00",
+      "first_sent_at": "2026-06-24T05:06:19.542957+00:00"
+    },
+    {
+      "id": "053e1b989c6345e8a18f7d61d2abd32fcc71ddbb",
+      "source": "arXiv cs.CR",
+      "title": "Red-Teaming the Agentic Red-Team",
+      "url": "https://arxiv.org/abs/2606.24496",
+      "published_at": "2026-06-24T04:00:00+00:00",
+      "first_sent_at": "2026-06-24T05:06:19.542957+00:00"
     }
   ]
 }
