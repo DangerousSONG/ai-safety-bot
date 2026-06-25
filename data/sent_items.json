@@ -1,30 +1,6 @@
 {
   "items": [
     {
-      "id": "a911db56784789869ec1e247a69acd8c5d39a842",
-      "source": "arXiv cs.CR",
-      "title": "The Cognitive Firewall:Securing Browser Based AI Agents Against Indirect Prompt Injection Via Hybrid Edge Cloud Defense",
-      "url": "https://arxiv.org/abs/2603.23791",
-      "published_at": "2026-03-26T04:00:00+00:00",
-      "first_sent_at": "2026-03-27T03:53:09.492953+00:00"
-    },
-    {
-      "id": "9f76bdb47a50fd17da6dd0d05ce90c048cf5befd",
-      "source": "arXiv cs.CR",
-      "title": "Enhancing Jailbreak Attacks on LLMs via Persona Prompts",
-      "url": "https://arxiv.org/abs/2507.22171",
-      "published_at": "2026-03-26T04:00:00+00:00",
-      "first_sent_at": "2026-03-27T03:53:09.492953+00:00"
-    },
-    {
-      "id": "72b3ee173a975012637a16e93b05c17dfec56b56",
-      "source": "GitHub Blog Security",
-      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
-      "url": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
-      "published_at": "2026-03-26T16:00:00+00:00",
-      "first_sent_at": "2026-03-27T03:53:09.492953+00:00"
-    },
-    {
       "id": "e105e1f8288666fa1127303ec62515728b4c610e",
       "source": "arXiv cs.CR",
       "title": "Knowdit: Agentic Smart Contract Vulnerability Detection with Auditing Knowledge Summarization",
@@ -1031,6 +1007,30 @@
       "url": "https://arxiv.org/abs/2606.24496",
       "published_at": "2026-06-24T04:00:00+00:00",
       "first_sent_at": "2026-06-24T05:06:19.542957+00:00"
+    },
+    {
+      "id": "d94ddad6a8f04265c3a1a2f0e79ef7cc8460581c",
+      "source": "arXiv cs.CR",
+      "title": "RAS: Measuring LLM Safety Through Refusal Alignment",
+      "url": "https://arxiv.org/abs/2606.25750",
+      "published_at": "2026-06-25T04:00:00+00:00",
+      "first_sent_at": "2026-06-25T05:10:54.547968+00:00"
+    },
+    {
+      "id": "ae57cd09825b6a544fc64508fe84915f14bde0d7",
+      "source": "arXiv cs.CR",
+      "title": "How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring",
+      "url": "https://arxiv.org/abs/2606.25487",
+      "published_at": "2026-06-25T04:00:00+00:00",
+      "first_sent_at": "2026-06-25T05:10:54.547968+00:00"
+    },
+    {
+      "id": "72b3ee173a975012637a16e93b05c17dfec56b56",
+      "source": "GitHub Blog Security",
+      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
+      "url": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
+      "published_at": "2026-03-26T16:00:00+00:00",
+      "first_sent_at": "2026-06-25T05:10:54.547968+00:00"
     }
   ]
 }
