@@ -1031,6 +1031,22 @@
       "url": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
       "published_at": "2026-03-26T16:00:00+00:00",
       "first_sent_at": "2026-06-25T05:10:54.547968+00:00"
+    },
+    {
+      "id": "edaf12d96662313a0ebd82f3927ec8d76a6d8e4a",
+      "source": "arXiv cs.CR",
+      "title": "Jailbreaking for the Average Jane: Choosing Optimal Jailbreaks via Bandit Algorithms for Automatically Enhanced Queries",
+      "url": "https://arxiv.org/abs/2606.26936",
+      "published_at": "2026-06-26T04:00:00+00:00",
+      "first_sent_at": "2026-06-26T05:16:22.904840+00:00"
+    },
+    {
+      "id": "4938542797d0ca06ee5be11c281881d5cada5a09",
+      "source": "arXiv cs.CR",
+      "title": "Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents",
+      "url": "https://arxiv.org/abs/2606.26479",
+      "published_at": "2026-06-26T04:00:00+00:00",
+      "first_sent_at": "2026-06-26T05:16:22.904840+00:00"
     }
   ]
 }
