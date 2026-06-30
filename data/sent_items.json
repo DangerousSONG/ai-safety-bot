@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "d80f283913743a09747b8c835c9f17edcb7e525b",
-      "source": "arXiv cs.CR",
-      "title": "GUARD-SLM: Token Activation-Based Defense Against Jailbreak Attacks for Small Language Models",
-      "url": "https://arxiv.org/abs/2603.28817",
-      "published_at": "2026-04-01T04:00:00+00:00",
-      "first_sent_at": "2026-04-01T04:15:02.838102+00:00"
-    },
-    {
-      "id": "7b801b70add0ad4d0778ab4e661c0f2e2de2cbfb",
-      "source": "arXiv cs.CR",
-      "title": "Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks",
-      "url": "https://arxiv.org/abs/2603.30016",
-      "published_at": "2026-04-01T04:00:00+00:00",
-      "first_sent_at": "2026-04-01T04:15:02.838102+00:00"
-    },
-    {
       "id": "bde0ecf864f25538519f97a5b71c08a748569cd6",
       "source": "arXiv cs.CR",
       "title": "Trojan-Speak: Bypassing Constitutional Classifiers with No Jailbreak Tax via Adversarial Finetuning",
@@ -1039,6 +1023,30 @@
       "url": "https://arxiv.org/abs/2606.27976",
       "published_at": "2026-06-29T04:00:00+00:00",
       "first_sent_at": "2026-06-29T05:58:40.689871+00:00"
+    },
+    {
+      "id": "5a968dd4c8017541aab2205b7ecb5ff1079dcc2c",
+      "source": "arXiv cs.CR",
+      "title": "RIPA: Sensory-Vector Prompt Injection Attacks on LLM-Controlled ROS 2 Robots",
+      "url": "https://arxiv.org/abs/2606.28649",
+      "published_at": "2026-06-30T04:00:00+00:00",
+      "first_sent_at": "2026-06-30T05:12:13.555947+00:00"
+    },
+    {
+      "id": "a289ed2a7b514c79b8078be094ec96cd1c9dc4ca",
+      "source": "arXiv cs.CR",
+      "title": "An Empirical Evaluation of Prompt Injection Vulnerabilities in Large Language Models Across Multilingual and Obfuscated Attack Scenarios",
+      "url": "https://arxiv.org/abs/2606.29602",
+      "published_at": "2026-06-30T04:00:00+00:00",
+      "first_sent_at": "2026-06-30T05:12:13.555947+00:00"
+    },
+    {
+      "id": "2caa70ceed1794be27b0f9852b53f51ea8440fa6",
+      "source": "GitHub Blog Security",
+      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+      "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
+      "published_at": "2026-06-29T16:10:20+00:00",
+      "first_sent_at": "2026-06-30T05:12:13.555947+00:00"
     }
   ]
 }
