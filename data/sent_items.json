@@ -1047,6 +1047,22 @@
       "url": "http://security.googleblog.com/2026/04/google-workspaces-continuous-approach.html",
       "published_at": "2026-04-02T16:00:00+00:00",
       "first_sent_at": "2026-07-02T05:04:26.735098+00:00"
+    },
+    {
+      "id": "72c0e1ea20d0a2a09491e959084abec98b1d344e",
+      "source": "arXiv cs.CR",
+      "title": "Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring",
+      "url": "https://arxiv.org/abs/2607.02121",
+      "published_at": "2026-07-03T04:00:00+00:00",
+      "first_sent_at": "2026-07-03T04:49:57.859800+00:00"
+    },
+    {
+      "id": "e2bef9ae4ff95d8e098d6756be6429be6a4ef20d",
+      "source": "arXiv cs.CR",
+      "title": "Beyond Gradient-Based Attacks: Adversarial Robustness and Explainability Stability in Cybersecurity Classifiers",
+      "url": "https://arxiv.org/abs/2607.01679",
+      "published_at": "2026-07-03T04:00:00+00:00",
+      "first_sent_at": "2026-07-03T04:49:57.859800+00:00"
     }
   ]
 }
