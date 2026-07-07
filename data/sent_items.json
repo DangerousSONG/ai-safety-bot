@@ -1,54 +1,6 @@
 {
   "items": [
     {
-      "id": "cefe6149b6c6c547bb0fdec88ae103239076ff86",
-      "source": "arXiv cs.CR",
-      "title": "An Independent Safety Evaluation of Kimi K2.5",
-      "url": "https://arxiv.org/abs/2604.03121",
-      "published_at": "2026-04-06T04:00:00+00:00",
-      "first_sent_at": "2026-04-06T04:10:36.966578+00:00"
-    },
-    {
-      "id": "ca549bf5d6d33f9f99a6f4eb2fc3b83109b5015a",
-      "source": "arXiv cs.CR",
-      "title": "Kill-Chain Canaries: Stage-Level Tracking of Prompt Injection Across Attack Surfaces and Model Safety Tiers",
-      "url": "https://arxiv.org/abs/2603.28013",
-      "published_at": "2026-04-06T04:00:00+00:00",
-      "first_sent_at": "2026-04-06T04:10:36.966578+00:00"
-    },
-    {
-      "id": "b743a3d76db04320bb2bd830b832e05fdb31d251",
-      "source": "arXiv cs.CR",
-      "title": "Understanding the Effects of Safety Unalignment on Large Language Models",
-      "url": "https://arxiv.org/abs/2604.02574",
-      "published_at": "2026-04-06T04:00:00+00:00",
-      "first_sent_at": "2026-04-07T03:52:14.757459+00:00"
-    },
-    {
-      "id": "0ecf046b7cbc7de218e65f7eaf3c044710b1c740",
-      "source": "arXiv cs.CR",
-      "title": "Towards Multi-Stakeholder Vulnerability Notifications in the Ad-Tech Supply Chain",
-      "url": "https://arxiv.org/abs/2406.06958",
-      "published_at": "2026-04-06T04:00:00+00:00",
-      "first_sent_at": "2026-04-07T03:52:14.757459+00:00"
-    },
-    {
-      "id": "263f52ececc5acfb42f262cdff2215472ccaac18",
-      "source": "arXiv cs.CR",
-      "title": "AttackEval: A Systematic Empirical Study of Prompt Injection Attack Effectiveness Against Large Language Models",
-      "url": "https://arxiv.org/abs/2604.03598",
-      "published_at": "2026-04-07T04:00:00+00:00",
-      "first_sent_at": "2026-04-08T03:54:32.529135+00:00"
-    },
-    {
-      "id": "7eaec73659e75a91e74920f6f07ddb0c22e19726",
-      "source": "arXiv cs.CR",
-      "title": "Context-Binding Gaps in Stateful Zero-Knowledge Proximity Proofs: Taxonomy, Separation, and Mitigation",
-      "url": "https://arxiv.org/abs/2604.03900",
-      "published_at": "2026-04-07T04:00:00+00:00",
-      "first_sent_at": "2026-04-08T03:54:32.529135+00:00"
-    },
-    {
       "id": "3c5398300c6b5dc20629c20a74f90a38702b2b50",
       "source": "arXiv cs.CR",
       "title": "SkillAttack: Automated Red Teaming of Agent Skills through Attack Path Refinement",
@@ -1063,6 +1015,22 @@
       "url": "https://arxiv.org/abs/2607.01679",
       "published_at": "2026-07-03T04:00:00+00:00",
       "first_sent_at": "2026-07-03T04:49:57.859800+00:00"
+    },
+    {
+      "id": "2dabd5b5dde93abed3114f7aef51d1d09c4858a9",
+      "source": "arXiv cs.CR",
+      "title": "Not All Refusals Are Equal: How Safety Alignment Fails Cybersecurity at Scale",
+      "url": "https://arxiv.org/abs/2607.02714",
+      "published_at": "2026-07-07T04:00:00+00:00",
+      "first_sent_at": "2026-07-07T04:59:41.916470+00:00"
+    },
+    {
+      "id": "1f3226284070960919a91b7f3a3eccca55abb302",
+      "source": "arXiv cs.CR",
+      "title": "CONTRA: Red-Teaming Configurations of Personalizable Agents",
+      "url": "https://arxiv.org/abs/2607.03220",
+      "published_at": "2026-07-07T04:00:00+00:00",
+      "first_sent_at": "2026-07-07T04:59:41.916470+00:00"
     }
   ]
 }
