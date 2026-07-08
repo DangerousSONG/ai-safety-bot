@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "3c5398300c6b5dc20629c20a74f90a38702b2b50",
-      "source": "arXiv cs.CR",
-      "title": "SkillAttack: Automated Red Teaming of Agent Skills through Attack Path Refinement",
-      "url": "https://arxiv.org/abs/2604.04989",
-      "published_at": "2026-04-08T04:00:00+00:00",
-      "first_sent_at": "2026-04-09T03:51:41.158056+00:00"
-    },
-    {
-      "id": "7e7f46dd8c92a2aee56a27e15e75c957541d1f06",
-      "source": "arXiv cs.CR",
-      "title": "FreakOut-LLM: The Effect of Emotional Stimuli on Safety Alignment",
-      "url": "https://arxiv.org/abs/2604.04992",
-      "published_at": "2026-04-08T04:00:00+00:00",
-      "first_sent_at": "2026-04-09T03:51:41.158056+00:00"
-    },
-    {
       "id": "09c45ba246f8e95c22042c250fff04ff1c14e0bf",
       "source": "arXiv cs.CR",
       "title": "TrajGuard: Streaming Hidden-state Trajectory Detection for Decoding-time Jailbreak Defense",
@@ -1031,6 +1015,22 @@
       "url": "https://arxiv.org/abs/2607.03220",
       "published_at": "2026-07-07T04:00:00+00:00",
       "first_sent_at": "2026-07-07T04:59:41.916470+00:00"
+    },
+    {
+      "id": "41b35d856e0d073edfe30ccf383293952672d416",
+      "source": "arXiv cs.CR",
+      "title": "Evaluating calibrated refusal and safe usefulness in dual-use biology settings",
+      "url": "https://arxiv.org/abs/2607.05462",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "first_sent_at": "2026-07-08T04:20:59.686461+00:00"
+    },
+    {
+      "id": "d2107e4306360dfdfede04139dae54ae63c47629",
+      "source": "arXiv cs.CR",
+      "title": "Bit2Watt: A Cyber-Physical Vulnerability Exploiting GPU Workloads Across Power and Computing Infrastructures",
+      "url": "https://arxiv.org/abs/2607.05993",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "first_sent_at": "2026-07-08T04:20:59.686461+00:00"
     }
   ]
 }
