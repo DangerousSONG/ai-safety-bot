@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "09c45ba246f8e95c22042c250fff04ff1c14e0bf",
-      "source": "arXiv cs.CR",
-      "title": "TrajGuard: Streaming Hidden-state Trajectory Detection for Decoding-time Jailbreak Defense",
-      "url": "https://arxiv.org/abs/2604.07727",
-      "published_at": "2026-04-10T04:00:00+00:00",
-      "first_sent_at": "2026-04-10T04:11:48.487778+00:00"
-    },
-    {
-      "id": "a3b406581f714b2217d073d6aa836aa118c04681",
-      "source": "arXiv cs.CR",
-      "title": "MEV-ACE: Identity-Authenticated Fair Ordering for Proposer-Controlled MEV Mitigation",
-      "url": "https://arxiv.org/abs/2604.07568",
-      "published_at": "2026-04-10T04:00:00+00:00",
-      "first_sent_at": "2026-04-10T04:11:48.487778+00:00"
-    },
-    {
       "id": "5b64a1048795d818c35376b92a84271d4b6f2837",
       "source": "arXiv cs.CR",
       "title": "Exploiting Web Search Tools of AI Agents for Data Exfiltration",
@@ -1031,6 +1015,22 @@
       "url": "https://arxiv.org/abs/2607.05993",
       "published_at": "2026-07-08T04:00:00+00:00",
       "first_sent_at": "2026-07-08T04:20:59.686461+00:00"
+    },
+    {
+      "id": "909073b26111f21adda60b02e838ed9b59565318",
+      "source": "arXiv cs.CR",
+      "title": "Behavioral Privacy Leakage in Agentic Negotiation: Formalizing and Mitigating Inference Attacks via Randomized Policies",
+      "url": "https://arxiv.org/abs/2607.06815",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "first_sent_at": "2026-07-09T04:59:33.388671+00:00"
+    },
+    {
+      "id": "b03f30371891e063a056811b0135d1dd03e1cb05",
+      "source": "arXiv cs.CR",
+      "title": "Large Language Models (LLMs) and Generative AI in Cybersecurity and Privacy: A Survey of Dual-Use Risks, AI-Generated Malware, Explainability, and Defensive Strategies",
+      "url": "https://arxiv.org/abs/2607.06963",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "first_sent_at": "2026-07-09T04:59:33.388671+00:00"
     }
   ]
 }
