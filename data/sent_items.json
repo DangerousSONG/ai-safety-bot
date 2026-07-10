@@ -1031,6 +1031,22 @@
       "url": "https://arxiv.org/abs/2607.06963",
       "published_at": "2026-07-09T04:00:00+00:00",
       "first_sent_at": "2026-07-09T04:59:33.388671+00:00"
+    },
+    {
+      "id": "42e3842bf6fbd47d509ee324eba516f2c263595c",
+      "source": "arXiv cs.CR",
+      "title": "Efficient Safety Alignment of Language Models via Latent Personality Traits",
+      "url": "https://arxiv.org/abs/2607.07918",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "first_sent_at": "2026-07-10T04:59:42.597222+00:00"
+    },
+    {
+      "id": "053a67d99dd84f6a441dbba08b6c33740c62f67a",
+      "source": "arXiv cs.CR",
+      "title": "Mechanistic Interpretability of LLM Jailbreaks via Internal Attribution Graphs",
+      "url": "https://arxiv.org/abs/2607.07903",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "first_sent_at": "2026-07-10T04:59:42.597222+00:00"
     }
   ]
 }
