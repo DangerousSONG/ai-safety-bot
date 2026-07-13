@@ -1,30 +1,6 @@
 {
   "items": [
     {
-      "id": "5b64a1048795d818c35376b92a84271d4b6f2837",
-      "source": "arXiv cs.CR",
-      "title": "Exploiting Web Search Tools of AI Agents for Data Exfiltration",
-      "url": "https://arxiv.org/abs/2510.09093",
-      "published_at": "2026-04-13T04:00:00+00:00",
-      "first_sent_at": "2026-04-13T04:24:34.223243+00:00"
-    },
-    {
-      "id": "47f2599fceaa1b0e9cd4264b5dae654ad9a7cfc4",
-      "source": "arXiv cs.CR",
-      "title": "Jailbreaking the Matrix: Nullspace Steering for Controlled Model Subversion",
-      "url": "https://arxiv.org/abs/2604.10326",
-      "published_at": "2026-04-14T04:00:00+00:00",
-      "first_sent_at": "2026-04-14T04:13:02.002285+00:00"
-    },
-    {
-      "id": "6f6d0e88af54f30cc1c24cfd3fcdb45d3b7c9b22",
-      "source": "arXiv cs.CR",
-      "title": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents",
-      "url": "https://arxiv.org/abs/2604.10577",
-      "published_at": "2026-04-14T04:00:00+00:00",
-      "first_sent_at": "2026-04-14T04:13:02.002285+00:00"
-    },
-    {
       "id": "b6bd558dbbdf9623823f49f82494ee4b03ef6530",
       "source": "arXiv cs.CR",
       "title": "TEMPLATEFUZZ: Fine-Grained Chat Template Fuzzing for Jailbreaking and Red Teaming LLMs",
@@ -1047,6 +1023,22 @@
       "url": "https://arxiv.org/abs/2607.07903",
       "published_at": "2026-07-10T04:00:00+00:00",
       "first_sent_at": "2026-07-10T04:59:42.597222+00:00"
+    },
+    {
+      "id": "7ac2a29b52b1faac43a46e9b3f72b580ccb9b62f",
+      "source": "arXiv cs.CR",
+      "title": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+      "url": "https://arxiv.org/abs/2607.09653",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "first_sent_at": "2026-07-13T04:35:55.145605+00:00"
+    },
+    {
+      "id": "49f6295e603cfb57d1ee524121b33a31122507dc",
+      "source": "arXiv cs.CR",
+      "title": "SherAgent: Scaling Attack Investigation in the Wild via LLM-Empowered Iterative Query-Filter Backtracking",
+      "url": "https://arxiv.org/abs/2607.09176",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "first_sent_at": "2026-07-13T04:35:55.145605+00:00"
     }
   ]
 }
