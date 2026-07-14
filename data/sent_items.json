@@ -1039,6 +1039,22 @@
       "url": "https://arxiv.org/abs/2607.09176",
       "published_at": "2026-07-13T04:00:00+00:00",
       "first_sent_at": "2026-07-13T04:35:55.145605+00:00"
+    },
+    {
+      "id": "e4d2f96491987199abe8d05ea12cb89a9ae571cd",
+      "source": "arXiv cs.CR",
+      "title": "Large Language Models in Misinformation Ecosystems: Misuse, Defense, and Vulnerability",
+      "url": "https://arxiv.org/abs/2607.10402",
+      "published_at": "2026-07-14T04:00:00+00:00",
+      "first_sent_at": "2026-07-14T04:08:43.938754+00:00"
+    },
+    {
+      "id": "a3572ed3af96cf19bc7abf3744bc7f6b2ef8e8cf",
+      "source": "arXiv cs.CR",
+      "title": "Trivial Prompt Reframing Bypasses Safety Guardrails in Google\\'s MedGemma-4B",
+      "url": "https://arxiv.org/abs/2607.09804",
+      "published_at": "2026-07-14T04:00:00+00:00",
+      "first_sent_at": "2026-07-14T04:08:43.938754+00:00"
     }
   ]
 }
