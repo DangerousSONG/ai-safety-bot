@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "b6bd558dbbdf9623823f49f82494ee4b03ef6530",
-      "source": "arXiv cs.CR",
-      "title": "TEMPLATEFUZZ: Fine-Grained Chat Template Fuzzing for Jailbreaking and Red Teaming LLMs",
-      "url": "https://arxiv.org/abs/2604.12232",
-      "published_at": "2026-04-15T04:00:00+00:00",
-      "first_sent_at": "2026-04-15T04:11:42.166341+00:00"
-    },
-    {
-      "id": "6baff97fa5247575e8f943038cbb24cbc9b1e3af",
-      "source": "arXiv cs.CR",
-      "title": "WebAgentGuard: A Reasoning-Driven Guard Model for Detecting Prompt Injection Attacks in Web Agents",
-      "url": "https://arxiv.org/abs/2604.12284",
-      "published_at": "2026-04-15T04:00:00+00:00",
-      "first_sent_at": "2026-04-15T04:11:42.166341+00:00"
-    },
-    {
       "id": "7d13921de5b620dd5dd030587e7a0f16c3117e7c",
       "source": "arXiv cs.CR",
       "title": "Activation-Guided Local Editing for Jailbreaking Attacks",
@@ -1055,6 +1039,22 @@
       "url": "https://arxiv.org/abs/2607.09804",
       "published_at": "2026-07-14T04:00:00+00:00",
       "first_sent_at": "2026-07-14T04:08:43.938754+00:00"
+    },
+    {
+      "id": "1fb5d92efef62ac0315a72383f96a052133c2afa",
+      "source": "arXiv cs.CR",
+      "title": "PVDetector: Detecting Prompt Injection Attacks on Purpose-Specific LLM Agents through Policy-Violation Concept Analysis",
+      "url": "https://arxiv.org/abs/2607.12624",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "first_sent_at": "2026-07-15T04:10:28.733815+00:00"
+    },
+    {
+      "id": "b4ddb63f3b96db7445afa9eb2ec13619f15153b7",
+      "source": "arXiv cs.CR",
+      "title": "Antiproof: Synthesizing Vulnerability Detectors and Proofs of Exploitability",
+      "url": "https://arxiv.org/abs/2607.12316",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "first_sent_at": "2026-07-15T04:10:28.733815+00:00"
     }
   ]
 }
