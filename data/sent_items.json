@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "5d0a7384cf8e8706230753751c604500bbeb150b",
-      "source": "arXiv cs.CR",
-      "title": "Owner-Harm: A Missing Threat Model for AI Agent Safety",
-      "url": "https://arxiv.org/abs/2604.18658",
-      "published_at": "2026-04-22T04:00:00+00:00",
-      "first_sent_at": "2026-04-22T04:11:20.567746+00:00"
-    },
-    {
-      "id": "6ed65d1d137b55e898f4a2f9412c11019f9ad6cc",
-      "source": "arXiv cs.CR",
-      "title": "Beyond Explicit Refusals: Soft-Failure Attacks on Retrieval-Augmented Generation",
-      "url": "https://arxiv.org/abs/2604.18663",
-      "published_at": "2026-04-22T04:00:00+00:00",
-      "first_sent_at": "2026-04-22T04:11:20.567746+00:00"
-    },
-    {
       "id": "92629aa492174d11517a5d613b76bcc37e503f2b",
       "source": "arXiv cs.CR",
       "title": "Taint-Style Vulnerability Detection and Confirmation for Node.js Packages Using LLM Agent Reasoning",
@@ -1031,6 +1015,30 @@
       "url": "https://arxiv.org/abs/2607.15697",
       "published_at": "2026-07-20T04:00:00+00:00",
       "first_sent_at": "2026-07-20T04:41:51.977985+00:00"
+    },
+    {
+      "id": "382e4b197f2ecd5e7f6b2fbe37484a190b3cae58",
+      "source": "arXiv cs.CR",
+      "title": "How Jailbreak Attacks Inform Safety Alignment: A Defender-Centric, Shapley-Based Evaluation of Jailbreak Contributions",
+      "url": "https://arxiv.org/abs/2607.17152",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "first_sent_at": "2026-07-21T04:20:34.195820+00:00"
+    },
+    {
+      "id": "12c0a59607d40affac1ce00f7e299107b1858b7a",
+      "source": "arXiv cs.CR",
+      "title": "Between Safe Boundaries: Exploiting Temporal Consistency for Jailbreaking Text-To-Video Generation Models",
+      "url": "https://arxiv.org/abs/2607.17279",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "first_sent_at": "2026-07-21T04:20:34.195820+00:00"
+    },
+    {
+      "id": "842beb2253c393f4c0b4c3ab26ee7f30c91158cb",
+      "source": "OpenAI News",
+      "title": "Safety and alignment in an era of long-horizon models",
+      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "published_at": "2026-07-20T10:00:00+00:00",
+      "first_sent_at": "2026-07-21T04:20:34.195820+00:00"
     }
   ]
 }
