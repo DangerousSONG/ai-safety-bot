@@ -1,30 +1,6 @@
 {
   "items": [
     {
-      "id": "92629aa492174d11517a5d613b76bcc37e503f2b",
-      "source": "arXiv cs.CR",
-      "title": "Taint-Style Vulnerability Detection and Confirmation for Node.js Packages Using LLM Agent Reasoning",
-      "url": "https://arxiv.org/abs/2604.20179",
-      "published_at": "2026-04-23T04:00:00+00:00",
-      "first_sent_at": "2026-04-23T04:16:00.708662+00:00"
-    },
-    {
-      "id": "f239ec64755f879901fc473d90340a2837e14085",
-      "source": "arXiv cs.CR",
-      "title": "Synthesizing Multi-Agent Harnesses for Vulnerability Discovery",
-      "url": "https://arxiv.org/abs/2604.20801",
-      "published_at": "2026-04-23T04:00:00+00:00",
-      "first_sent_at": "2026-04-23T04:16:00.708662+00:00"
-    },
-    {
-      "id": "928435683514a6ea44a24f31ccb8690542a1bb27",
-      "source": "OpenAI News",
-      "title": "Introducing OpenAI Privacy Filter",
-      "url": "https://openai.com/index/introducing-openai-privacy-filter",
-      "published_at": "2026-04-22T00:00:00+00:00",
-      "first_sent_at": "2026-04-23T04:16:00.708662+00:00"
-    },
-    {
       "id": "64bf27fd6a9e30c4cbb3bb858b2b9472c3e09a58",
       "source": "Google Security Blog",
       "title": "AI threats in the wild: The current state of prompt injections on the web",
@@ -1039,6 +1015,22 @@
       "url": "https://openai.com/index/safety-alignment-long-horizon-models",
       "published_at": "2026-07-20T10:00:00+00:00",
       "first_sent_at": "2026-07-21T04:20:34.195820+00:00"
+    },
+    {
+      "id": "8a39f283a9ea95d931364b287a36e519ebbe633f",
+      "source": "arXiv cs.CR",
+      "title": "CPInj: Uncovering Prompt Injection Risks in Textual Collaborative Prompt Optimization",
+      "url": "https://arxiv.org/abs/2607.18622",
+      "published_at": "2026-07-22T04:00:00+00:00",
+      "first_sent_at": "2026-07-22T04:22:14.948032+00:00"
+    },
+    {
+      "id": "ed93ac54a12d82ded6cba4f9da61032362681a1f",
+      "source": "arXiv cs.CR",
+      "title": "Adversarial Robustness of Phishing Email Detection: A Comparative Study of TF-IDF + Logistic Regression and Fine-Tuned DistilBERT",
+      "url": "https://arxiv.org/abs/2607.18429",
+      "published_at": "2026-07-22T04:00:00+00:00",
+      "first_sent_at": "2026-07-22T04:22:14.948032+00:00"
     }
   ]
 }
