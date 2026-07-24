@@ -1031,6 +1031,22 @@
       "url": "http://security.googleblog.com/2026/04/ai-threats-in-wild-current-state-of.html",
       "published_at": "2026-04-23T21:38:00+00:00",
       "first_sent_at": "2026-07-23T04:21:35.535600+00:00"
+    },
+    {
+      "id": "adeb8358fe6f7733dd31dbd92e717254604629a4",
+      "source": "arXiv cs.CR",
+      "title": "Security Vulnerability Patterns in AI-Generated Code: A Cross-Model Comparative Study",
+      "url": "https://arxiv.org/abs/2607.20713",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "first_sent_at": "2026-07-24T04:20:43.664044+00:00"
+    },
+    {
+      "id": "466665bf6f26cd7a487aced8bbb127b274a8eb30",
+      "source": "arXiv cs.CR",
+      "title": "Isolating LLM Alignment from Regex: Zero Coverage and Metric-Dependent Divergence Under Adversarial Mutation",
+      "url": "https://arxiv.org/abs/2607.20494",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "first_sent_at": "2026-07-24T04:20:43.664044+00:00"
     }
   ]
 }
