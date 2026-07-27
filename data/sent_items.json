@@ -1,46 +1,6 @@
 {
   "items": [
     {
-      "id": "71d482fac2341c7b77bf63c0776a13b977efde3a",
-      "source": "arXiv cs.CR",
-      "title": "Toward Principled LLM Safety Testing: Solving the Jailbreak Oracle Problem",
-      "url": "https://arxiv.org/abs/2506.17299",
-      "published_at": "2026-04-27T04:00:00+00:00",
-      "first_sent_at": "2026-04-27T04:34:29.179196+00:00"
-    },
-    {
-      "id": "718a694488cc802f61e4704e4f27fad1b4931a50",
-      "source": "arXiv cs.CR",
-      "title": "Evaluating Concept Filtering Defenses against Child Sexual Abuse Material Generation by Text-to-Image Models",
-      "url": "https://arxiv.org/abs/2512.05707",
-      "published_at": "2026-04-27T04:00:00+00:00",
-      "first_sent_at": "2026-04-27T04:34:29.179196+00:00"
-    },
-    {
-      "id": "31d53edae701dfc144390e24384445903e9517e0",
-      "source": "arXiv cs.CR",
-      "title": "Evaluating Jailbreaking Vulnerabilities in LLMs Deployed as Assistants for Smart Grid Operations: A Benchmark Against NERC Standards",
-      "url": "https://arxiv.org/abs/2604.23341",
-      "published_at": "2026-04-28T04:00:00+00:00",
-      "first_sent_at": "2026-04-28T04:38:01.555331+00:00"
-    },
-    {
-      "id": "f201526d3501bd2e42253f39db2e9bb782ec1642",
-      "source": "arXiv cs.CR",
-      "title": "AutoRISE: Agent-Driven Strategy Evolution for Red-Teaming Large Language Models",
-      "url": "https://arxiv.org/abs/2604.22871",
-      "published_at": "2026-04-28T04:00:00+00:00",
-      "first_sent_at": "2026-04-28T04:38:01.555331+00:00"
-    },
-    {
-      "id": "90999c44afe623f2d2bb076322a6794f750d1a5e",
-      "source": "Hugging Face Blog",
-      "title": "How to build scalable web apps with OpenAI's Privacy Filter",
-      "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
-      "published_at": "2026-04-27T00:00:00+00:00",
-      "first_sent_at": "2026-04-28T04:38:01.555331+00:00"
-    },
-    {
       "id": "102523bc134743ca36379e4b9202ef15d9a2eb0b",
       "source": "arXiv cs.CR",
       "title": "A Comparative Evaluation of AI Agent Security Guardrails",
@@ -1047,6 +1007,22 @@
       "url": "https://arxiv.org/abs/2607.20494",
       "published_at": "2026-07-24T04:00:00+00:00",
       "first_sent_at": "2026-07-24T04:20:43.664044+00:00"
+    },
+    {
+      "id": "56313b9002d68faea061370bfc44a5beea1705b2",
+      "source": "arXiv cs.CR",
+      "title": "PoCEvolve: Generating Proof-of-Concept Exploits from Security Patches with Vulnerability-Aware Prompt Evolution",
+      "url": "https://arxiv.org/abs/2607.22076",
+      "published_at": "2026-07-27T04:00:00+00:00",
+      "first_sent_at": "2026-07-27T04:42:59.816408+00:00"
+    },
+    {
+      "id": "33a313d37eee4027ebb7565a095e785a4e2bcb65",
+      "source": "arXiv cs.CR",
+      "title": "Every Model Cheats: Prompt-Level Mitigation of Cheating on Offensive Cyber Tasks",
+      "url": "https://arxiv.org/abs/2607.21763",
+      "published_at": "2026-07-27T04:00:00+00:00",
+      "first_sent_at": "2026-07-27T04:42:59.816408+00:00"
     }
   ]
 }
