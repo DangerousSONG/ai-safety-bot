@@ -1023,6 +1023,22 @@
       "url": "https://arxiv.org/abs/2607.21763",
       "published_at": "2026-07-27T04:00:00+00:00",
       "first_sent_at": "2026-07-27T04:42:59.816408+00:00"
+    },
+    {
+      "id": "9fc061cbccea2ac721b6d6cd105bbd0a8566d8ea",
+      "source": "arXiv cs.CR",
+      "title": "ReCon: A Resource-Constrained Benchmark for LLM-Based Cybersecurity Compliance Across Ingestion and Retrieval Pipelines",
+      "url": "https://arxiv.org/abs/2607.22885",
+      "published_at": "2026-07-28T04:00:00+00:00",
+      "first_sent_at": "2026-07-28T04:16:14.477175+00:00"
+    },
+    {
+      "id": "9fdfd982ae64e811b114c4fd7056e3023b9b4660",
+      "source": "arXiv cs.CR",
+      "title": "Mask2Shield: Strengthening LLM Safety against Neuron-Pruning Attacks",
+      "url": "https://arxiv.org/abs/2607.23015",
+      "published_at": "2026-07-28T04:00:00+00:00",
+      "first_sent_at": "2026-07-28T04:16:14.477175+00:00"
     }
   ]
 }
