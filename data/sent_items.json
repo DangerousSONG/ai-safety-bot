@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "8e42ddd9ab458e2809cc868ef291bab2d80c2baa",
-      "source": "arXiv cs.CR",
-      "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
-      "url": "https://arxiv.org/abs/2604.28157",
-      "published_at": "2026-05-01T04:00:00+00:00",
-      "first_sent_at": "2026-05-01T04:53:32.889905+00:00"
-    },
-    {
-      "id": "852242d1c9b568fd2cb39bb3b5d66416506390ab",
-      "source": "arXiv cs.CR",
-      "title": "TwinGate: Stateful Defense against Decompositional Jailbreaks in Untraceable Traffic via Asymmetric Contrastive Learning",
-      "url": "https://arxiv.org/abs/2604.27861",
-      "published_at": "2026-05-01T04:00:00+00:00",
-      "first_sent_at": "2026-05-01T04:53:32.889905+00:00"
-    },
-    {
       "id": "cd4e525f40691b8043fea36913d5bf86f4e3c643",
       "source": "arXiv cs.CR",
       "title": "STARE: Step-wise Temporal Alignment and Red-teaming Engine for Multi-modal Toxicity Attack",
@@ -1039,6 +1023,22 @@
       "url": "https://arxiv.org/abs/2607.26639",
       "published_at": "2026-07-30T04:00:00+00:00",
       "first_sent_at": "2026-07-30T04:11:24.022164+00:00"
+    },
+    {
+      "id": "fff9e2be50f670acd4c11f8f02e018d56ca44b0e",
+      "source": "arXiv cs.CR",
+      "title": "Piggybacking on Perception: Stealthy Concurrent Audio Prompt Injections against Multimodal LLM Agents",
+      "url": "https://arxiv.org/abs/2607.28165",
+      "published_at": "2026-07-31T04:00:00+00:00",
+      "first_sent_at": "2026-07-31T04:29:40.747968+00:00"
+    },
+    {
+      "id": "1bb193c5a998501783a4435e26cc2218e4864c86",
+      "source": "arXiv cs.CR",
+      "title": "Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation",
+      "url": "https://arxiv.org/abs/2607.28226",
+      "published_at": "2026-07-31T04:00:00+00:00",
+      "first_sent_at": "2026-07-31T04:29:40.747968+00:00"
     }
   ]
 }
