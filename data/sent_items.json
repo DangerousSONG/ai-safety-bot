@@ -1,38 +1,6 @@
 {
   "items": [
     {
-      "id": "cd4e525f40691b8043fea36913d5bf86f4e3c643",
-      "source": "arXiv cs.CR",
-      "title": "STARE: Step-wise Temporal Alignment and Red-teaming Engine for Multi-modal Toxicity Attack",
-      "url": "https://arxiv.org/abs/2605.00699",
-      "published_at": "2026-05-04T04:00:00+00:00",
-      "first_sent_at": "2026-05-04T04:44:38.795142+00:00"
-    },
-    {
-      "id": "ae2f7df85de3f33587bcff3628e825f749bad893",
-      "source": "arXiv cs.CR",
-      "title": "Alignment Contracts for Agentic Security Systems",
-      "url": "https://arxiv.org/abs/2605.00081",
-      "published_at": "2026-05-04T04:00:00+00:00",
-      "first_sent_at": "2026-05-04T04:44:38.795142+00:00"
-    },
-    {
-      "id": "4629298367d68f5224b1f771e1ee0d6a4fd04439",
-      "source": "arXiv cs.CR",
-      "title": "LocalAlign: Enabling Generalizable Prompt Injection Defense via Generation of Near-Target Adversarial Examples for Alignment Training",
-      "url": "https://arxiv.org/abs/2605.01462",
-      "published_at": "2026-05-05T04:00:00+00:00",
-      "first_sent_at": "2026-05-05T04:20:48.235134+00:00"
-    },
-    {
-      "id": "c166a5b31a27cf2b85e486e1813dea5865783d0f",
-      "source": "arXiv cs.CR",
-      "title": "SRTJ: Self-Evolving Rule-Driven Training-Free LLM Jailbreaking",
-      "url": "https://arxiv.org/abs/2605.00974",
-      "published_at": "2026-05-05T04:00:00+00:00",
-      "first_sent_at": "2026-05-05T04:20:48.235134+00:00"
-    },
-    {
       "id": "58446dc242bd9f2e71dcb56c183c35cf4d1508e3",
       "source": "arXiv cs.CR",
       "title": "Tracing the Dynamics of Refusal: Exploiting Latent Refusal Trajectories for Robust Jailbreak Detection",
@@ -1039,6 +1007,22 @@
       "url": "https://arxiv.org/abs/2607.28226",
       "published_at": "2026-07-31T04:00:00+00:00",
       "first_sent_at": "2026-07-31T04:29:40.747968+00:00"
+    },
+    {
+      "id": "795133e9076df8941f4a542bac1e314a943730f7",
+      "source": "arXiv cs.CR",
+      "title": "When Safety Becomes a Vulnerability: Exploiting LLM Alignment Homogeneity for Transferable Blocking in RAG",
+      "url": "https://arxiv.org/abs/2603.03919",
+      "published_at": "2026-08-03T04:00:00+00:00",
+      "first_sent_at": "2026-08-03T04:36:26.183436+00:00"
+    },
+    {
+      "id": "fc033e1d9f46de4600f2cd96fce5bb46c1db2ffe",
+      "source": "arXiv cs.CR",
+      "title": "Alignment Is Local: A Paired Diagnostic for GUI Agents under User-Side Persuasion",
+      "url": "https://arxiv.org/abs/2607.29199",
+      "published_at": "2026-08-03T04:00:00+00:00",
+      "first_sent_at": "2026-08-03T04:36:26.183436+00:00"
     }
   ]
 }
