@@ -1023,6 +1023,22 @@
       "url": "https://arxiv.org/abs/2607.29199",
       "published_at": "2026-08-03T04:00:00+00:00",
       "first_sent_at": "2026-08-03T04:36:26.183436+00:00"
+    },
+    {
+      "id": "3340b2f146e102c401831fb7f85b40ac5f58f4a4",
+      "source": "arXiv cs.CR",
+      "title": "Symbolic Attack Chain Generation from Atomic Red Team Techniques: An Empirical Study of Predicate Representation Granularity",
+      "url": "https://arxiv.org/abs/2608.00143",
+      "published_at": "2026-08-04T04:00:00+00:00",
+      "first_sent_at": "2026-08-04T04:18:38.005690+00:00"
+    },
+    {
+      "id": "22cb4669dd435d6c24eec7f19f03dbd430084f78",
+      "source": "arXiv cs.CR",
+      "title": "Deep Learning for Cyber Threat Detection and Mitigation in Healthcare-IoT",
+      "url": "https://arxiv.org/abs/2608.00118",
+      "published_at": "2026-08-04T04:00:00+00:00",
+      "first_sent_at": "2026-08-04T04:18:38.005690+00:00"
     }
   ]
 }
