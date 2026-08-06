@@ -1,38 +1,6 @@
 {
   "items": [
     {
-      "id": "931a857ee1acd6cc6d9dbbf73fdaf549870483a3",
-      "source": "arXiv cs.CR",
-      "title": "Sparse Tokens Suffice: Jailbreaking Audio Language Models via Token-Aware Gradient Optimization",
-      "url": "https://arxiv.org/abs/2605.04700",
-      "published_at": "2026-05-07T04:00:00+00:00",
-      "first_sent_at": "2026-05-07T04:37:53.667612+00:00"
-    },
-    {
-      "id": "4a3c649540eb76a6594183796356ffffd4daab97",
-      "source": "arXiv cs.CR",
-      "title": "SoK: Robustness in Large Language Models against Jailbreak Attacks",
-      "url": "https://arxiv.org/abs/2605.05058",
-      "published_at": "2026-05-07T04:00:00+00:00",
-      "first_sent_at": "2026-05-07T04:37:53.667612+00:00"
-    },
-    {
-      "id": "83769c42cd917062cc4c37eca105c4307d5b0c7a",
-      "source": "arXiv cs.CR",
-      "title": "SafeHarbor: Hierarchical Memory-Augmented Guardrail for LLM Agent Safety",
-      "url": "https://arxiv.org/abs/2605.05704",
-      "published_at": "2026-05-08T04:00:00+00:00",
-      "first_sent_at": "2026-05-08T04:19:23.883569+00:00"
-    },
-    {
-      "id": "3890e1464a78708573a8fa47c2fde39664825365",
-      "source": "arXiv cs.CR",
-      "title": "GLiNER Guard: Unified Encoder Family for Production LLM Safety and Privacy",
-      "url": "https://arxiv.org/abs/2605.05277",
-      "published_at": "2026-05-08T04:00:00+00:00",
-      "first_sent_at": "2026-05-08T04:19:23.883569+00:00"
-    },
-    {
       "id": "f0d9b35ed755a229a0c92295177861b909c47121",
       "source": "arXiv cs.CR",
       "title": "An Automated Framework for Cybersecurity Policy Compliance Assessment Against Security Control Standards",
@@ -1039,6 +1007,22 @@
       "url": "https://arxiv.org/abs/2608.02683",
       "published_at": "2026-08-05T04:00:00+00:00",
       "first_sent_at": "2026-08-05T04:17:04.566779+00:00"
+    },
+    {
+      "id": "6f0b6e2696eb4cab8383a884dd10efcb32e96bd5",
+      "source": "arXiv cs.CR",
+      "title": "LoginTrap: Uncovering Task-Agnostic Phishing-Style Indirect Prompt Injection Attacks against LLM-based Web Agents",
+      "url": "https://arxiv.org/abs/2608.04741",
+      "published_at": "2026-08-06T04:00:00+00:00",
+      "first_sent_at": "2026-08-06T04:19:57.024629+00:00"
+    },
+    {
+      "id": "582e5c30c609977839255b83dcef74a3503effdf",
+      "source": "arXiv cs.CR",
+      "title": "A Multimodal Automatic Redteaming Evaluation based on Atomic Jailbreak Strategy Decoupling and Combination",
+      "url": "https://arxiv.org/abs/2608.04034",
+      "published_at": "2026-08-06T04:00:00+00:00",
+      "first_sent_at": "2026-08-06T04:19:57.024629+00:00"
     }
   ]
 }
