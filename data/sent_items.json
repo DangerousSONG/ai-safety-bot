@@ -1023,6 +1023,22 @@
       "url": "https://arxiv.org/abs/2608.04034",
       "published_at": "2026-08-06T04:00:00+00:00",
       "first_sent_at": "2026-08-06T04:19:57.024629+00:00"
+    },
+    {
+      "id": "e9b8c333d90b5a00755bb4ea62ac7d3d15347b8e",
+      "source": "arXiv cs.CR",
+      "title": "AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection",
+      "url": "https://arxiv.org/abs/2608.04053",
+      "published_at": "2026-08-06T04:00:00+00:00",
+      "first_sent_at": "2026-08-07T03:54:57.635110+00:00"
+    },
+    {
+      "id": "7672a022e9982f85e6f9ea12d9e5527242582962",
+      "source": "arXiv cs.CR",
+      "title": "SoK: How Frontier AI Reshapes System-Level Security Risk Dynamics in Critical Infrastructure",
+      "url": "https://arxiv.org/abs/2608.04033",
+      "published_at": "2026-08-06T04:00:00+00:00",
+      "first_sent_at": "2026-08-07T03:54:57.635110+00:00"
     }
   ]
 }
