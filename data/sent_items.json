@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "3e71485e29a2e8a47ffdef500cf7ee40c6ffaf99",
-      "source": "arXiv cs.CR",
-      "title": "Few-Shot Truly Benign DPO Attack for Jailbreaking LLMs",
-      "url": "https://arxiv.org/abs/2605.10998",
-      "published_at": "2026-05-13T04:00:00+00:00",
-      "first_sent_at": "2026-05-13T04:53:55.522358+00:00"
-    },
-    {
-      "id": "52671955c95a4547a521729b22dcc4ec82623d62",
-      "source": "arXiv cs.CR",
-      "title": "MT-JailBench: A Modular Benchmark for Understanding Multi-Turn Jailbreak Attacks",
-      "url": "https://arxiv.org/abs/2605.11002",
-      "published_at": "2026-05-13T04:00:00+00:00",
-      "first_sent_at": "2026-05-13T04:53:55.522358+00:00"
-    },
-    {
       "id": "de0e7960baf0405ff2aad05fa63dd37c8087415c",
       "source": "arXiv cs.CR",
       "title": "Persona-Conditioned Adversarial Prompting (PCAP): Multi-Identity Red-Teaming for Enhanced Adversarial Prompt Discovery",
@@ -1031,6 +1015,22 @@
       "url": "https://arxiv.org/abs/2608.06508",
       "published_at": "2026-08-10T04:00:00+00:00",
       "first_sent_at": "2026-08-11T03:06:47.693260+00:00"
+    },
+    {
+      "id": "34ac6fd07f4fb46b4a181f29240e143aa0a66dd4",
+      "source": "arXiv cs.CR",
+      "title": "Whose Refusal Is It? The Unmeasured Contribution of Black-Box Multimodal Guardrails",
+      "url": "https://arxiv.org/abs/2608.08641",
+      "published_at": "2026-08-11T04:00:00+00:00",
+      "first_sent_at": "2026-08-12T03:25:54.828641+00:00"
+    },
+    {
+      "id": "d53d04c3edf26412fc23e640089571ce8771287a",
+      "source": "arXiv cs.CR",
+      "title": "The Anatomy of a Prompt Injection: A Component Model for Structured Analysis",
+      "url": "https://arxiv.org/abs/2608.07808",
+      "published_at": "2026-08-11T04:00:00+00:00",
+      "first_sent_at": "2026-08-12T03:25:54.828641+00:00"
     }
   ]
 }
