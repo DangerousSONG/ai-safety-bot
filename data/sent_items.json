@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "5c82b32786d4f2c411e1219933462cff0197899f",
-      "source": "arXiv cs.CR",
-      "title": "EVA: Editing for Versatile Alignment against Jailbreaks",
-      "url": "https://arxiv.org/abs/2605.14750",
-      "published_at": "2026-05-15T04:00:00+00:00",
-      "first_sent_at": "2026-05-15T04:56:25.524911+00:00"
-    },
-    {
-      "id": "4dedbfd5a88938e4b7eb6d9bae4814dd57358683",
-      "source": "arXiv cs.CR",
-      "title": "WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections",
-      "url": "https://arxiv.org/abs/2605.15030",
-      "published_at": "2026-05-15T04:00:00+00:00",
-      "first_sent_at": "2026-05-15T04:56:25.524911+00:00"
-    },
-    {
       "id": "038761cd419266cf4808e65308b8d830307973fa",
       "source": "arXiv cs.CR",
       "title": "Compositional Jailbreaking: An Empirical Analysis of Mutator Chain Interactions in Aligned LLMs",
@@ -1023,6 +1007,22 @@
       "url": "https://arxiv.org/abs/2608.10281",
       "published_at": "2026-08-12T04:00:00+00:00",
       "first_sent_at": "2026-08-13T03:29:26.754597+00:00"
+    },
+    {
+      "id": "e255385f70d531f2a26d30644007adb1a82567bc",
+      "source": "arXiv cs.CR",
+      "title": "How China-Origin Vision-Language Models Move from Refusal to Reframing in State Alignment",
+      "url": "https://arxiv.org/abs/2608.11816",
+      "published_at": "2026-08-13T04:00:00+00:00",
+      "first_sent_at": "2026-08-14T03:26:34.229369+00:00"
+    },
+    {
+      "id": "4349da33ae12762b56e6858ced83da71c0136e16",
+      "source": "arXiv cs.CR",
+      "title": "ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents",
+      "url": "https://arxiv.org/abs/2608.11878",
+      "published_at": "2026-08-13T04:00:00+00:00",
+      "first_sent_at": "2026-08-14T03:26:34.229369+00:00"
     }
   ]
 }
