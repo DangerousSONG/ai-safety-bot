@@ -1,54 +1,6 @@
 {
   "items": [
     {
-      "id": "038761cd419266cf4808e65308b8d830307973fa",
-      "source": "arXiv cs.CR",
-      "title": "Compositional Jailbreaking: An Empirical Analysis of Mutator Chain Interactions in Aligned LLMs",
-      "url": "https://arxiv.org/abs/2605.15598",
-      "published_at": "2026-05-18T04:00:00+00:00",
-      "first_sent_at": "2026-05-18T05:12:52.810678+00:00"
-    },
-    {
-      "id": "6b181138b59053a492c21cbe7b6435e8213ec540",
-      "source": "arXiv cs.CR",
-      "title": "A Cross-Modal Prompt Injection Attack against Large Vision-Language Models with Image-Only Perturbation",
-      "url": "https://arxiv.org/abs/2605.16090",
-      "published_at": "2026-05-18T04:00:00+00:00",
-      "first_sent_at": "2026-05-18T05:12:52.810678+00:00"
-    },
-    {
-      "id": "61afedf1e04d37eb537168f828a59b5ee6f5cdb8",
-      "source": "arXiv cs.CR",
-      "title": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents",
-      "url": "https://arxiv.org/abs/2605.17324",
-      "published_at": "2026-05-19T04:00:00+00:00",
-      "first_sent_at": "2026-05-19T05:07:40.548981+00:00"
-    },
-    {
-      "id": "ff7c787b213ccf43c7a68fe381eeceaa899ff0b2",
-      "source": "arXiv cs.CR",
-      "title": "A Red Teaming Framework for Evaluating Robustness of AI-enabled Security Orchestration, Automation, and Response Systems",
-      "url": "https://arxiv.org/abs/2605.17075",
-      "published_at": "2026-05-19T04:00:00+00:00",
-      "first_sent_at": "2026-05-19T05:07:40.548981+00:00"
-    },
-    {
-      "id": "6af92865a2b68a268b5c9fece48ea3060b92cc58",
-      "source": "arXiv cs.CR",
-      "title": "DMN: A Compositional Framework for Jailbreaking Multimodal LLMs with Multi-Image Inputs",
-      "url": "https://arxiv.org/abs/2605.18915",
-      "published_at": "2026-05-20T04:00:00+00:00",
-      "first_sent_at": "2026-05-20T05:10:37.108543+00:00"
-    },
-    {
-      "id": "83735f2fd29c49554c2439eca809cada6dcf4fbc",
-      "source": "arXiv cs.CR",
-      "title": "DarkLLM: Learning Language-Driven Adversarial Attacks with Large Language Models",
-      "url": "https://arxiv.org/abs/2605.18868",
-      "published_at": "2026-05-20T04:00:00+00:00",
-      "first_sent_at": "2026-05-20T05:10:37.108543+00:00"
-    },
-    {
       "id": "2fa4f247d924176e8b6ba804a6c40768a6ba0612",
       "source": "arXiv cs.CR",
       "title": "Rethinking Fraud Safety Evaluation: Multi-Round Attacks Reveal Safety-Utility Tradeoffs in Graph-Context LLM Defenders",
@@ -1023,6 +975,22 @@
       "url": "https://arxiv.org/abs/2608.11878",
       "published_at": "2026-08-13T04:00:00+00:00",
       "first_sent_at": "2026-08-14T03:26:34.229369+00:00"
+    },
+    {
+      "id": "3460fe3fc810fa19aec64ad1ae87e09ee696aaab",
+      "source": "arXiv cs.CR",
+      "title": "Pre-Model Representation Failures in GNN-Based Smart Contract Vulnerability Detection",
+      "url": "https://arxiv.org/abs/2608.15184",
+      "published_at": "2026-08-18T04:00:00+00:00",
+      "first_sent_at": "2026-08-19T02:20:15.559923+00:00"
+    },
+    {
+      "id": "420bca7a6f87d065abe975e8e25c4b39ecb59bc9",
+      "source": "arXiv cs.CR",
+      "title": "SysEvolve: An AI-native, safe, autonomous adversarial attack-defense co-evolutionary system",
+      "url": "https://arxiv.org/abs/2608.15012",
+      "published_at": "2026-08-18T04:00:00+00:00",
+      "first_sent_at": "2026-08-19T02:20:15.559923+00:00"
     }
   ]
 }
