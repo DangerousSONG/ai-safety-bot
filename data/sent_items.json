@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "c9d0c1ab9e68b18bd718447dc874edde3d969113",
-      "source": "arXiv cs.CR",
-      "title": "Frequency-Domain Regularized Adversarial Alignment for Transferable Attacks against Closed-Source MLLMs",
-      "url": "https://arxiv.org/abs/2605.21541",
-      "published_at": "2026-05-22T04:00:00+00:00",
-      "first_sent_at": "2026-05-22T05:08:02.178772+00:00"
-    },
-    {
-      "id": "256018cdff9f8cc8c89ea5fa8e7897c5b9b416d8",
-      "source": "arXiv cs.CR",
-      "title": "FuzzingBrain V2: A Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction",
-      "url": "https://arxiv.org/abs/2605.21779",
-      "published_at": "2026-05-22T04:00:00+00:00",
-      "first_sent_at": "2026-05-22T05:08:02.178772+00:00"
-    },
-    {
       "id": "9a81141cb8ca3ce2d1544fe6fefeeef37cba4b0b",
       "source": "arXiv cs.CR",
       "title": "Are Frontier LLMs Ready for Cybersecurity? Evidence for Vertical Foundation Models from Dual-Mode Vulnerability Benchmarks",
@@ -991,6 +975,22 @@
       "url": "https://arxiv.org/abs/2608.17360",
       "published_at": "2026-08-19T04:00:00+00:00",
       "first_sent_at": "2026-08-20T02:19:20.786064+00:00"
+    },
+    {
+      "id": "23302d96e233e608c4a3ce129da0cb98e407ba76",
+      "source": "arXiv cs.CR",
+      "title": "Are LLMs Safe Beyond Text: Do Emojis Expose Gaps in Safety Evaluation",
+      "url": "https://arxiv.org/abs/2608.18164",
+      "published_at": "2026-08-20T04:00:00+00:00",
+      "first_sent_at": "2026-08-21T02:25:27.957933+00:00"
+    },
+    {
+      "id": "5551af69e55b0cedcbb1632ed2fd1127da95023e",
+      "source": "arXiv cs.CR",
+      "title": "Abliteration Mitigation via Refusal Aliases",
+      "url": "https://arxiv.org/abs/2608.18093",
+      "published_at": "2026-08-20T04:00:00+00:00",
+      "first_sent_at": "2026-08-21T02:25:27.957933+00:00"
     }
   ]
 }
