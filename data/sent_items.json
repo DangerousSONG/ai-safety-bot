@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "aee983ebdc76a4afbc3964ee2c9efd433c8eef5b",
-      "source": "arXiv cs.CR",
-      "title": "Jailbreak susceptibility prediction and mitigation via the behavioral geometry of models",
-      "url": "https://arxiv.org/abs/2605.26409",
-      "published_at": "2026-05-27T04:00:00+00:00",
-      "first_sent_at": "2026-05-27T05:23:05.870951+00:00"
-    },
-    {
-      "id": "d0b62ad00ab913698e08339acc080a284cd7f88f",
-      "source": "arXiv cs.CR",
-      "title": "AgentSecBench: Measuring Prompt Injection, Privacy Leakage, and Tool-Use Integrity in LLM Agents",
-      "url": "https://arxiv.org/abs/2605.26269",
-      "published_at": "2026-05-27T04:00:00+00:00",
-      "first_sent_at": "2026-05-27T05:23:05.870951+00:00"
-    },
-    {
       "id": "1adcf1bf7af730bd73f3bc0a4a27c9ec93b1a7db",
       "source": "arXiv cs.CR",
       "title": "MIRAGE: Context-Aware Prompt Injection against Mobile GUI Agents via User-Generated Content",
@@ -975,6 +959,22 @@
       "url": "https://arxiv.org/abs/2608.20554",
       "published_at": "2026-08-24T04:00:00+00:00",
       "first_sent_at": "2026-08-25T02:20:15.053810+00:00"
+    },
+    {
+      "id": "c091b4357ee8761fdd34b78ab8bca506b0b917bd",
+      "source": "arXiv cs.CR",
+      "title": "Beyond Over-Refusal: Defending Indirect Prompt Injection via Latent Instruction Manifolds",
+      "url": "https://arxiv.org/abs/2608.22248",
+      "published_at": "2026-08-25T04:00:00+00:00",
+      "first_sent_at": "2026-08-26T02:26:59.935151+00:00"
+    },
+    {
+      "id": "2a36d813efd081ed3f745375b273ea123d1450c4",
+      "source": "arXiv cs.CR",
+      "title": "Breaking the Assumptions: Auditing Input-Side Jailbreak Defenses Against Semantic Attacks",
+      "url": "https://arxiv.org/abs/2608.21895",
+      "published_at": "2026-08-25T04:00:00+00:00",
+      "first_sent_at": "2026-08-26T02:26:59.935151+00:00"
     }
   ]
 }
