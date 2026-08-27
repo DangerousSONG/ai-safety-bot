@@ -1,38 +1,6 @@
 {
   "items": [
     {
-      "id": "1adcf1bf7af730bd73f3bc0a4a27c9ec93b1a7db",
-      "source": "arXiv cs.CR",
-      "title": "MIRAGE: Context-Aware Prompt Injection against Mobile GUI Agents via User-Generated Content",
-      "url": "https://arxiv.org/abs/2605.28116",
-      "published_at": "2026-05-28T04:00:00+00:00",
-      "first_sent_at": "2026-05-28T05:15:26.238530+00:00"
-    },
-    {
-      "id": "8a9b7497ee4e5a75e34740d7ead020701d4a00e8",
-      "source": "arXiv cs.CR",
-      "title": "Disentangling Adversarial Prompts: A Semantic-Graph Defense for Robust LLM Security",
-      "url": "https://arxiv.org/abs/2605.27823",
-      "published_at": "2026-05-28T04:00:00+00:00",
-      "first_sent_at": "2026-05-28T05:15:26.238530+00:00"
-    },
-    {
-      "id": "c202cc6058ffba380ae548ecf6236387b7b925be",
-      "source": "arXiv cs.CR",
-      "title": "Evolving Skill-Structured Attack Memory Enhances LLM Jailbreaking",
-      "url": "https://arxiv.org/abs/2605.29237",
-      "published_at": "2026-05-29T04:00:00+00:00",
-      "first_sent_at": "2026-05-29T05:18:14.202543+00:00"
-    },
-    {
-      "id": "b60e29e2a524bcf36f16f0f0575e28d862edcb65",
-      "source": "arXiv cs.CR",
-      "title": "Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening",
-      "url": "https://arxiv.org/abs/2605.28999",
-      "published_at": "2026-05-29T04:00:00+00:00",
-      "first_sent_at": "2026-05-29T05:18:14.202543+00:00"
-    },
-    {
       "id": "60c05028db636c0d9f15cf91ae3982646eefc5a2",
       "source": "arXiv cs.CR",
       "title": "TRACE: Task-Aware Adaptive Self-Evolving Agentic Jailbreaking",
@@ -975,6 +943,22 @@
       "url": "https://arxiv.org/abs/2608.21895",
       "published_at": "2026-08-25T04:00:00+00:00",
       "first_sent_at": "2026-08-26T02:26:59.935151+00:00"
+    },
+    {
+      "id": "dddaec46c4bfc6899347c8aa7f1440dab509b5ee",
+      "source": "arXiv cs.CR",
+      "title": "AI Slop and Hallucinations in Vulnerability Assessment: A Survey on Reasoning Failures and Trustworthy Mitigation",
+      "url": "https://arxiv.org/abs/2608.25667",
+      "published_at": "2026-08-27T04:00:00+00:00",
+      "first_sent_at": "2026-08-27T11:07:04.289368+00:00"
+    },
+    {
+      "id": "8eaa0e11bf74271a9edda5d5c350749b26d45111",
+      "source": "arXiv cs.CR",
+      "title": "Reassembling Distributed Risk: Trajectory-Conditioned Action Generation for Multi-Turn Agent Safety",
+      "url": "https://arxiv.org/abs/2608.25711",
+      "published_at": "2026-08-27T04:00:00+00:00",
+      "first_sent_at": "2026-08-27T11:07:04.289368+00:00"
     }
   ]
 }
