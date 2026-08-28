@@ -959,6 +959,22 @@
       "url": "https://arxiv.org/abs/2608.25711",
       "published_at": "2026-08-27T04:00:00+00:00",
       "first_sent_at": "2026-08-27T11:07:04.289368+00:00"
+    },
+    {
+      "id": "7156ea1e6eb97ea104fd7a9f25c84cbb0f692121",
+      "source": "arXiv cs.CR",
+      "title": "The Guard That Cried Wolf: How Scary Words Make Agent Guardrails Refuse Legitimate Actions",
+      "url": "https://arxiv.org/abs/2608.27009",
+      "published_at": "2026-08-28T04:00:00+00:00",
+      "first_sent_at": "2026-08-28T12:39:14.146399+00:00"
+    },
+    {
+      "id": "9eb242813bc22ffdebec5bbff700ba68671292fd",
+      "source": "arXiv cs.CR",
+      "title": "SysComb: Fine-Grained Transparent System Call Filtering for Attack Surface Reduction",
+      "url": "https://arxiv.org/abs/2608.26871",
+      "published_at": "2026-08-28T04:00:00+00:00",
+      "first_sent_at": "2026-08-28T12:39:14.146399+00:00"
     }
   ]
 }
