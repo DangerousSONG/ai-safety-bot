@@ -1,38 +1,6 @@
 {
   "items": [
     {
-      "id": "60c05028db636c0d9f15cf91ae3982646eefc5a2",
-      "source": "arXiv cs.CR",
-      "title": "TRACE: Task-Aware Adaptive Self-Evolving Agentic Jailbreaking",
-      "url": "https://arxiv.org/abs/2605.30883",
-      "published_at": "2026-06-01T04:00:00+00:00",
-      "first_sent_at": "2026-06-01T06:10:31.501539+00:00"
-    },
-    {
-      "id": "b2302cad651f746ef45e1f8eecd9b2446cd772d4",
-      "source": "arXiv cs.CR",
-      "title": "Triaging Threats to Specialized Guardrails",
-      "url": "https://arxiv.org/abs/2605.30693",
-      "published_at": "2026-06-01T04:00:00+00:00",
-      "first_sent_at": "2026-06-01T06:10:31.501539+00:00"
-    },
-    {
-      "id": "a5b54fa2bbdc53dac24ecd1b51b95985302b5edb",
-      "source": "arXiv cs.CR",
-      "title": "Cross-Generational Transfer of Adversarial Attacks Reveals Non-Monotonic Safety Alignment in LLMs",
-      "url": "https://arxiv.org/abs/2606.00813",
-      "published_at": "2026-06-02T04:00:00+00:00",
-      "first_sent_at": "2026-06-02T05:56:19.141413+00:00"
-    },
-    {
-      "id": "7ae12ba74d3bba2135921ef55bfa02bb44e05ce5",
-      "source": "arXiv cs.CR",
-      "title": "Persona Attack: Incremental Memory Injection Jailbreak Attack against Large Language Models",
-      "url": "https://arxiv.org/abs/2606.00150",
-      "published_at": "2026-06-02T04:00:00+00:00",
-      "first_sent_at": "2026-06-02T05:56:19.141413+00:00"
-    },
-    {
       "id": "e7df2af35d49d07175c62aef7d40d60e54b6838f",
       "source": "arXiv cs.CR",
       "title": "MultiTurnPSB: Evaluating Multi-Turn Jailbreak Attacks an dClassifier-Based Defenses for Medical AI Safety",
@@ -975,6 +943,22 @@
       "url": "https://arxiv.org/abs/2608.26871",
       "published_at": "2026-08-28T04:00:00+00:00",
       "first_sent_at": "2026-08-28T12:39:14.146399+00:00"
+    },
+    {
+      "id": "ac02c51301bb25758c4a24d151f45a7a60770fe5",
+      "source": "arXiv cs.CR",
+      "title": "Fully Unleashing the Multimodal Attacker: Meta-Adaptive Jailbreaking of Vision-Language Models",
+      "url": "https://arxiv.org/abs/2608.27531",
+      "published_at": "2026-08-31T04:00:00+00:00",
+      "first_sent_at": "2026-08-31T06:53:48.883344+00:00"
+    },
+    {
+      "id": "088fafcd86460550587c8ecc7217ad4e0db006f5",
+      "source": "arXiv cs.CR",
+      "title": "Circuit Discovery Helps Detect LLM Jailbreaking: A Mechanistic Interpretability Study",
+      "url": "https://arxiv.org/abs/2608.27504",
+      "published_at": "2026-08-31T04:00:00+00:00",
+      "first_sent_at": "2026-08-31T06:53:48.883344+00:00"
     }
   ]
 }
