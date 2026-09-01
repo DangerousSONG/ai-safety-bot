@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "e7df2af35d49d07175c62aef7d40d60e54b6838f",
-      "source": "arXiv cs.CR",
-      "title": "MultiTurnPSB: Evaluating Multi-Turn Jailbreak Attacks an dClassifier-Based Defenses for Medical AI Safety",
-      "url": "https://arxiv.org/abs/2606.02630",
-      "published_at": "2026-06-03T04:00:00+00:00",
-      "first_sent_at": "2026-06-03T06:09:18.894762+00:00"
-    },
-    {
-      "id": "76c87b523a27433092d64d5238b3b529c8699bff",
-      "source": "arXiv cs.CR",
-      "title": "A New Framework for Cybersecurity Refusals in AI Agents",
-      "url": "https://arxiv.org/abs/2606.02644",
-      "published_at": "2026-06-03T04:00:00+00:00",
-      "first_sent_at": "2026-06-03T06:09:18.894762+00:00"
-    },
-    {
       "id": "983176fc88aab5ce5c75b347f623c4fc76e58b80",
       "source": "arXiv cs.CR",
       "title": "MaskForge: Structure-Aware Adaptive Attacks for Jailbreaking Diffusion Large Language Models",
@@ -959,6 +943,22 @@
       "url": "https://arxiv.org/abs/2608.27504",
       "published_at": "2026-08-31T04:00:00+00:00",
       "first_sent_at": "2026-08-31T06:53:48.883344+00:00"
+    },
+    {
+      "id": "227b581e464970974a61b81512e3c92ad0c7fd98",
+      "source": "arXiv cs.CR",
+      "title": "Benchmark Contamination: A Taxonomy Organized by Defeated Mitigation",
+      "url": "https://arxiv.org/abs/2608.29463",
+      "published_at": "2026-09-01T04:00:00+00:00",
+      "first_sent_at": "2026-09-01T06:11:17.218168+00:00"
+    },
+    {
+      "id": "86a42ca9c98d9b6b25453eea8b9c037d942c098c",
+      "source": "arXiv cs.CR",
+      "title": "Influence Is Not Authority: When Causal Guardrail Signals Make Legitimate Tool Use Look Like an Attack in Tool-Using LLM Agents",
+      "url": "https://arxiv.org/abs/2608.29942",
+      "published_at": "2026-09-01T04:00:00+00:00",
+      "first_sent_at": "2026-09-01T06:11:17.218168+00:00"
     }
   ]
 }
