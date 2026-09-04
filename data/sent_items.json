@@ -951,6 +951,22 @@
       "url": "https://arxiv.org/abs/2609.02127",
       "published_at": "2026-09-03T04:00:00+00:00",
       "first_sent_at": "2026-09-03T05:37:26.442603+00:00"
+    },
+    {
+      "id": "ae818b4162a79ceddee00647c17fc4ed2f89f0d1",
+      "source": "arXiv cs.CR",
+      "title": "AlcaTRAz - Anchored Tree-Rule Defense Against Jailbreaks",
+      "url": "https://arxiv.org/abs/2609.03693",
+      "published_at": "2026-09-04T04:00:00+00:00",
+      "first_sent_at": "2026-09-04T05:43:17.166609+00:00"
+    },
+    {
+      "id": "46c8ec2b387716a8a5e637ef32f6d1aaf224cd43",
+      "source": "arXiv cs.CR",
+      "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
+      "url": "https://arxiv.org/abs/2609.04075",
+      "published_at": "2026-09-04T04:00:00+00:00",
+      "first_sent_at": "2026-09-04T05:43:17.166609+00:00"
     }
   ]
 }
