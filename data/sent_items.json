@@ -1,38 +1,6 @@
 {
   "items": [
     {
-      "id": "6a4180ea4009edc29ba73504346c1a8978485ab0",
-      "source": "arXiv cs.CR",
-      "title": "GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines",
-      "url": "https://arxiv.org/abs/2606.09935",
-      "published_at": "2026-06-10T04:00:00+00:00",
-      "first_sent_at": "2026-06-10T05:24:53.921052+00:00"
-    },
-    {
-      "id": "b6da169f5dbf4007d8d8db2206b974e8b8c816bb",
-      "source": "arXiv cs.CR",
-      "title": "Assessing Automated Prompt Injection Attacks in Agentic Environments",
-      "url": "https://arxiv.org/abs/2606.10525",
-      "published_at": "2026-06-10T04:00:00+00:00",
-      "first_sent_at": "2026-06-10T05:24:53.921052+00:00"
-    },
-    {
-      "id": "8918bd5381f09a49d4ca5c1737d4f8f9d094e00e",
-      "source": "arXiv cs.CR",
-      "title": "JailbreakOPT: Tool-Assisted Iterative Jailbreak Prompt Optimization",
-      "url": "https://arxiv.org/abs/2606.11425",
-      "published_at": "2026-06-11T04:00:00+00:00",
-      "first_sent_at": "2026-06-11T05:58:53.960002+00:00"
-    },
-    {
-      "id": "3d911829cc892d67d4c5aaf10906681aa779719e",
-      "source": "arXiv cs.CR",
-      "title": "Grammar-Constrained Decoding Can Jailbreak LLMs into Generating Malicious Code",
-      "url": "https://arxiv.org/abs/2606.11817",
-      "published_at": "2026-06-11T04:00:00+00:00",
-      "first_sent_at": "2026-06-11T05:58:53.960002+00:00"
-    },
-    {
       "id": "9069b8d23efa53252cccbb69e098fc183de4f2ea",
       "source": "arXiv cs.CR",
       "title": "PI-Hunter: Automated Red-Teaming for Exposing and Localizing Prompt Injections",
@@ -951,6 +919,22 @@
       "url": "https://arxiv.org/abs/2609.04495",
       "published_at": "2026-09-07T04:00:00+00:00",
       "first_sent_at": "2026-09-07T05:55:40.951700+00:00"
+    },
+    {
+      "id": "96eef8111266f1c2efb49be24c8c4fe74a7933cd",
+      "source": "arXiv cs.CR",
+      "title": "An Experimental Evaluation of Multimodal Prompt Injection Attacks on Agentic AI Frameworks",
+      "url": "https://arxiv.org/abs/2609.09404",
+      "published_at": "2026-09-10T04:00:00+00:00",
+      "first_sent_at": "2026-09-10T05:47:20.471970+00:00"
+    },
+    {
+      "id": "55fbb9de5de85832fa609beb56f7de3dc0f9b4e5",
+      "source": "arXiv cs.CR",
+      "title": "DuplexJail: Safety Alignment Breaks Under Spoken Interruption in Full-Duplex Models",
+      "url": "https://arxiv.org/abs/2609.09420",
+      "published_at": "2026-09-10T04:00:00+00:00",
+      "first_sent_at": "2026-09-10T05:47:20.471970+00:00"
     }
   ]
 }
