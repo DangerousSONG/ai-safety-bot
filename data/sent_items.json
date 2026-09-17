@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "8abfbba8b2e6bcfec52e39f43d2d7e968db84bbc",
-      "source": "arXiv cs.CR",
-      "title": "OpenAnt: LLM-Powered Vulnerability Discovery Through Code Decomposition, Adversarial Verification, and Dynamic Testing",
-      "url": "https://arxiv.org/abs/2606.19149",
-      "published_at": "2026-06-18T04:00:00+00:00",
-      "first_sent_at": "2026-06-18T06:02:54.662896+00:00"
-    },
-    {
-      "id": "582ebdf9eb9bf5fd8a31adc0d6d1c66b95c51f37",
-      "source": "arXiv cs.CR",
-      "title": "CodeSentinel: A Three-Layer Defense Against Indirect Prompt Injection in Code Contexts",
-      "url": "https://arxiv.org/abs/2606.19235",
-      "published_at": "2026-06-18T04:00:00+00:00",
-      "first_sent_at": "2026-06-18T06:02:54.662896+00:00"
-    },
-    {
       "id": "e2a81b38802c8a0148ee38a549c295be9cfe8ab4",
       "source": "arXiv cs.CR",
       "title": "LLM agent safety, multi-turn red-teaming, jailbreak benchmarks, adversarial robustness, safety-critical systems",
@@ -927,6 +911,30 @@
       "url": "https://arxiv.org/abs/2609.16433",
       "published_at": "2026-09-16T04:00:00+00:00",
       "first_sent_at": "2026-09-16T05:52:13.466346+00:00"
+    },
+    {
+      "id": "0f5ae19c72073eae29d8aa115a87e7661b4761ee",
+      "source": "arXiv cs.CR",
+      "title": "Normal Alignment: Improved Cryptanalytic Sign Recovery on Hard-Label Networks",
+      "url": "https://arxiv.org/abs/2609.18751",
+      "published_at": "2026-09-17T04:00:00+00:00",
+      "first_sent_at": "2026-09-17T05:59:21.102248+00:00"
+    },
+    {
+      "id": "b37954f892e4215fe78f48b362e07fd7f5a762bc",
+      "source": "OpenAI News",
+      "title": "Our framework for reporting model misalignment",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "published_at": "2026-09-16T17:00:00+00:00",
+      "first_sent_at": "2026-09-17T05:59:21.102248+00:00"
+    },
+    {
+      "id": "81c69d227635157bbef46c94117f1a02bdc26c78",
+      "source": "arXiv cs.CR",
+      "title": "A Security Risk Assessment Framework for AI-Powered Development Tools",
+      "url": "https://arxiv.org/abs/2609.18658",
+      "published_at": "2026-09-17T04:00:00+00:00",
+      "first_sent_at": "2026-09-17T05:59:21.102248+00:00"
     }
   ]
 }
