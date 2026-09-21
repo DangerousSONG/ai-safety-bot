@@ -935,6 +935,22 @@
       "url": "https://arxiv.org/abs/2609.19587",
       "published_at": "2026-09-18T04:00:00+00:00",
       "first_sent_at": "2026-09-18T05:45:49.401894+00:00"
+    },
+    {
+      "id": "f98e117d572f0e248bb32a840f70ff87ad641d99",
+      "source": "arXiv cs.CR",
+      "title": "The Right Tool for the Job: On the Selection of Mitigations for GenAI Privacy Threats",
+      "url": "https://arxiv.org/abs/2609.20884",
+      "published_at": "2026-09-21T04:00:00+00:00",
+      "first_sent_at": "2026-09-21T06:06:17.685746+00:00"
+    },
+    {
+      "id": "2dd551d57e05e3ca5c64a54673cc6410f6bab1bf",
+      "source": "arXiv cs.CR",
+      "title": "HE-Guardrail: A Homomorphic Guardrail Against Jailbreak Attacks for Encrypted Large Language Model Inference",
+      "url": "https://arxiv.org/abs/2609.21484",
+      "published_at": "2026-09-21T04:00:00+00:00",
+      "first_sent_at": "2026-09-21T06:06:17.685746+00:00"
     }
   ]
 }
