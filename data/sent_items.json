@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "40ddaaa276e2b8c0a8ce3b3c59ee55cb4d8cdd65",
-      "source": "arXiv cs.CR",
-      "title": "PixJail: Self-Evolving Paper-to-Pipeline Reproduction for Text-to-Image Jailbreak Evaluation",
-      "url": "https://arxiv.org/abs/2606.24081",
-      "published_at": "2026-06-24T04:00:00+00:00",
-      "first_sent_at": "2026-06-24T05:06:19.542957+00:00"
-    },
-    {
-      "id": "053e1b989c6345e8a18f7d61d2abd32fcc71ddbb",
-      "source": "arXiv cs.CR",
-      "title": "Red-Teaming the Agentic Red-Team",
-      "url": "https://arxiv.org/abs/2606.24496",
-      "published_at": "2026-06-24T04:00:00+00:00",
-      "first_sent_at": "2026-06-24T05:06:19.542957+00:00"
-    },
-    {
       "id": "d94ddad6a8f04265c3a1a2f0e79ef7cc8460581c",
       "source": "arXiv cs.CR",
       "title": "RAS: Measuring LLM Safety Through Refusal Alignment",
@@ -951,6 +935,22 @@
       "url": "https://arxiv.org/abs/2609.21484",
       "published_at": "2026-09-21T04:00:00+00:00",
       "first_sent_at": "2026-09-21T06:06:17.685746+00:00"
+    },
+    {
+      "id": "bc1c3ce3ac6a3aae4e91f9d133ab9e4d57e52025",
+      "source": "arXiv cs.CR",
+      "title": "Beyond Single-Model Injection: A Threat Model and Defense Architecture for Prompt Injection in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2609.22949",
+      "published_at": "2026-09-22T04:00:00+00:00",
+      "first_sent_at": "2026-09-22T05:59:58.450493+00:00"
+    },
+    {
+      "id": "a17633a92ab1bc42f4cf8bec570962fdc19f4830",
+      "source": "arXiv cs.CR",
+      "title": "The Price of Safety: Benign-Case Utility and Token Overhead of Memory-Poisoning Defenses in LLM Agents",
+      "url": "https://arxiv.org/abs/2609.22818",
+      "published_at": "2026-09-22T04:00:00+00:00",
+      "first_sent_at": "2026-09-22T05:59:58.450493+00:00"
     }
   ]
 }
