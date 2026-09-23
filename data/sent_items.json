@@ -1,30 +1,6 @@
 {
   "items": [
     {
-      "id": "d94ddad6a8f04265c3a1a2f0e79ef7cc8460581c",
-      "source": "arXiv cs.CR",
-      "title": "RAS: Measuring LLM Safety Through Refusal Alignment",
-      "url": "https://arxiv.org/abs/2606.25750",
-      "published_at": "2026-06-25T04:00:00+00:00",
-      "first_sent_at": "2026-06-25T05:10:54.547968+00:00"
-    },
-    {
-      "id": "ae57cd09825b6a544fc64508fe84915f14bde0d7",
-      "source": "arXiv cs.CR",
-      "title": "How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring",
-      "url": "https://arxiv.org/abs/2606.25487",
-      "published_at": "2026-06-25T04:00:00+00:00",
-      "first_sent_at": "2026-06-25T05:10:54.547968+00:00"
-    },
-    {
-      "id": "72b3ee173a975012637a16e93b05c17dfec56b56",
-      "source": "GitHub Blog Security",
-      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
-      "url": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
-      "published_at": "2026-03-26T16:00:00+00:00",
-      "first_sent_at": "2026-06-25T05:10:54.547968+00:00"
-    },
-    {
       "id": "edaf12d96662313a0ebd82f3927ec8d76a6d8e4a",
       "source": "arXiv cs.CR",
       "title": "Jailbreaking for the Average Jane: Choosing Optimal Jailbreaks via Bandit Algorithms for Automatically Enhanced Queries",
@@ -951,6 +927,22 @@
       "url": "https://arxiv.org/abs/2609.22818",
       "published_at": "2026-09-22T04:00:00+00:00",
       "first_sent_at": "2026-09-22T05:59:58.450493+00:00"
+    },
+    {
+      "id": "d3192d74875716615086a061c625434fe22bffc7",
+      "source": "arXiv cs.CR",
+      "title": "Not All 4-bit Quantizers Are Equal: Deployment-Time Mitigation of PII Leakage in Fine-Tuned Small Language Models",
+      "url": "https://arxiv.org/abs/2609.25014",
+      "published_at": "2026-09-23T04:00:00+00:00",
+      "first_sent_at": "2026-09-23T05:47:46.651195+00:00"
+    },
+    {
+      "id": "8529bca939cd91ae55bed1256465e48d1e502d70",
+      "source": "arXiv cs.CR",
+      "title": "The Uncontrolled Variable: Vision-Language Model Refusal Responds to Image Presence in Ways Risk Cannot Explain",
+      "url": "https://arxiv.org/abs/2609.26174",
+      "published_at": "2026-09-23T04:00:00+00:00",
+      "first_sent_at": "2026-09-23T05:47:46.651195+00:00"
     }
   ]
 }
