@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "edaf12d96662313a0ebd82f3927ec8d76a6d8e4a",
-      "source": "arXiv cs.CR",
-      "title": "Jailbreaking for the Average Jane: Choosing Optimal Jailbreaks via Bandit Algorithms for Automatically Enhanced Queries",
-      "url": "https://arxiv.org/abs/2606.26936",
-      "published_at": "2026-06-26T04:00:00+00:00",
-      "first_sent_at": "2026-06-26T05:16:22.904840+00:00"
-    },
-    {
-      "id": "4938542797d0ca06ee5be11c281881d5cada5a09",
-      "source": "arXiv cs.CR",
-      "title": "Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents",
-      "url": "https://arxiv.org/abs/2606.26479",
-      "published_at": "2026-06-26T04:00:00+00:00",
-      "first_sent_at": "2026-06-26T05:16:22.904840+00:00"
-    },
-    {
       "id": "acafe8ba49d2bbce5e98a2cda0dc5ebe53cb491d",
       "source": "arXiv cs.CR",
       "title": "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models",
@@ -943,6 +927,22 @@
       "url": "https://arxiv.org/abs/2609.26174",
       "published_at": "2026-09-23T04:00:00+00:00",
       "first_sent_at": "2026-09-23T05:47:46.651195+00:00"
+    },
+    {
+      "id": "28e75af0a3830cfc31e5dd6cbac45d7b4f8d18b5",
+      "source": "arXiv cs.CR",
+      "title": "Solidity Meets LLMs: A Transformer-Based Approach to Smart Contract Vulnerability Detection",
+      "url": "https://arxiv.org/abs/2609.27091",
+      "published_at": "2026-09-24T04:00:00+00:00",
+      "first_sent_at": "2026-09-24T06:01:39.738606+00:00"
+    },
+    {
+      "id": "ab830beca22aae2cb5cf5f6e8a6b64d3f03d4fe1",
+      "source": "arXiv cs.CR",
+      "title": "RAMP: Reversing Adversarial Perturbations to Strengthen Clean-Label Backdoor Attacks against Malware Detectors",
+      "url": "https://arxiv.org/abs/2609.27422",
+      "published_at": "2026-09-24T04:00:00+00:00",
+      "first_sent_at": "2026-09-24T06:01:39.738606+00:00"
     }
   ]
 }
