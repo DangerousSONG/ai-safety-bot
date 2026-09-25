@@ -943,6 +943,22 @@
       "url": "https://arxiv.org/abs/2609.27422",
       "published_at": "2026-09-24T04:00:00+00:00",
       "first_sent_at": "2026-09-24T06:01:39.738606+00:00"
+    },
+    {
+      "id": "5215c492e281149d8bd591237a42658c05c4e068",
+      "source": "arXiv cs.CR",
+      "title": "Decision Hijacking: Prompt Injection Attacks on Jev's Typed Probabilistic Decisions",
+      "url": "https://arxiv.org/abs/2609.28613",
+      "published_at": "2026-09-25T04:00:00+00:00",
+      "first_sent_at": "2026-09-25T06:02:47.477368+00:00"
+    },
+    {
+      "id": "48bbcbafb29d13815c2aef3a7c988ccf97db04ba",
+      "source": "arXiv cs.CR",
+      "title": "Privacy Leakage Through AI-mediated Analysis of Smartphone Data",
+      "url": "https://arxiv.org/abs/2609.28537",
+      "published_at": "2026-09-25T04:00:00+00:00",
+      "first_sent_at": "2026-09-25T06:02:47.477368+00:00"
     }
   ]
 }
