@@ -1,46 +1,6 @@
 {
   "items": [
     {
-      "id": "acafe8ba49d2bbce5e98a2cda0dc5ebe53cb491d",
-      "source": "arXiv cs.CR",
-      "title": "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models",
-      "url": "https://arxiv.org/abs/2606.28153",
-      "published_at": "2026-06-29T04:00:00+00:00",
-      "first_sent_at": "2026-06-29T05:58:40.689871+00:00"
-    },
-    {
-      "id": "813045826c22b5ef147f027c9f1d7d03f5741d23",
-      "source": "arXiv cs.CR",
-      "title": "SHARD: cell-keyed residual splitting for alignment-resistant private dense retrieval",
-      "url": "https://arxiv.org/abs/2606.27976",
-      "published_at": "2026-06-29T04:00:00+00:00",
-      "first_sent_at": "2026-06-29T05:58:40.689871+00:00"
-    },
-    {
-      "id": "5a968dd4c8017541aab2205b7ecb5ff1079dcc2c",
-      "source": "arXiv cs.CR",
-      "title": "RIPA: Sensory-Vector Prompt Injection Attacks on LLM-Controlled ROS 2 Robots",
-      "url": "https://arxiv.org/abs/2606.28649",
-      "published_at": "2026-06-30T04:00:00+00:00",
-      "first_sent_at": "2026-06-30T05:12:13.555947+00:00"
-    },
-    {
-      "id": "a289ed2a7b514c79b8078be094ec96cd1c9dc4ca",
-      "source": "arXiv cs.CR",
-      "title": "An Empirical Evaluation of Prompt Injection Vulnerabilities in Large Language Models Across Multilingual and Obfuscated Attack Scenarios",
-      "url": "https://arxiv.org/abs/2606.29602",
-      "published_at": "2026-06-30T04:00:00+00:00",
-      "first_sent_at": "2026-06-30T05:12:13.555947+00:00"
-    },
-    {
-      "id": "2caa70ceed1794be27b0f9852b53f51ea8440fa6",
-      "source": "GitHub Blog Security",
-      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
-      "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
-      "published_at": "2026-06-29T16:10:20+00:00",
-      "first_sent_at": "2026-06-30T05:12:13.555947+00:00"
-    },
-    {
       "id": "83506df6b7626da9f4256e736bd0bfa871ce90e8",
       "source": "arXiv cs.CR",
       "title": "Security--Fidelity Tradeoffs: The Hidden Cost of Prompt Injection Defense",
@@ -959,6 +919,22 @@
       "url": "https://arxiv.org/abs/2609.28537",
       "published_at": "2026-09-25T04:00:00+00:00",
       "first_sent_at": "2026-09-25T06:02:47.477368+00:00"
+    },
+    {
+      "id": "c80ad3d2bfc90c58995a5652ff737ecbf44188ad",
+      "source": "arXiv cs.CR",
+      "title": "Prompt Injection Detection for Email Agents Through Attack Chain Modeling",
+      "url": "https://arxiv.org/abs/2609.30657",
+      "published_at": "2026-09-28T04:00:00+00:00",
+      "first_sent_at": "2026-09-28T06:37:02.322808+00:00"
+    },
+    {
+      "id": "60359caca4fb4ab41421fcd95d4366af45217dfe",
+      "source": "arXiv cs.CR",
+      "title": "AgentXploit: Autonomous Repository-to-Runtime Red-Teaming for AI Agents",
+      "url": "https://arxiv.org/abs/2609.31318",
+      "published_at": "2026-09-28T04:00:00+00:00",
+      "first_sent_at": "2026-09-28T06:37:02.322808+00:00"
     }
   ]
 }
