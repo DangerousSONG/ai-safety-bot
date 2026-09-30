@@ -1,46 +1,6 @@
 {
   "items": [
     {
-      "id": "83506df6b7626da9f4256e736bd0bfa871ce90e8",
-      "source": "arXiv cs.CR",
-      "title": "Security--Fidelity Tradeoffs: The Hidden Cost of Prompt Injection Defense",
-      "url": "https://arxiv.org/abs/2606.30783",
-      "published_at": "2026-07-01T04:00:00+00:00",
-      "first_sent_at": "2026-07-01T05:46:42.302668+00:00"
-    },
-    {
-      "id": "459240cd63e21ec9e21cfd7db2e95d32d5d9df1e",
-      "source": "arXiv cs.CR",
-      "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
-      "url": "https://arxiv.org/abs/2606.31227",
-      "published_at": "2026-07-01T04:00:00+00:00",
-      "first_sent_at": "2026-07-01T05:46:42.302668+00:00"
-    },
-    {
-      "id": "210fd45135b45d1b02ddcbab34159bc017053432",
-      "source": "arXiv cs.CR",
-      "title": "Beyond the Prompt: Jailbreaking Function-Calling LLMs via Simulated Moderation Traces",
-      "url": "https://arxiv.org/abs/2607.00481",
-      "published_at": "2026-07-02T04:00:00+00:00",
-      "first_sent_at": "2026-07-02T05:04:26.735098+00:00"
-    },
-    {
-      "id": "2e4b7b03be8a49aa237990583ff41278af92f09e",
-      "source": "arXiv cs.CR",
-      "title": "HARC: Coupling Harmfulness and Refusal Directions for Robust Safety Alignment",
-      "url": "https://arxiv.org/abs/2607.00572",
-      "published_at": "2026-07-02T04:00:00+00:00",
-      "first_sent_at": "2026-07-02T05:04:26.735098+00:00"
-    },
-    {
-      "id": "2052cf1bdec63903f17714dd5a8caf629ef92e84",
-      "source": "Google Security Blog",
-      "title": "Google Workspace’s continuous approach to mitigating indirect prompt injections",
-      "url": "http://security.googleblog.com/2026/04/google-workspaces-continuous-approach.html",
-      "published_at": "2026-04-02T16:00:00+00:00",
-      "first_sent_at": "2026-07-02T05:04:26.735098+00:00"
-    },
-    {
       "id": "72c0e1ea20d0a2a09491e959084abec98b1d344e",
       "source": "arXiv cs.CR",
       "title": "Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring",
@@ -935,6 +895,30 @@
       "url": "https://arxiv.org/abs/2609.31318",
       "published_at": "2026-09-28T04:00:00+00:00",
       "first_sent_at": "2026-09-28T06:37:02.322808+00:00"
+    },
+    {
+      "id": "2d7ae88971b7951131f4d8c010631621c9e3daac",
+      "source": "arXiv cs.CR",
+      "title": "Cheap to Hypothesize, Costly to Verify: The Defense Surface of Agentic Vulnerability Discovery",
+      "url": "https://arxiv.org/abs/2609.35909",
+      "published_at": "2026-09-30T04:00:00+00:00",
+      "first_sent_at": "2026-09-30T06:33:46.992127+00:00"
+    },
+    {
+      "id": "d454385a98212e2cf3aadc156f61237e4380d0c6",
+      "source": "arXiv cs.CR",
+      "title": "Render Before Reading: Visual Rendering as a Prompt Injection Defense",
+      "url": "https://arxiv.org/abs/2609.36121",
+      "published_at": "2026-09-30T04:00:00+00:00",
+      "first_sent_at": "2026-09-30T06:33:46.992127+00:00"
+    },
+    {
+      "id": "2052cf1bdec63903f17714dd5a8caf629ef92e84",
+      "source": "Google Security Blog",
+      "title": "Google Workspace’s continuous approach to mitigating indirect prompt injections",
+      "url": "http://security.googleblog.com/2026/04/google-workspaces-continuous-approach.html",
+      "published_at": "2026-04-02T16:00:00+00:00",
+      "first_sent_at": "2026-09-30T06:33:46.992127+00:00"
     }
   ]
 }
