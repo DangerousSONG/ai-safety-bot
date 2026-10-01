@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "72c0e1ea20d0a2a09491e959084abec98b1d344e",
-      "source": "arXiv cs.CR",
-      "title": "Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring",
-      "url": "https://arxiv.org/abs/2607.02121",
-      "published_at": "2026-07-03T04:00:00+00:00",
-      "first_sent_at": "2026-07-03T04:49:57.859800+00:00"
-    },
-    {
-      "id": "e2bef9ae4ff95d8e098d6756be6429be6a4ef20d",
-      "source": "arXiv cs.CR",
-      "title": "Beyond Gradient-Based Attacks: Adversarial Robustness and Explainability Stability in Cybersecurity Classifiers",
-      "url": "https://arxiv.org/abs/2607.01679",
-      "published_at": "2026-07-03T04:00:00+00:00",
-      "first_sent_at": "2026-07-03T04:49:57.859800+00:00"
-    },
-    {
       "id": "2dabd5b5dde93abed3114f7aef51d1d09c4858a9",
       "source": "arXiv cs.CR",
       "title": "Not All Refusals Are Equal: How Safety Alignment Fails Cybersecurity at Scale",
@@ -919,6 +903,22 @@
       "url": "http://security.googleblog.com/2026/04/google-workspaces-continuous-approach.html",
       "published_at": "2026-04-02T16:00:00+00:00",
       "first_sent_at": "2026-09-30T06:33:46.992127+00:00"
+    },
+    {
+      "id": "cb4c4527914b6f08b9031c722879230be346cabb",
+      "source": "arXiv cs.CR",
+      "title": "SceneJail: Exploiting Video Scenario Context to Jailbreak Multimodal LLMs",
+      "url": "https://arxiv.org/abs/2609.38899",
+      "published_at": "2026-10-01T04:00:00+00:00",
+      "first_sent_at": "2026-10-01T07:07:03.512914+00:00"
+    },
+    {
+      "id": "ed9bc380d28a7a990c3aa9712fc8db6a283bf593",
+      "source": "arXiv cs.CR",
+      "title": "Inference-Layer Security: Defending Against Adversarial Inference and Infrastructure Abuse",
+      "url": "https://arxiv.org/abs/2609.38239",
+      "published_at": "2026-10-01T04:00:00+00:00",
+      "first_sent_at": "2026-10-01T07:07:03.512914+00:00"
     }
   ]
 }
