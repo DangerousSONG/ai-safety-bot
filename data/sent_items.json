@@ -919,6 +919,22 @@
       "url": "https://arxiv.org/abs/2609.38239",
       "published_at": "2026-10-01T04:00:00+00:00",
       "first_sent_at": "2026-10-01T07:07:03.512914+00:00"
+    },
+    {
+      "id": "6a156edd7af1b4447d23578c2dd4ba5b77c9d428",
+      "source": "arXiv cs.CR",
+      "title": "From A2A Attacks to Envelope-Layer Defense: Red-Teaming Evaluation of LLM Agents and a Three-Layer Isomorphic Attack-Defense Model",
+      "url": "https://arxiv.org/abs/2610.00392",
+      "published_at": "2026-10-02T04:00:00+00:00",
+      "first_sent_at": "2026-10-02T06:54:43.465431+00:00"
+    },
+    {
+      "id": "2818a36521dcc8a754a4d6b118d0733a358fb72d",
+      "source": "arXiv cs.CR",
+      "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2610.01058",
+      "published_at": "2026-10-02T04:00:00+00:00",
+      "first_sent_at": "2026-10-02T06:54:43.465431+00:00"
     }
   ]
 }
