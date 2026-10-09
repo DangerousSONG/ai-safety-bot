@@ -919,6 +919,22 @@
       "url": "https://arxiv.org/abs/2610.09264",
       "published_at": "2026-10-08T04:00:00+00:00",
       "first_sent_at": "2026-10-08T07:14:06.652764+00:00"
+    },
+    {
+      "id": "a2e5bfed139010f88e94f17c2148a7fe16582338",
+      "source": "arXiv cs.CR",
+      "title": "BRANCH: Bypassing Multi-Scanner AI Guardrails",
+      "url": "https://arxiv.org/abs/2610.10742",
+      "published_at": "2026-10-09T04:00:00+00:00",
+      "first_sent_at": "2026-10-09T07:17:24.449500+00:00"
+    },
+    {
+      "id": "2807ef0834f9ef47dd1661c26e2a6d4509a041e1",
+      "source": "arXiv cs.CR",
+      "title": "False Claims, Credible Images: A Red-Teaming Benchmark for Commercial Image Generators",
+      "url": "https://arxiv.org/abs/2610.11112",
+      "published_at": "2026-10-09T04:00:00+00:00",
+      "first_sent_at": "2026-10-09T07:17:24.449500+00:00"
     }
   ]
 }
