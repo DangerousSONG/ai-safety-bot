@@ -1,54 +1,6 @@
 {
   "items": [
     {
-      "id": "1fb5d92efef62ac0315a72383f96a052133c2afa",
-      "source": "arXiv cs.CR",
-      "title": "PVDetector: Detecting Prompt Injection Attacks on Purpose-Specific LLM Agents through Policy-Violation Concept Analysis",
-      "url": "https://arxiv.org/abs/2607.12624",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "first_sent_at": "2026-07-15T04:10:28.733815+00:00"
-    },
-    {
-      "id": "b4ddb63f3b96db7445afa9eb2ec13619f15153b7",
-      "source": "arXiv cs.CR",
-      "title": "Antiproof: Synthesizing Vulnerability Detectors and Proofs of Exploitability",
-      "url": "https://arxiv.org/abs/2607.12316",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "first_sent_at": "2026-07-15T04:10:28.733815+00:00"
-    },
-    {
-      "id": "3ef90b1ef530b23f0a4cddcb8c6b2ea0403a943e",
-      "source": "arXiv cs.CR",
-      "title": "The Refusal Residue: When Probes Catch Alignment Faking and When They Don't",
-      "url": "https://arxiv.org/abs/2607.13346",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "first_sent_at": "2026-07-16T04:14:03.685251+00:00"
-    },
-    {
-      "id": "6970cb189538ae8c55f5dd9fd9f598c6f4772709",
-      "source": "arXiv cs.CR",
-      "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
-      "url": "https://arxiv.org/abs/2607.13081",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "first_sent_at": "2026-07-16T04:14:03.685251+00:00"
-    },
-    {
-      "id": "498504a43e712bd66d79bacbe9d905362c5de035",
-      "source": "arXiv cs.CR",
-      "title": "Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation",
-      "url": "https://arxiv.org/abs/2607.14493",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "first_sent_at": "2026-07-17T04:14:07.619979+00:00"
-    },
-    {
-      "id": "e62022bbcc4d5e05aa69c48000622dd14fcc7be9",
-      "source": "arXiv cs.CR",
-      "title": "Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
-      "url": "https://arxiv.org/abs/2607.14147",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "first_sent_at": "2026-07-17T04:14:07.619979+00:00"
-    },
-    {
       "id": "a4467d860bbae5b9f519e486f7be95d450309937",
       "source": "arXiv cs.CR",
       "title": "SpeechGuard: Online Defense against Backdoor Attacks on Speech Recognition Models",
@@ -919,6 +871,22 @@
       "url": "https://arxiv.org/abs/2610.13491",
       "published_at": "2026-10-12T04:00:00+00:00",
       "first_sent_at": "2026-10-12T07:12:37.259988+00:00"
+    },
+    {
+      "id": "085e997149537caba09b468503b162c458780ab3",
+      "source": "arXiv cs.CR",
+      "title": "MMA-SafetyBench: A Benchmark for Multimodal Agent Safety Evaluation",
+      "url": "https://arxiv.org/abs/2610.19384",
+      "published_at": "2026-10-15T04:00:00+00:00",
+      "first_sent_at": "2026-10-15T05:45:42.897787+00:00"
+    },
+    {
+      "id": "78acb748cc3d1ba2a8074a2bd28a7370aef00a24",
+      "source": "arXiv cs.CR",
+      "title": "Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks",
+      "url": "https://arxiv.org/abs/2610.19971",
+      "published_at": "2026-10-15T04:00:00+00:00",
+      "first_sent_at": "2026-10-15T05:45:42.897787+00:00"
     }
   ]
 }
