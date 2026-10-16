@@ -887,6 +887,22 @@
       "url": "https://arxiv.org/abs/2610.19971",
       "published_at": "2026-10-15T04:00:00+00:00",
       "first_sent_at": "2026-10-15T05:45:42.897787+00:00"
+    },
+    {
+      "id": "6ca88137b40431c61271d7691c6ecae36dddbe5e",
+      "source": "arXiv cs.CR",
+      "title": "INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems",
+      "url": "https://arxiv.org/abs/2610.20776",
+      "published_at": "2026-10-16T04:00:00+00:00",
+      "first_sent_at": "2026-10-16T05:42:54.425971+00:00"
+    },
+    {
+      "id": "360a1b03f605540fb7260ae9e55ace8885d9fd19",
+      "source": "arXiv cs.CR",
+      "title": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
+      "url": "https://arxiv.org/abs/2610.20941",
+      "published_at": "2026-10-16T04:00:00+00:00",
+      "first_sent_at": "2026-10-16T05:42:54.425971+00:00"
     }
   ]
 }
